@@ -1,0 +1,36 @@
+﻿using AutoMaegler.Models;
+
+namespace AutoMaegler.Service
+{
+    public class CarService: ICarService
+    {
+        public List<Car> GetCars()
+        {
+
+        }
+        public void AddCar(Car car)
+        {
+
+        }
+        public void UpdateCar(Car car)
+        {
+
+        }
+        public Car GetCar(int id)
+        {
+
+        }
+        public Car DeleteCar(int id)
+        {
+
+        }
+        public IEnumerable<Car> NameSearch(string str)
+        {
+
+        }
+        public IEnumerable<Car> PriceFilter(int minPrice, int maxPrice)
+        {
+
+        }
+    }
+}
