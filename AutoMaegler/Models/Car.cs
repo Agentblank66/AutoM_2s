@@ -1,4 +1,6 @@
-﻿namespace AutoMaegler.Models
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace AutoMaegler.Models
 {
     public class Car
     {
@@ -50,6 +52,11 @@
             MaxPull = maxPull;
             Weight = weight;
             Status = status;
+        }
+
+        public override string ToString()
+        {
+            return $"Id: {Id} Type: {Type} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} MotorSize: {MotorSize} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status}";
         }
     }
 }
