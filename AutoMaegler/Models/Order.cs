@@ -6,5 +6,13 @@
         Car Car { get; set; }
         Employee Employee { get; set; }
         Customer Customer { get; set; }
+
+        public Order(int id, Car car, Employee employee, Customer customer)
+        {
+            Id = id;
+            Car = car;
+            Employee = employee;
+            Customer = customer;
+        }
     }
 }
