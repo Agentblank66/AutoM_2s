@@ -1,4 +1,4 @@
-﻿namespace AutoMaegler
+﻿namespace AutoMaegler.Models
 {
     public class Car
     {
@@ -6,7 +6,7 @@
         public string Name { get; set; }
         public string Description { get; set; }
         public Car() { }
-            
+
         public Car(int id, string name, string description)
         {
             Id = id;

@@ -1,4 +1,4 @@
-﻿namespace AutoMaegler
+﻿namespace AutoMaegler.Models
 {
     public class Employee
     {
