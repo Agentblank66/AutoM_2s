@@ -50,15 +50,15 @@ namespace AutoMaegler.Service
             return null;
         }
 
-        public void UpdateOrder(Order order) 
+        public void UpdateOrder(Order order)
         {
             if (order != null)
             {
-               foreach (Order o in _orders)
+                foreach (Order o in _orders)
                 {
                     if (o.Id == order.Id)
                     {
-                        
+
                     }
                 }
             }

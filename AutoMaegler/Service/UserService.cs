@@ -13,5 +13,12 @@ namespace AutoMaegler.Service
             Customers = MockUsers.GetMockCustomers();
             Employees = MockUsers.GetMockEmployees();
         }
+        public void AddCustomer(Customer customer)
+        {
+            Customers.Add(customer);
+            //Skal være generisk når det skal laves
+            //JsonFileService.SaveJsonObjects(Users);
+        }
+
     }
 }
