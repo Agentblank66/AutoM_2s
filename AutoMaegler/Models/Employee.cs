@@ -1,20 +1,13 @@
 ﻿namespace AutoMaegler.Models
 {
-    public class Employee
+    public class Employee: User
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+      
         public string Type { get; set; }
-        public int PhoneNumber { get; set; }
-        public string Email { get; set; }
 
-        public Employee(int id, string name, string type, int phoneNumber, string email)
+        public Employee(int id, string name, string type, int phoneNumber, string email, string password): base(id, name, email, password)
         {
-            Id = id;
-            Name = name;
             Type = type;
-            PhoneNumber = phoneNumber;
-            Email = email;
         }
 
 
