@@ -2,20 +2,20 @@
 {
     public abstract class Order
     {
-        public enum leasingType
+        public enum OrderType
         {
             Leasing,
             Buy,
             Sale
         }
 
-        public leasingType Type { get; set; }
+        public OrderType Type { get; set; }
         public int Id { get; set; }
         Car Car { get; set; }
         Employee Employee { get; set; }
         Customer Customer { get; set; }
 
-        public Order(int id, Car car, Employee employee, Customer customer, leasingType type)
+        public Order(int id, Car car, Employee employee, Customer customer, OrderType type)
         {
             Id = id;
             Car = car;

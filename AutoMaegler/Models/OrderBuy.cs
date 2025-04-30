@@ -5,7 +5,7 @@
         public int BuyPrice { get; set; }
         public DateTime BuyDate { get; set; }
 
-        public OrderBuy(int id, Car car, Employee employee, Customer customer, leasingType type,int buyPrice, DateTime buyDate)
+        public OrderBuy(int id, Car car, Employee employee, Customer customer, OrderType type,int buyPrice, DateTime buyDate)
         : base(id, car, employee, customer, type)
         {
             BuyPrice = buyPrice;
