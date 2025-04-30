@@ -1,3 +1,6 @@
+using AutoMaegler.Pages.LogIn;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -14,7 +17,14 @@ namespace AutoMaegler.Pages
 
         public void OnGet()
         {
-
+            if (LogInPageModel.LoggedInCustomer == null)
+            {
+                HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            }
+            else if(LogInPageModel.LoggedInEmployee == null)
+            {
+                HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            }
         }
     }
 }
