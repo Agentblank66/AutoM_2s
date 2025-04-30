@@ -7,7 +7,7 @@ namespace AutoMaegler.Service
         private List<Order> _orders;
         private List<OrderBuy> _orderBuys;
         private List<OrderLeasing> _orderLeasings;
-        private List<Order> _orderSales;
+        private List<OrderSale> _orderSales;
 
         public OrderService()
         {
@@ -21,15 +21,16 @@ namespace AutoMaegler.Service
 
         public void AddOrder(Order order)
         {
-            switch (order.Type)
+            int orderType = (int)order.Type;
+            switch (orderType)
             {
                 case 0:
                     _orderLeasings.Add((OrderLeasing)order);
                     break;
-                case (Order.leasingType)1:
+                case 1:
                     _orderBuys.Add((OrderBuy)order);
                     break;
-                case (Order.leasingType)2:
+                case 2:
                     _orderSales.Add((OrderSale)order);
                     break;
                 default:
