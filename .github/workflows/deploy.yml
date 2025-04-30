@@ -1,0 +1,37 @@
+name: Deploy to Simply.com
+
+on:
+  push:
+    branches:
+      - main  # Kører kun når du pusher til main-grenen
+
+jobs:
+  build:
+    runs-on: windows-latest  # Kør på en Windows-agent
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Hent din kode fra GitHub repository
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0'  # Brug den version af .NET, du bruger
+
+      - name: Restore dependencies
+        run: dotnet restore  # Gør det muligt at hente nuværende afhængigheder
+
+      - name: Build
+        run: dotnet build --configuration Release  # Byg projektet
+
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./publish  # Publicer applikationen til en output-folder
+
+      - name: Upload Files via FTP
+        uses: sebastienros/ftp-action@v1.1
+        with:
+          host: ${{ secrets.FTP_HOST }}  # FTP-værtsadresse, gemt som secret
+          username: ${{ secrets.FTP_USERNAME }}  # FTP-brugernavn, gemt som secret
+          password: ${{ secrets.FTP_PASSWORD }}  # FTP-password, gemt som secret
+          local-folder: './publish'  # Den publicerede mappe, der skal uploades
+          remote-folder: '/wwwroot'  # Den mappe på din server, hvor filerne skal uploades
