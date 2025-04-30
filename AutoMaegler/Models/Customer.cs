@@ -1,20 +1,13 @@
 ﻿namespace AutoMaegler.Models
 {
-    public class Customer
+    public class Customer: User
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int PhoneNumber { get; set; }
-        public string Email { get; set; }
         public string Address { get; set; }
         public bool WishToSell { get; set; }
 
-        public Customer(int id, string name, int phonenumber, string email, string address, bool wishtosell)
+        public Customer(int id, string name, int phonenumber, string email, string password, string address, bool wishtosell): base(id, name, email, password)
         {
-            Id = id;
-            Name = name;
-            PhoneNumber = phonenumber;
-            Email = email;
+ 
             Address = address;
             WishToSell = wishtosell;
         }
