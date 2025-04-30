@@ -6,8 +6,11 @@ namespace AutoMaegler.Service
     {
         public List<Car> GetCars()
         {
-
+            List<Car> cars = new List<Car>(); // skaf cars
+            return cars;
         }
+        
+
         public void AddCar(Car car)
         {
 
