@@ -6,8 +6,8 @@
         public DateTime SaleDate { get; set; }
 
 
-        public OrderSale(int id, Car car, Employee employee, Customer customer, int salePrice, DateTime saleDate)
-            : base(id, car, employee, customer)
+        public OrderSale(int id, Car car, Employee employee, Customer customer, leasingType type, int salePrice, DateTime saleDate)
+            : base(id, car, employee, customer, type)
         {
             SalePrice = salePrice;
             SaleDate = saleDate;

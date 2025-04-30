@@ -5,8 +5,8 @@
         public int Dipositum { get; set; }
         public DateTime LeasingDate { get; set; }
 
-        public OrderLeasing(int id, Car car, Employee employee, Customer customer, int leasingPrice, DateTime leasingDate)
-            : base(id, car, employee, customer)
+        public OrderLeasing(int id, Car car, Employee employee, Customer customer, leasingType type, int leasingPrice, DateTime leasingDate)
+            : base(id, car, employee, customer, type)
         {
             Dipositum = leasingPrice;
             LeasingDate = leasingDate;
