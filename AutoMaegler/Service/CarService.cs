@@ -9,12 +9,12 @@ namespace AutoMaegler.Service
 
         public List<Car> GetCars()
         {
-            return cars;
+            return _cars;
         }
 
         public void AddCar(Car car)
         {
-            cars.Add(car);
+            _cars.Add(car);
         }
         public void UpdateCar(Car car)
         { 
@@ -50,13 +50,10 @@ namespace AutoMaegler.Service
             }
 
         }
-        public Car DeleteCar(int id)
-        {
 
-        }
         public Car? GetCar(int id)
         {
-            foreach (Car car in cars) 
+            foreach (Car car in _cars) 
             { 
                 if (car.Id == id) return car;
             }
@@ -65,7 +62,7 @@ namespace AutoMaegler.Service
         public Car? DeleteCar(int id)
         {
             Car car = GetCar(id);
-            cars.Remove(GetCar(id));
+            _cars.Remove(GetCar(id));
             return car;
         }
         public IEnumerable<Car> NameSearch(string str)
