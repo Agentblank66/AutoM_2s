@@ -9,9 +9,9 @@ namespace AutoMaegler.Service
         {
 
         }
-        public IEnumerable<Car> GetDBCars()
-        {
-            //Skal returnere list fra DB
-        }
+        ////public IEnumerable<Car> GetDBCars()
+        //{
+        //    //Skal returnere list fra DB
+        //}
     }
 }
