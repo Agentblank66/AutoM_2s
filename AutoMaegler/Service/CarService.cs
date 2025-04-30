@@ -103,7 +103,17 @@ namespace AutoMaegler.Service
 
         public IEnumerable<Car> PriceFilter(int minPrice, int maxPrice)
         {
-
+            List<Car> SortedByPriceCars = GetCars();
+            List<Car> PriceResult = new List<Car>();
+            
+            foreach (Car car in SortedByPriceCars)
+            {
+                if (car.Price >= minPrice && car.Price <= maxPrice)
+                {
+                    PriceResult.Add(car);
+                }
+            }
+            return PriceResult;
         }
     }
 }
