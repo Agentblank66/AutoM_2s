@@ -72,7 +72,9 @@ namespace AutoMaegler.Service
             List<Car> brandMatch = new List<Car>();
             List<Car> typeOfMatch = new List<Car>();
 
-            // Safe iteration using a copy
+            // foreach allcars
+            // if match add to list
+            // if match remove from list
             foreach (Car car in allCars)
             {
                 if (car.Brand == str)
@@ -82,6 +84,9 @@ namespace AutoMaegler.Service
                 }
             }
 
+            // foreach allcars
+            // if match add to list
+            // if match remove from list
             foreach (Car car in allCars)
             {
                 if (car.Type == str)
@@ -91,7 +96,7 @@ namespace AutoMaegler.Service
                 }
             }
 
-            // Combine results
+            // Combine results from lists
             List<Car> result = new List<Car>();
             result.AddRange(brandMatch);
             result.AddRange(typeOfMatch);
