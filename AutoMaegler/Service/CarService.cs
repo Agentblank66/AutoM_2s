@@ -65,41 +65,40 @@ namespace AutoMaegler.Service
             _cars.Remove(GetCar(id));
             return car;
         }
+
         public IEnumerable<Car> NameSearch(string str)
         {
             List<Car> allCars = GetCars();
             List<Car> brandMatch = new List<Car>();
-            List<Car> typeOfmatch = new List<Car>();
-            List<Car> Result = new List<Car>();
+            List<Car> typeOfMatch = new List<Car>();
 
-            // check Brand Match
-            // Add to brandmatch List
-            // remove from allcars List
-            foreach (Car car in allCars) 
-            { 
-                if(car.Brand == str) 
-                { 
+            // Safe iteration using a copy
+            foreach (Car car in allCars)
+            {
+                if (car.Brand == str)
+                {
                     brandMatch.Add(car);
                     allCars.Remove(car);
                 }
             }
 
-            // check Brand Match
-            // Add to typematch List
-            // remove from allcars List
             foreach (Car car in allCars)
             {
                 if (car.Type == str)
                 {
-                    typeOfmatch.Add(car);
+                    typeOfMatch.Add(car);
                     allCars.Remove(car);
                 }
             }
 
-            Result = brandMatch;
-            Result += typeOfmatch;
+            // Combine results
+            List<Car> result = new List<Car>();
+            result.AddRange(brandMatch);
+            result.AddRange(typeOfMatch);
 
+            return result;
         }
+
 
         public IEnumerable<Car> PriceFilter(int minPrice, int maxPrice)
         {
