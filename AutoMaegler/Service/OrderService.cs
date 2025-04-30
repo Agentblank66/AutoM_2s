@@ -38,16 +38,42 @@ namespace AutoMaegler.Service
             }
         }
 
-        public Order GetOrder(int id)
+        public Order GetOrder(int id, Order.OrderType type)
         {
-            foreach (Order order in _orders)
+            switch (type)
             {
-                if (order.Id == id)
-                {
-                    return order;
-                }
+                case Order.OrderType.Leasing:
+                    foreach (OrderLeasing order in _orderLeasings)
+                    {
+                        if (order.Id == id)
+                        {
+                            return order;
+                        }
+                    }
+                    break;
+                case Order.OrderType.Buy:
+                    foreach (OrderBuy order in _orderBuys)
+                    {
+                        if (order.Id == id)
+                        {
+                            return order;
+                        }
+                    }
+                    break;
+                case Order.OrderType.Sale:
+                    foreach (OrderSale order in _orderSales)
+                    {
+                        if (order.Id == id)
+                        {
+                            return order;
+                        }
+                    }
+                    break;
+                default:
+                    throw new ArgumentException("Invalid order type");
             }
             return null;
+
         }
 
         public void UpdateOrder(Order order) 
