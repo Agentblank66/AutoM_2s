@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AutoMaegler.styles.css" asp-append-version="true" />
 </head>
-<body style="background-color: darkblue;">
-    <header style="background-color: cyan">
-        <nav style="background-color: cyan" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+<body style="background-color: mediumblue;">
+    <header style="background-color: darkblue">
+        <nav style="background-color: midnightblue" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
                 <img style="height:80px; padding:10px;" src="https://www.autom.dk/img/logo.png" />
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -21,13 +21,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Admin/CreateUser">Create User</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Admin/CreateUser">Create User</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@
                     if (LogInPageModel.LoggedInCustomer == null)
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/LogIn/LogInPage">Login</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/LogIn/LogInPage">Login</a>
                         </li>
                     }
                     else if (LogInPageModel.LoggedInEmployee == null)
@@ -68,7 +68,13 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer style="background-color: midnightblue" class="border-top footer text-muted">
+        <div class="container">
+            <h4 style="color: white">Åbningstider</h4>
+            <p style="color: white">Man-Fre    <span style="display:inline-block">09:00-17:30</span></p>
+            <p style="color: white">Lørdag     <span>Kun efter aftale</span></p>
+            <p style="color: white">Lørdag     <span>Kun efter aftale</span></p>
+        </div>
         <div class="container">
             &copy; 2025 - AutoMaegler - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
