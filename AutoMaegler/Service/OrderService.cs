@@ -26,12 +26,15 @@ namespace AutoMaegler.Service
             {
                 case 0:
                     _orderLeasings.Add((OrderLeasing)order);
+                    _orders.Add(order);
                     break;
                 case 1:
                     _orderBuys.Add((OrderBuy)order);
+                    _orders.Add(order);
                     break;
                 case 2:
                     _orderSales.Add((OrderSale)order);
+                    _orders.Add(order);
                     break;
                 default:
                     throw new ArgumentException("Invalid order type");
@@ -104,6 +107,70 @@ namespace AutoMaegler.Service
                     ((OrderSale)orderToUpdate).SaleDate = saleOrder.SaleDate;
                 }
             }
+        }
+
+        public Order DeleteOrder(int id, Order.OrderType type) 
+        {
+            Order tempOrderToBeDeleted = GetOrder(id, type);
+            if (tempOrderToBeDeleted != null) 
+            {
+                switch (tempOrderToBeDeleted.Type)
+                {
+                    case Order.OrderType.Leasing:
+                        _orderLeasings.Remove((OrderLeasing)tempOrderToBeDeleted);
+                        break;
+                    case Order.OrderType.Buy:
+                        _orderBuys.Remove((OrderBuy)tempOrderToBeDeleted);
+                        break;
+                    case Order.OrderType.Sale:
+                        _orderSales.Remove((OrderSale)tempOrderToBeDeleted);
+                        break;
+                    default:
+                        throw new ArgumentException("Invalid order type");
+                }
+                return tempOrderToBeDeleted;
+            }
+            return null;
+        }
+
+        public IEnumerable<Order> NameSearch(string str)
+        {
+            List<Order> result = new List<Order>();
+            foreach (Order order in _orders)
+            {
+                if (order.Customer.Name.Contains(str, StringComparison.OrdinalIgnoreCase))
+                {
+                    result.Add(order);
+                }
+            }
+            return result;
+        }
+
+        public IEnumerable<Order> PriceFilter(double minPrice, double maxPrice, double minMonthlyPayment, double maxMonthlyPayment)
+        {
+            List<Order> result = new List<Order>();
+            foreach (OrderLeasing order in _orderLeasings)
+            {
+                if (order.MonthlyPayment >= minMonthlyPayment && order.MonthlyPayment <= maxMonthlyPayment)
+                {
+                    result.Add(order);
+                }
+            }
+            foreach (OrderBuy order in _orderBuys)
+            {
+                if (order.BuyPrice >= minPrice && order.BuyPrice <= maxPrice)
+                {
+                    result.Add(order);
+                }
+            }
+            foreach (OrderSale order in _orderSales)
+            {
+                if (order.SalePrice >= minPrice && order.SalePrice <= maxPrice)
+                {
+                    result.Add(order);
+                }
+            }
+            return result;
         }
     }
 }
