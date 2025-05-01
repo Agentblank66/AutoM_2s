@@ -10,6 +10,6 @@ namespace AutoMaegler.Service
         public Order GetOrder(int id, Order.OrderType type);
         public Order DeleteOrder(int id, Order.OrderType type);
         public IEnumerable<Order> NameSearch(string str);
-        public IEnumerable<Order> PriceFilter(int minPrice, int maxPrice, int minLeasing, int maxLeasing);
+        public IEnumerable<Order> PriceFilter(double minPrice, double maxPrice, double minLeasing, double maxLeasing);
     }
 }
