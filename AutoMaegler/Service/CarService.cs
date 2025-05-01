@@ -66,6 +66,9 @@ namespace AutoMaegler.Service
             return car;
         }
 
+
+        // laves om til 2 metoder 
+        // lav endnu en search på fuel
         public IEnumerable<Car> NameSearch(string str)
         {
             List<Car> allCars = GetCars();
