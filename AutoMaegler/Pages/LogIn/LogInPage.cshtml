@@ -20,10 +20,13 @@
                 <input asp-for="Password" />
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group mt-1">
             <button class="btn btn-outline-light">Log in</button>
         </div>
     </form>
 </div>
-
-
+<div class="nav-item mt-3">
+    <form method="get" asp-area="" asp-page="/Admin/CreateUser">
+        <button type="submit" class="btn btn-primary text-white">Create User</button>
+    </form>
+</div>

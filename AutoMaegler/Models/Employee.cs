@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            return $"Id: {Id} Name: {Name} Type: {Type} PhoneNumber: {PhoneNumber} Email: {Email}";
+            return $"Id: {Id} Name: {Name} Type: {Type} Email: {Email}";
         }
     }
 }

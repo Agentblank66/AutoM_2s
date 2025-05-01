@@ -8,7 +8,6 @@ namespace AutoMaegler.Models
         public string Name { get; set; }
         [StringLength(50, ErrorMessage = "Email length can't be more than 50 characters.")]
         public string Email { get; set; }
-        public int PhoneNumber { get; set; }
         [Required]
         public string Password { get; set; }
 
@@ -22,7 +21,7 @@ namespace AutoMaegler.Models
 
         public override string ToString()
         {
-            return $"Id: {Id} Name: {Name} PhoneNumber: {PhoneNumber} Email: {Email}";
+            return $"Id: {Id} Name: {Name} Email: {Email}";
         }
 
     }
