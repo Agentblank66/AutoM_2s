@@ -68,25 +68,75 @@
         </main>
     </div>
 
-    <footer style="background-color: midnightblue" class="border-top footer text-muted">
-        <div class="container">
-            <h4 style="color: white">Åbningstider</h4>
-            <p style="color: white">Man-Fre    <span style="display:inline-block">09:00-17:30</span></p>
-            <p style="color: white">Lørdag     <span>Kun efter aftale</span></p>
-            <p style="color: white">Søndag     <span>10:00 - 16:00</span></p>
-        </div>
-        <div class="container">
-            <h4 style="color: white">Kontakt</h4>
-            <p style="color: white">Vojensvej 31-39</p>
-            <p style="color: white">2610 Rødovre</p>
-            <p style="color: white">Tlf.: 3672 6580</p>
+    <style>
+        .footer-span-space {
+            margin-left: 30px;
+        }
 
-            <h5>Salgsafdelingen</h5>
-            <p>Tlf.: 3672 6580</p>
-            <p>E-mail: info@autom.dk</p>
-        </div>
-        <div class="container">
-            &copy; 2025 - AutoMaegler - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        .footer {
+            background-color: midnightblue;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer a {
+            color: lightgray;
+            text-decoration: underline;
+        }
+
+        .footer h4,
+        .footer h5 {
+            margin-top: 0;
+            margin-bottom: 5px; /* mindre bundmargen */
+            line-height: 1.2; /* tættere linjeafstand */
+        }
+
+        .footer p {
+            margin: 3px 0; /* mindre top- og bundmargen */
+            line-height: 1.4; /* tættere linjeafstand */
+        }
+
+        #footer-h5{
+            margin-top: 40px;
+        }
+    </style>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Åbningstider</h4>
+                <p>Man-Fre <span class="footer-span-space">09:00-17:30</span></p>
+                <p>Lørdag <span class="footer-span-space">Kun efter aftale</span></p>
+                <p>Søndag <span class="footer-span-space">10:00 - 16:00</span></p>
+            </div>
+            <div class="footer-column">
+                <h4>Kontakt</h4>
+                <p>Vojensvej 31-39</p>
+                <p>2610 Rødovre</p>
+                <p>Tlf.: 3672 6580</p>
+
+                <h5 id="footer-h5">Salgsafdelingen</h5>
+                <p>Tlf.: 3672 6580</p>
+                <p>E-mail: info@autom.dk</p>
+            </div>
+            <div class="footer-column">
+                <p>&copy; 2025 - AutoMaegler - <a href="/privacy">Privacy</a></p>
+            </div>
         </div>
     </footer>
 
