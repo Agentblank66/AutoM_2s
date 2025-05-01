@@ -26,33 +26,32 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Admin/CreateUser">Create User</a>
-                        </li>
                     </ul>
                 </div>
             </div>
             <ul class="navbar-nav">
                 @{
-                    if (LogInPageModel.LoggedInCustomer == null)
+                    var customer = LogInPageModel.LoggedInCustomer;
+                    var employee = LogInPageModel.LoggedInEmployee;
+
+                    if (customer == null && employee == null)
                     {
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-page="/LogIn/LogInPage">Login</a>
                         </li>
                     }
-                    else if (LogInPageModel.LoggedInEmployee == null)
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/LogIn/LogInPage">Login</a>
-                        </li>
-                    }
                     else
                     {
                         <li class="nav-item nav-link text-dark me-3">
-                            User: @LogInPageModel.LoggedInCustomer.Email
-                            User: @LogInPageModel.LoggedInEmployee.Email
+                            @if (customer != null)
+                            {
+                                <span>@customer.Email</span>
+                            }
+                            else if (employee != null)
+                            {
+                                <span>@employee.Email</span>
+                            }
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/LogIn/LogOutPage">Logout</a>
                         </li>
@@ -60,7 +59,7 @@
                 }
             </ul>
         </nav>
-       
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
