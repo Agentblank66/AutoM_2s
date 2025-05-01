@@ -8,8 +8,8 @@ namespace AutoMaegler.Service
         public void AddOrder(Order order);
         public void UpdateOrder(Order order);
         public Order GetOrder(int id, Order.OrderType type);
-        public Order DeleteOrder(int id);
+        public Order DeleteOrder(int id, Order.OrderType type);
         public IEnumerable<Order> NameSearch(string str);
-        public IEnumerable<Order> PriceFilter(int minPrice, int maxPrice);
+        public IEnumerable<Order> PriceFilter(int minPrice, int maxPrice, int minLeasing, int maxLeasing);
     }
 }
