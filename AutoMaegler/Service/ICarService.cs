@@ -4,6 +4,9 @@ namespace AutoMaegler.Service
 {
     public interface ICarService
     {
+        /// <summary>
+        /// Methods that any class implementing this interface must implement.
+        /// </summary>
         public List<Car> GetCars();
         public void AddCar(Car car);
         public void UpdateCar(Car car);
