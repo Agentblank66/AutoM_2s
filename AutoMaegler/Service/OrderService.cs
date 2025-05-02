@@ -4,21 +4,36 @@ namespace AutoMaegler.Service
 {
     public class OrderService : IOrderService
     {
+        /// <summary>
+        /// Private lists for the OrderService class.
+        /// </summary>
         private List<Order> _orders;
         private List<OrderBuy> _orderBuys;
         private List<OrderLeasing> _orderLeasings;
         private List<OrderSale> _orderSales;
 
+        /// <summary>
+        /// Constructor for the OrderService class.
+        /// </summary>
         public OrderService()
         {
         }
 
+        /// <summary>
+        /// A method that gets all orders.
+        /// </summary>
+        /// <returns> All orders </returns>
         public List<Order> GetOrders()
         {
             return _orders;
 
         }
 
+        /// <summary>
+        /// A method that adds an order to the list of orders.
+        /// </summary>
+        /// <param name="order"></param>
+        /// <exception cref="ArgumentException"></exception>
         public void AddOrder(Order order)
         {
             int orderType = (int)order.Type;
@@ -41,6 +56,13 @@ namespace AutoMaegler.Service
             }
         }
 
+        /// <summary>
+        /// A method that gets an order by id and type.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
+        /// <returns> A specific order </returns>
+        /// <exception cref="ArgumentException"></exception>
         public Order GetOrder(int id, Order.OrderType type)
         {
             switch (type)
@@ -79,6 +101,10 @@ namespace AutoMaegler.Service
 
         }
 
+        /// <summary>
+        /// A method that updates an order.
+        /// </summary>
+        /// <param name="order"></param>
         public void UpdateOrder(Order order)
         {
             Order orderToUpdate = GetOrder(order.Id, order.Type);
@@ -109,6 +135,13 @@ namespace AutoMaegler.Service
             }
         }
 
+        /// <summary>
+        /// A method that deletes an order if it exists.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
+        /// <returns> Either the deleted order or null </returns>
+        /// <exception cref="ArgumentException"></exception>
         public Order DeleteOrder(int id, Order.OrderType type) 
         {
             Order tempOrderToBeDeleted = GetOrder(id, type);
@@ -133,6 +166,11 @@ namespace AutoMaegler.Service
             return null;
         }
 
+        /// <summary>
+        /// A method that searches for orders by customer name.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns> A list of orders </returns>
         public IEnumerable<Order> NameSearch(string str)
         {
             List<Order> result = new List<Order>();
@@ -146,6 +184,14 @@ namespace AutoMaegler.Service
             return result;
         }
 
+        /// <summary>
+        /// A method that filters orders by price and monthly payment.
+        /// </summary>
+        /// <param name="minPrice"></param>
+        /// <param name="maxPrice"></param>
+        /// <param name="minMonthlyPayment"></param>
+        /// <param name="maxMonthlyPayment"></param>
+        /// <returns> A list of orders </returns>
         public IEnumerable<Order> PriceFilter(double minPrice, double maxPrice, double minMonthlyPayment, double maxMonthlyPayment)
         {
             List<Order> result = new List<Order>();

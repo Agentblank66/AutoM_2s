@@ -4,6 +4,9 @@ namespace AutoMaegler.Models
 {
     public class Car
     {
+        /// <summary>
+        /// Properties of the Car class.
+        /// </summary>
         public int Id { get; set; }
         public string Type { get; set; }
         public string Brand { get; set; }
@@ -26,9 +29,35 @@ namespace AutoMaegler.Models
         public int Weight { get; set; }
         public bool Status { get; set; }
 
+        /// <summary>
+        /// Default constructor for the Car class.
+        /// </summary>
         public Car(){ }
 
-
+        /// <summary>
+        /// Constructor for the Car class with parameters.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
+        /// <param name="brand"></param>
+        /// <param name="color"></param>
+        /// <param name="fuel"></param>
+        /// <param name="modelYear"></param>
+        /// <param name="price"></param>
+        /// <param name="mileage"></param>
+        /// <param name="kmPrL"></param>
+        /// <param name="topSpeed"></param>
+        /// <param name="doors"></param>
+        /// <param name="horsePower"></param>
+        /// <param name="gear"></param>
+        /// <param name="cylinders"></param>
+        /// <param name="motorSize"></param>
+        /// <param name="zeroToOneHundred"></param>
+        /// <param name="length"></param>
+        /// <param name="numOffWheels"></param>
+        /// <param name="maxPull"></param>
+        /// <param name="weight"></param>
+        /// <param name="status"></param>
         public Car(int id, string type, string brand, string color, string fuel, int modelYear, int price, int mileage, double kmPrL, int topSpeed, int doors, int horsePower, string gear, int cylinders, double motorSize, double zeroToOneHundred, int length, int numOffWheels, double maxPull, int weight, bool status)
         {
             Id = id;
@@ -54,6 +83,10 @@ namespace AutoMaegler.Models
             Status = status;
         }
 
+        /// <summary>
+        /// Overrides the ToString method to provide a string representation of the Car object.
+        /// </summary>
+        /// <returns> A string with properties </returns>
         public override string ToString()
         {
             return $"Id: {Id} Type: {Type} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} MotorSize: {MotorSize} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status}";

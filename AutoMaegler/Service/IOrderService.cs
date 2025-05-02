@@ -4,6 +4,9 @@ namespace AutoMaegler.Service
 {
     public interface IOrderService
     {
+        /// <summary>
+        /// Methods that any class implementing this interface must implement.
+        /// </summary>
         public List<Order> GetOrders();
         public void AddOrder(Order order);
         public void UpdateOrder(Order order);

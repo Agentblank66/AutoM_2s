@@ -5,17 +5,33 @@ namespace AutoMaegler.Service
 {
     public class CarService: ICarService
     {
+        /// <summary>
+        /// List of cars in the car service.
+        /// </summary>
         private List<Car> _cars;
 
+        /// <summary>
+        /// Methods to get all cars.
+        /// </summary>
+        /// <returns> A list of all cars </returns>
         public List<Car> GetCars()
         {
             return _cars;
         }
 
+        /// <summary>
+        /// Adds a car to the list of cars.
+        /// </summary>
+        /// <param name="car"></param>
         public void AddCar(Car car)
         {
             _cars.Add(car);
         }
+
+        /// <summary>
+        /// Updates a car in the list of cars.
+        /// </summary>
+        /// <param name="car"></param>
         public void UpdateCar(Car car)
         { 
             if (_cars != null)
@@ -51,6 +67,11 @@ namespace AutoMaegler.Service
 
         }
 
+        /// <summary>
+        /// Gets a car by id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns> A car or null </returns>
         public Car? GetCar(int id)
         {
             foreach (Car car in _cars) 
@@ -59,6 +80,12 @@ namespace AutoMaegler.Service
             }
             return null;
         }
+
+        /// <summary>
+        /// Deletes a car by id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns> The deleted car </returns>
         public Car? DeleteCar(int id)
         {
             Car car = GetCar(id);
@@ -107,7 +134,12 @@ namespace AutoMaegler.Service
             return result;
         }
 
-
+        /// <summary>
+        /// Filters cars by price range.
+        /// </summary>
+        /// <param name="minPrice"></param>
+        /// <param name="maxPrice"></param>
+        /// <returns> A list of cars </returns>
         public IEnumerable<Car> PriceFilter(int minPrice, int maxPrice)
         {
             List<Car> SortedByPriceCars = GetCars();
