@@ -5,7 +5,7 @@
         /// <summary>
         /// Properties of the OrderSale class.
         /// </summary>
-        public int SalePrice { get; set; }
+        public double SalePrice { get; set; }
         public DateTime SaleDate { get; set; }
 
         /// <summary>
@@ -18,7 +18,7 @@
         /// <param name="type"></param>
         /// <param name="salePrice"></param>
         /// <param name="saleDate"></param>
-        public OrderSale(int id, Car car, Employee employee, Customer customer, OrderType type, int salePrice, DateTime saleDate)
+        public OrderSale(int id, Car car, Employee employee, Customer customer, OrderType type, double salePrice, DateTime saleDate)
             : base(id, car, employee, customer, type)
         {
             SalePrice = salePrice;
