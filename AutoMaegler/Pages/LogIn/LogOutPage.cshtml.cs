@@ -4,9 +4,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AutoMaegler.Pages.LogIn
-{
+{ 
     public class LogOutPageModel : PageModel
     {
+        /// <summary>
+        /// A method which signs out either the customer or the employee.
+        /// </summary>
+        /// <returns>
+        /// Redirects to the index page.
+        /// </returns>
         public async Task<IActionResult> OnGet()
         {
             LogInPageModel.LoggedInCustomer = null;

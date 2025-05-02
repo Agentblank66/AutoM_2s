@@ -4,23 +4,41 @@ namespace AutoMaegler.MockData
 {
     public class MockUsers
     {
+        /// <summary>
+        /// A privat static list of employees.
+        /// </summary>
         private static List<Employee> Employees = new List<Employee>
         {
             new Employee(1, "Oliver Kronborg", "Salesman", 23098543, "Okronborg@gmail.com", "123")
            
         };
 
+        /// <summary>
+        /// A privat static list of customers.
+        /// </summary>
         private static List<Customer> Customers = new List<Customer>
         {
             new Customer(101, "Lars Larsen", 12456790, "LLarsen@gmail.com", "123", "Bovej 9", true)
             
         };
 
+        /// <summary>
+        /// A method which returns a list of employees.
+        /// </summary>
+        /// <returns>
+        /// Returns a list of employees.
+        /// </returns>
         public static List<Employee> GetMockEmployees()
         {
             return Employees;
         }
 
+        /// <summary>
+        /// A method which returns a list of customers.
+        /// </summary>
+        /// <returns>
+        /// Returns a list of customers.
+        /// </returns>
         public static List<Customer> GetMockCustomers()
         {
             return Customers;
