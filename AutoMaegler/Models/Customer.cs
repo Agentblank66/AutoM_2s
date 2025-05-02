@@ -3,16 +3,10 @@
     public class Customer: User
     {
         /// <summary>
-        /// A property which contains the address of the customer.
+        /// Properties of the Customer class.
         /// </summary>
         public string Address { get; set; }
-        /// <summary>
-        /// A property which contains the phone number of the customer.
-        /// </summary>
         public bool WishToSell { get; set; }
-        /// <summary>
-        /// A property which contains the phone number of the customer.
-        /// </summary>
         public int PhoneNumber { get; set; }
 
         /// <summary>
