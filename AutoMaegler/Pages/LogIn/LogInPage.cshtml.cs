@@ -11,17 +11,22 @@ namespace AutoMaegler.Pages.LogIn
 {
     public class LogInPageModel : PageModel
     {
+        /// <summary>
+        /// Properties of the LogInPageModel class.
+        /// </summary>
         [BindProperty]
         public string UserName { get; set; }
-
         [BindProperty, DataType(DataType.Password)]
         public string Password { get; set; }
         public string Message { get; set; }
         public static Customer LoggedInCustomer { get; set; } = null;
         public static Employee LoggedInEmployee { get; set; } = null;
-
         private UserService _userService;
 
+        /// <summary>
+        /// A constructor which initializes the user service.
+        /// </summary>
+        /// <param name="userService"></param>
         public LogInPageModel(UserService userService)
         {
             _userService = userService;
@@ -31,6 +36,13 @@ namespace AutoMaegler.Pages.LogIn
         {
         }
 
+        /// <summary>
+        /// A method which checks if the user is a customer or an employee and signs them in.
+        /// </summary>
+        /// <returns>
+        /// Returns the same page with an "Invalid attempt" message if the user is not found, 
+        /// otherwise redirects to the index page.
+        /// </returns>
         public async Task<IActionResult> OnPost()
         {
 

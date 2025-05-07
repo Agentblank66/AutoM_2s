@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<UserService, UserService>();
+builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.Configure<CookiePolicyOptions>(options => {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
@@ -37,9 +38,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.MapRazorPages();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
 
 app.Run();
