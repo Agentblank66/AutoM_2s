@@ -2,7 +2,7 @@
 
 namespace AutoMaegler.Models
 {
-    public class User
+    public abstract class User
     {
         /// <summary>
         /// Properties of the User class.
@@ -28,15 +28,5 @@ namespace AutoMaegler.Models
             Email = email;
             Password = password;
         }
-
-        /// <summary>
-        /// A method which overrides the ToString method to return the user properties.
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            return $"Id: {Id} Name: {Name} Email: {Email} Password {Password}";
-        }
-
     }
 }
