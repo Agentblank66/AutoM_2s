@@ -12,27 +12,15 @@ namespace AutoMaegler.Pages.LogIn
     public class LogInPageModel : PageModel
     {
         /// <summary>
-        /// A property which binds the user name.
+        /// Properties of the LogInPageModel class.
         /// </summary>
         [BindProperty]
         public string UserName { get; set; }
-        /// <summary>
-        /// A property which binds the password and marks the Password property as Password.
-        /// </summary>
         [BindProperty, DataType(DataType.Password)]
         public string Password { get; set; }
-        /// <summary>
-        /// A property which holds the message to be displayed on the page.
-        /// </summary>
         public string Message { get; set; }
-        /// <summary>
-        /// Properties which holds the logged in customer or employee.
-        /// </summary>
         public static Customer LoggedInCustomer { get; set; } = null;
         public static Employee LoggedInEmployee { get; set; } = null;
-        /// <summary>
-        /// A private property which holds the userservice.
-        /// </summary>
         private UserService _userService;
 
         /// <summary>
@@ -67,7 +55,7 @@ namespace AutoMaegler.Pages.LogIn
 
                     LoggedInCustomer = customer;
 
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Name, UserName) };
+                    var claims = new List<Claim> { new Claim(ClaimTypes.Email, UserName) };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
