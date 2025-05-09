@@ -5,7 +5,6 @@
         /// <summary>
         /// Properties of the Customer class.
         /// </summary>
-        public string Address { get; set; }
         public bool WishToSell { get; set; }
         public int PhoneNumber { get; set; }
 
@@ -17,12 +16,10 @@
         /// <param name="phonenumber"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
-        /// <param name="address"></param>
         /// <param name="wishtosell"></param>
-        public Customer(int id, string name, int phonenumber, string email, string password, string address, bool wishtosell): base(id, name, email, password)
+        public Customer(int id, string firstName,string lastName, int phonenumber, string email, string password, bool wishtosell): base(id, firstName, lastName, email, password)
         {
  
-            Address = address;
             WishToSell = wishtosell;
             PhoneNumber = phonenumber;
         }
@@ -33,7 +30,7 @@
         /// <returns></returns>
         public override string ToString()
         {
-            return $"Id: {Id} Name: {Name} PhoneNumber: {PhoneNumber} Email: {Email} Address: {Address} WishToSell: {WishToSell}";
+            return $"Id: {Id} FirstName: {FirstName} LastName: {LastName} PhoneNumber: {PhoneNumber} Email: {Email} WishToSell: {WishToSell}";
         }
     }
 }

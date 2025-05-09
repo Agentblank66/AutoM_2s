@@ -8,7 +8,9 @@ namespace AutoMaegler.Models
         /// Properties of the User class.
         /// </summary>
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        [Key]
         [StringLength(50, ErrorMessage = "Email length can't be more than 50 characters.")]
         public string Email { get; set; }
         [Required]
@@ -21,10 +23,11 @@ namespace AutoMaegler.Models
         /// <param name="name"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
-        public User(int id, string name, string email, string password)
+        public User(int id, string firstName, string lastName, string email, string password)
         {
             Id = id;
-            Name = name;
+            FirstName = firstName;
+            LastName = lastName;
             Email = email;
             Password = password;
         }
