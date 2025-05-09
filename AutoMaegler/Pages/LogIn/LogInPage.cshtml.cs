@@ -55,7 +55,7 @@ namespace AutoMaegler.Pages.LogIn
 
                     LoggedInCustomer = customer;
 
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Name, UserName) };
+                    var claims = new List<Claim> { new Claim(ClaimTypes.Email, UserName) };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
