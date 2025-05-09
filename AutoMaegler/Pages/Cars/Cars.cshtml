@@ -116,6 +116,32 @@
         </div>
 
     </form>
+@* 
+<table>
+    <tbody>
+        @if (Model.Car != null)
+        {
+            foreach (var Car in Model.Car)
+            {
+                <tr class="btn-secondary">
+                    <td>
+                        @Car.Id
+                    </td>
+                    <td>
+                        @Car.Name
+                    </td>
+                    <td>
+                        @Car.Price
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+ *@
+
+
+
 
     <script>
         const slider = document.getElementById("justerbar");

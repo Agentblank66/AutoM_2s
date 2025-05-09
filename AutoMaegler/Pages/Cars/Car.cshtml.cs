@@ -7,6 +7,7 @@ namespace AutoMaegler.Pages.Cars
     {
         public void OnGet()
         {
+
         }
     }
 }
