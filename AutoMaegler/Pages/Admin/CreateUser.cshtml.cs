@@ -19,10 +19,11 @@ namespace AutoMaegler.Pages.Admin
         [BindProperty, DataType(DataType.Password)]
         public string Password { get; set; }
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public int PhoneNumber { get; set; }
-        public string Address { get; set; }
         public bool WishToSell { get; set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// A constructor which initializes the user service.
@@ -52,7 +53,7 @@ namespace AutoMaegler.Pages.Admin
             {
                 return Page();
             }
-            _userService.AddCustomer(new Customer(Id, Name, PhoneNumber, Email, Password, Address, WishToSell));
+            _userService.AddUser(new Customer(Id, FirstName, LastName, PhoneNumber, Email, Password, WishToSell));
             return RedirectToPage("/Index");
         }
     }

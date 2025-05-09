@@ -1,0 +1,67 @@
+﻿@page
+@model AutoMaegler.Pages.Admin.GetAllUsersModel
+@{
+}
+
+<div class="nav-item mt-3">
+    <form method="get" asp-area="" asp-page="/Admin/CreateUser">
+        <button type="submit" class="btn btn-primary text-white">Create User</button>
+    </form>
+</div>
+
+
+    <div style="display: flex; gap: 50px; align-items: flex-start; color:white">
+
+        <div>
+            <h3 style="color: white">Kunder</h3>
+            <table class="table table-striped text-white">
+                <thead>
+                    <tr>
+                        <th>Fornavn</th>
+                        <th>Efternavn</th>
+                        <th>Email</th>
+                        <th>Adgangskode</th>
+                        <th>Telefonnummer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var customer in Model.UserService.Customers)
+                    {
+                        <tr style="color:white">
+                            <td>@customer.FirstName</td>
+                            <td>@customer.LastName</td>
+                            <td>@customer.Email</td>
+                            <td>@customer.Password</td>
+                            <td>@customer.PhoneNumber</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h3 style="color:white">Medarbejder</h3>
+            <table class="table table-striped text-white">
+                <thead>
+                    <tr>
+                        <th>Fornavn</th>
+                        <th>Efternavn</th>
+                        <th>Email</th>
+                        <th>Type medarbejder</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var employee in Model.UserService.Employees)
+                    {
+                        <tr style="color:white">
+                            <td>@employee.FirstName</td>
+                            <td>@employee.LastName</td>
+                            <td>@employee.Email</td>
+                            <td>@employee.Type</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
