@@ -11,4 +11,5 @@ namespace AutoMaegler.EFDbContext
         }
         public DbSet<Car> Cars { get; set; }
     }
+
 }
