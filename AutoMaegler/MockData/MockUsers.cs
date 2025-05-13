@@ -9,7 +9,7 @@ namespace AutoMaegler.MockData
         /// </summary>
         private static List<Employee> Employees = new List<Employee>
         {
-            new Employee(1, "Oliver Kronborg", "Salesman", 23098543, "Okronborg@gmail.com", "123")
+            new Employee(1, "Oliver", "Kronborg", "Sælger", "Okronborg@gmail.com", "123")
            
         };
 
@@ -18,7 +18,7 @@ namespace AutoMaegler.MockData
         /// </summary>
         private static List<Customer> Customers = new List<Customer>
         {
-            new Customer(101, "Lars Larsen", 12456790, "LLarsen@gmail.com", "123", "Bovej 9", true)
+            new Customer(101, "Lars", "Larsen", 12456790, "LLarsen@gmail.com", "123", true)
             
         };
 

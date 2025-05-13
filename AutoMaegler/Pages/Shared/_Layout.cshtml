@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/AutoMaegler.styles.css" asp-append-version="true" />
 </head>
 <body style="background-color: mediumblue;">
+
     <header style="background-color: darkblue">
         <nav style="background-color: midnightblue" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
@@ -21,11 +22,20 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Index">KØB BIL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">SÆLG BIL</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-page="/Cars/Cars">BILER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-page="/OmOs">OM OS</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a class="nav-link text-white" asp-area="" asp-page="/Admin/GetAllUsers">Users</a>
                     </ul>
                 </div>
             </div>
@@ -59,7 +69,6 @@
                 }
             </ul>
         </nav>
-
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -134,6 +143,12 @@
                 <p>E-mail: info@autom.dk</p>
             </div>
             <div class="footer-column">
+                <a href="https://www.facebook.com/profile.php?id=100023827401656 " target="_blank"> 
+                    <p style="color: white">Vores Facebook side <img style="height:40px; padding:10px;" 
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/768px-Facebook_f_logo_%282021%29.svg.png?20210818083032" </p></a>
+                <a href="https://www.instagram.com/sjaellandsautomaegler/ " target="_blank"> 
+                    <p style="color: white">Vores Instagram side <img style="height:40px; padding:10px;" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png?20220518162235"</p> </a>
                 <p>&copy; 2025 - AutoMaegler - <a href="/privacy">Privacy</a></p>
             </div>
         </div>

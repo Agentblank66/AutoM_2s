@@ -2,13 +2,22 @@
 
 namespace AutoMaegler.Models
 {
-    public class User
+    public abstract class User
     {
+        public enum UserType
+        {
+            Employee,
+            Customer
+        }
         /// <summary>
         /// Properties of the User class.
         /// </summary>
+        public UserType UserTypes { get; set; }
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName => $"{FirstName} {LastName}";
+        [Key]
         [StringLength(50, ErrorMessage = "Email length can't be more than 50 characters.")]
         public string Email { get; set; }
         [Required]
@@ -21,22 +30,14 @@ namespace AutoMaegler.Models
         /// <param name="name"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
-        public User(int id, string name, string email, string password)
+        public User(int id, string firstName, string lastName, string email, string password)
         {
             Id = id;
-            Name = name;
+            FirstName = firstName;
+            LastName = lastName;
             Email = email;
             Password = password;
+            
         }
-
-        /// <summary>
-        /// A method which overrides the ToString method to return the user properties.
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            return $"Id: {Id} Name: {Name} Email: {Email} Password {Password}";
-        }
-
     }
 }

@@ -16,7 +16,7 @@
         /// <param name="phoneNumber"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
-        public Employee(int id, string name, string type, int phoneNumber, string email, string password): base(id, name, email, password)
+        public Employee(int id, string firstName, string lastName, string type, string email, string password): base(id, firstName, lastName, email, password)
         {
             Type = type;
         }
@@ -27,7 +27,7 @@
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Name: {Name} Type: {Type} Email: {Email}";
+            return $"Id: {Id} Fullname: {FullName} Type: {Type} Email: {Email}";
         }
     }
 }
