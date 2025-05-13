@@ -17,7 +17,7 @@
         /// <param name="email"></param>
         /// <param name="password"></param>
         /// <param name="wishtosell"></param>
-        public Customer(int id, string firstName,string lastName, int phonenumber, string email, string password, bool wishtosell, UserType types): base(id, firstName, lastName, email, password, types)
+        public Customer(int id, string firstName,string lastName, int phonenumber, string email, string password, bool wishtosell): base(id, firstName, lastName, email, password)
         {
  
             WishToSell = wishtosell;

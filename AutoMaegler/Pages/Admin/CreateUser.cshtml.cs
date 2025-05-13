@@ -24,6 +24,8 @@ namespace AutoMaegler.Pages.Admin
         public int PhoneNumber { get; set; }
         public bool WishToSell { get; set; }
         public string Type { get; set; }
+        public string UserType { get; set; }
+       
 
         /// <summary>
         /// A constructor which initializes the user service.
@@ -53,7 +55,14 @@ namespace AutoMaegler.Pages.Admin
             {
                 return Page();
             }
-            _userService.AddUser(new Customer(Id, FirstName, LastName, PhoneNumber, Email, Password, WishToSell));
+            if (UserType == "Customer") 
+            {
+                _userService.AddUser(new Customer(Id, FirstName, LastName, PhoneNumber, Email, Password, WishToSell));
+            }
+            else if (UserType == "Employee")
+            {
+                _userService.AddUser(new Employee(Id, FirstName, LastName, Type, PhoneNumber, Email, Password));
+            }
             return RedirectToPage("/Index");
         }
     }
