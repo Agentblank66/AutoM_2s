@@ -17,7 +17,7 @@
         /// <param name="email"></param>
         /// <param name="password"></param>
         /// <param name="wishtosell"></param>
-        public Customer(int id, string firstName,string lastName, int phonenumber, string email, string password, bool wishtosell): base(id, firstName, lastName, email, password)
+        public Customer(int id, string firstName,string lastName, int phonenumber, string email, string password, bool wishtosell, UserType types): base(id, firstName, lastName, email, password, types)
         {
  
             WishToSell = wishtosell;
@@ -30,7 +30,7 @@
         /// <returns></returns>
         public override string ToString()
         {
-            return $"Id: {Id} FirstName: {FirstName} LastName: {LastName} PhoneNumber: {PhoneNumber} Email: {Email} WishToSell: {WishToSell}";
+            return $"Id: {Id} Fullname: {FullName} PhoneNumber: {PhoneNumber} Email: {Email} WishToSell: {WishToSell}";
         }
     }
 }
