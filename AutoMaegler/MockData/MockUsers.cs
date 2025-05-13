@@ -9,7 +9,7 @@ namespace AutoMaegler.MockData
         /// </summary>
         private static List<Employee> Employees = new List<Employee>
         {
-            new Employee(1, "Oliver", "Kronborg", "Sælger", 23098543, "Okronborg@gmail.com", "123")
+            new Employee(1, "Oliver", "Kronborg", "Sælger", "Okronborg@gmail.com", "123")
            
         };
 

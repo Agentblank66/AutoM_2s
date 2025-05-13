@@ -16,7 +16,7 @@
         /// <param name="phoneNumber"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
-        public Employee(int id, string firstName, string lastName, string type, int phoneNumber, string email, string password): base(id, firstName, lastName, email, password)
+        public Employee(int id, string firstName, string lastName, string type, string email, string password): base(id, firstName, lastName, email, password)
         {
             Type = type;
         }
