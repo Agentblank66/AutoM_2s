@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<CarDBContext>();
+builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddDbContext<UserDbContext>();

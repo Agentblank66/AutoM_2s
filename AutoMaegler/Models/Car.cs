@@ -14,19 +14,19 @@ namespace AutoMaegler.Models
         [Required]
         public int Id { get; set; }
         [Required]
-        [StringLength(20)]
+        [StringLength(40)]
         public string Type { get; set; }
         [Required]
-        [StringLength(50)]
+        [StringLength(40)]
         public string Model { get; set; }
         [Required]
-        [StringLength(50)]
+        [StringLength(40)]
         public string Brand { get; set; }
         [Required]
-        [StringLength(20)]
+        [StringLength(40)]
         public string Color { get; set; }
         [Required]
-        [StringLength(20)]
+        [StringLength(40)]
         public string Fuel { get; set; }
         [Required]
         public int ModelYear { get; set; }
