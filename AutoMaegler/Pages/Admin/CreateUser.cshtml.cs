@@ -61,7 +61,7 @@ namespace AutoMaegler.Pages.Admin
             }
             else if (UserType == "Employee")
             {
-                _userService.AddUser(new Employee(Id, FirstName, LastName, Type, PhoneNumber, Email, Password));
+                _userService.AddUser(new Employee(Id, FirstName, LastName, Type, Email, Password));
             }
             return RedirectToPage("/Index");
         }

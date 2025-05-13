@@ -176,7 +176,7 @@ namespace AutoMaegler.Service
             List<Order> result = new List<Order>();
             foreach (Order order in _orders)
             {
-                if (order.Customer.Name.Contains(str, StringComparison.OrdinalIgnoreCase))
+                if (order.Customer.FullName.Contains(str, StringComparison.OrdinalIgnoreCase))
                 {
                     result.Add(order);
                 }
