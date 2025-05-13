@@ -4,14 +4,16 @@ namespace AutoMaegler.Service
 {
     public interface IUserService
     {
-        List<User> GetUsers();
-        void AddUser(Customer customer, Employee employee;
-        void DeleteUser( Customer customer, Employee employee);
-        void UpdateUser(Customer customer, Employee employee);
-        User GetUserById(int id);
-        IEnumerable<User> SearchbyName();
-       
-        
+        public void AddUser<T>(T user) where T : User;
+
+        public void DeleteUser<T>(T user) where T : User;
+
+        public void UpdateUser(User user);
+
+        public User GetUser(int id, User.UserType user);
+
+        public List<T> SearchById<T>(int id) where T : User;
+        public List<T> SearchbyName<T>(string name) where T : User;
 
     }
 }
