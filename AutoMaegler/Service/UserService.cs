@@ -41,7 +41,7 @@ namespace AutoMaegler.Service
 
         public User DeleteUser(Customer customer, Employee employee)
         {
-            if () 
+            if()
             {
                 Customers.Remove(customer);
                 //JsonFileService.SaveJsonObjects(Users);
