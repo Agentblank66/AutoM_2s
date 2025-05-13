@@ -117,7 +117,7 @@ namespace AutoMaegler.Service
                 if (order is OrderLeasing)
                 {
                     OrderLeasing leasingOrder = (OrderLeasing)order;
-                    ((OrderLeasing)orderToUpdate).Dipositum = leasingOrder.Dipositum;
+                    ((OrderLeasing)orderToUpdate).Depositum = leasingOrder.Depositum;
                     ((OrderLeasing)orderToUpdate).LeasingDate = leasingOrder.LeasingDate;
                 }
                 else if (order is OrderBuy)
@@ -176,7 +176,7 @@ namespace AutoMaegler.Service
             List<Order> result = new List<Order>();
             foreach (Order order in _orders)
             {
-                if (order.Customer.Name.Contains(str, StringComparison.OrdinalIgnoreCase))
+                if (order.Customer.FullName.Contains(str, StringComparison.OrdinalIgnoreCase))
                 {
                     result.Add(order);
                 }
