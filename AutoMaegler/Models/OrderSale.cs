@@ -1,11 +1,20 @@
-﻿namespace AutoMaegler.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AutoMaegler.Models
 {
     public class OrderSale : Order
     {
         /// <summary>
         /// Properties of the OrderSale class.
         /// </summary>
+
+        [Display(Name = "Salgs Pris")]
+        [Required(ErrorMessage = "Der skal være en salgs pris tilknyttet ordren")]
+        [Range(typeof(double), "0", "10000000", ErrorMessage = "Salgs pris skal være mellem (1) og (2)")]
         public double SalePrice { get; set; }
+
+        [Display(Name = "Salgs Dato")]
+        [Required(ErrorMessage = "Der skal være en salgs dato tilknyttet ordren")]
         public DateTime SaleDate { get; set; }
 
         /// <summary>
