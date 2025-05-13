@@ -94,13 +94,11 @@ namespace AutoMaegler.Service
         }
 
 
-        // laves om til 2 metoder 
-        // lav endnu en search på fuel
+        // søge på navn af bil
         public IEnumerable<Car> NameSearch(string str)
         {
             List<Car> allCars = GetCars();
             List<Car> brandMatch = new List<Car>();
-            List<Car> typeOfMatch = new List<Car>();
 
             // foreach allcars
             // if match add to list
@@ -114,6 +112,17 @@ namespace AutoMaegler.Service
                 }
             }
 
+            return brandMatch;
+        }
+
+        // søge på type af biler
+        public IEnumerable<Car> TypeSearch(string str)
+        {
+            List<Car> allCars = GetCars();
+            List<Car> typeOfMatch = new List<Car>();
+
+        
+
             // foreach allcars
             // if match add to list
             // if match remove from list
@@ -126,12 +135,30 @@ namespace AutoMaegler.Service
                 }
             }
 
-            // Combine results from lists
-            List<Car> result = new List<Car>();
-            result.AddRange(brandMatch);
-            result.AddRange(typeOfMatch);
+            return typeOfMatch;
+        }
 
-            return result;
+        // søge på fuel af biler
+        public IEnumerable<Car> FuelSearch(string str)
+        {
+            List<Car> allCars = GetCars();
+            List<Car> FuelOfMatch = new List<Car>();
+
+
+
+            // foreach allcars
+            // if match add to list
+            // if match remove from list
+            foreach (Car car in allCars)
+            {
+                if (car.Type == str)
+                {
+                    FuelOfMatch.Add(car);
+                    allCars.Remove(car);
+                }
+            }
+
+            return FuelOfMatch;
         }
 
         /// <summary>
