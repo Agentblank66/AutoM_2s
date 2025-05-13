@@ -181,5 +181,26 @@ namespace AutoMaegler.Service
             }
             return PriceResult;
         }
+
+        /// <summary>
+        /// Filters cars by price range.
+        /// </summary>
+        /// <param name="minKM"></param>
+        /// <param name="maxPrice"></param>
+        /// <returns> A list of cars </returns>
+        public IEnumerable<Car> KMFilter(int minKM, int maxKM)
+        {
+            List<Car> SortedByKMCars = GetCars();
+            List<Car> KMResult = new List<Car>();
+
+            foreach (Car car in SortedByKMCars)
+            {
+                if (car.Price >= minKM && car.Price <= maxKM)
+                {
+                    KMResult.Add(car);
+                }
+            }
+            return KMResult;
+        }
     }
 }
