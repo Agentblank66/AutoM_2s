@@ -218,5 +218,17 @@ namespace AutoMaegler.Service
             }
             return result;
         }
+
+        /// <summary>
+        /// A methods that sorts orders by id by using LINQ to do so.
+        /// </summary>
+        /// <returns> A list where all the orders are sorted </returns>
+        public IEnumerable<Order> SortById()
+        {
+            var sortedOrders = from order in _orders
+                               orderby order.Id
+                               select order;
+            return sortedOrders.ToList();
+        }
     }
 }
