@@ -220,15 +220,21 @@ namespace AutoMaegler.Service
         }
 
         /// <summary>
-        /// A methods that sorts orders by id by using LINQ to do so.
+        /// A methods that sorts orders by id by using generics to do so.
         /// </summary>
         /// <returns> A list where all the orders are sorted </returns>
-        public IEnumerable<Order> SortById()
+        public IEnumerable<T> SortById<T>(IEnumerable<T> orders) where T : Order
         {
-            var sortedOrders = from order in _orders
-                               orderby order.Id
-                               select order;
-            return sortedOrders.ToList();
+            return orders.OrderBy(order => order.Id).ToList();
+        }
+
+        /// <summary>
+        /// A method that sorts orders by id in descending order by using generics to do so.
+        /// </summary>
+        /// <returns> A list with the newly sorted orders </returns>
+        public IEnumerable<T> SortByIdDecending<T>(IEnumerable<T> orders) where T : Order
+        {
+            return orders.OrderByDescending(order => order.Id).ToList();
         }
     }
 }
