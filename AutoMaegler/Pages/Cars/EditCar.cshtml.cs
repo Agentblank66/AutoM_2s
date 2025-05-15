@@ -1,25 +1,25 @@
-using ItemRazorV1.Service;
+using AutoMaegler.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ItemRazorV1.Pages.Item
 {
-	public class EditItemModel : PageModel
+	public class EditCarModel : PageModel
 	{
-		private IItemService _itemService;
+		private ICarService _CarService;
 
-		public EditItemModel(IItemService itemService)
+		public EditCarModel(ICarService CarService)
 		{
-			_itemService = itemService;
+			_CarService = CarService;
 		}
 
 		[BindProperty]
-		public Models.Item Item { get; set; }
+		public AutoMaegler.Models.Car Car { get; set; }
 
 		public IActionResult OnGet(int id)
 		{
-			Item = _itemService.GetItem(id);
-			if (Item == null)
+			Car = _CarService.GetCar(id);
+			if (Car == null)
 				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
 			return Page();
@@ -32,8 +32,8 @@ namespace ItemRazorV1.Pages.Item
 				return Page();
 			}
 
-			_itemService.UpdateItem(Item);
-			return RedirectToPage("GetAllItems");
+			_CarService.UpdateCar(Car);
+			return RedirectToPage("Cars");
 		}
 	}
 }

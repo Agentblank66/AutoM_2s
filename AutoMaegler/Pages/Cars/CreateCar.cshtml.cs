@@ -1,20 +1,20 @@
-using ItemRazorV1.Service;
+using AutoMaegler.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ItemRazorV1.Pages.Item
 {
-    public class CreateItemModel : PageModel
+    public class CreateCarModel : PageModel
     {
-        private IItemService _itemService;
+        private ICarService _CarService;
 
-        public CreateItemModel(IItemService itemService)
+        public CreateCarModel(ICarService carService)
         {
-            _itemService = itemService;
+            _CarService = carService;
         }
 
         [BindProperty]
-        public Models.Item Item { get; set; }
+        public AutoMaegler.Models.Car Car { get; set; }
 
         public IActionResult OnGet()
         {
@@ -27,7 +27,7 @@ namespace ItemRazorV1.Pages.Item
             {
                 return Page();
             }
-            _itemService.AddItem(Item);
+            _CarService.AddCar(Car);
             return RedirectToPage("GetAllItems");
         }
     }
