@@ -2,7 +2,7 @@ using AutoMaegler.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ItemRazorV1.Pages.Item
+namespace AutoMaegler.Pages.Cars
 {
 	public class EditCarModel : PageModel
 	{
