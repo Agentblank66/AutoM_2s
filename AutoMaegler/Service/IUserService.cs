@@ -10,7 +10,7 @@ namespace AutoMaegler.Service
 
         public void UpdateUser(User user);
 
-        public User GetUser(int id, User.UserType user);
+        public User GetUser(int id, User.UserType? user);
 
         public List<T> SearchById<T>(int id) where T : User;
         public List<T> SearchbyName<T>(string name) where T : User;
