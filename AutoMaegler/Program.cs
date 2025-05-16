@@ -22,7 +22,9 @@ builder.Services.Configure<CookiePolicyOptions>(options => {
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(cookieOptions => {
     cookieOptions.LoginPath = "/Login/LogInPage";
 
+
 });
+
 builder.Services.AddMvc().AddRazorPagesOptions(options => {
     options.Conventions.AuthorizeFolder("/Car");
 
@@ -42,10 +44,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.MapRazorPages();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapRazorPages();
 
 app.Run();
