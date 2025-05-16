@@ -18,11 +18,14 @@ namespace AutoMaegler.Models
         public string Type { get; set; }
         [Required]
         [StringLength(40)]
-        public string Model { get; set; }
+        public string Brand { get; set; }
         [Required]
         [StringLength(40)]
-        public string Brand { get; set; }
         public string Model { get; set; }
+
+        [Required]
+        [StringLength(40)]
+
         public string Color { get; set; }
         [Required]
         [StringLength(40)]
