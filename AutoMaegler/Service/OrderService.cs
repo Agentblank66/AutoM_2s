@@ -117,7 +117,7 @@ namespace AutoMaegler.Service
                 if (order is OrderLeasing)
                 {
                     OrderLeasing leasingOrder = (OrderLeasing)order;
-                    ((OrderLeasing)orderToUpdate).Dipositum = leasingOrder.Dipositum;
+                    ((OrderLeasing)orderToUpdate).Depositum = leasingOrder.Depositum;
                     ((OrderLeasing)orderToUpdate).LeasingDate = leasingOrder.LeasingDate;
                 }
                 else if (order is OrderBuy)
@@ -217,6 +217,68 @@ namespace AutoMaegler.Service
                 }
             }
             return result;
+        }
+
+        /// <summary>
+        /// A methods that sorts orders by id by using generics to do so.
+        /// </summary>
+        /// <returns> A list where all the orders are sorted </returns>
+        public IEnumerable<T> SortById<T>(IEnumerable<T> orders) where T : Order
+        {
+            return orders.OrderBy(order => order.Id).ToList();
+        }
+
+        /// <summary>
+        /// A method that sorts orders by id in descending order by using generics to do so.
+        /// </summary>
+        /// <returns> A list with the newly sorted orders </returns>
+        public IEnumerable<T> SortByIdDecending<T>(IEnumerable<T> orders) where T : Order
+        {
+            return orders.OrderByDescending(order => order.Id).ToList();
+        }
+
+        /// <summary>
+        /// A method that sorts orders by customer name by using generics to do so.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="orders"></param>
+        /// <returns> A list with the sorted orders by name </returns>
+        public IEnumerable<T> SortByName<T>(IEnumerable<T> orders) where T: Order
+        {
+            return orders.OrderBy(order => order.Customer.FullName).ToList();
+        }
+
+        /// <summary>
+        /// A method that sorts orders by customer name in descending order by using generics to do so.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="orders"></param>
+        /// <returns> A list with the sorted orders by name in descending order </returns>
+        public IEnumerable<T> SortByNameDecending<T>(IEnumerable<T> orders) where T : Order
+        {
+            return orders.OrderByDescending(order => order.Customer.FullName).ToList();
+        }
+
+        /// <summary>
+        /// A method that sorts orders by price by using generics to do so.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="orders"></param>
+        /// <returns> A list where all orders are sorted by price </returns>
+        public IEnumerable<T> SortByPrice<T>(IEnumerable<T> orders) where T : Order
+        {
+            return orders.OrderBy(order => order.Car.Price).ToList();
+        }
+
+        /// <summary>
+        /// A method that sorts orders by price in descending order by using generics to do so.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="orders"></param>
+        /// <returns> A list where all orders are sorted by price in descending order </returns>
+        public IEnumerable<T> SortByPriceDescending<T>(IEnumerable<T> orders) where T : Order
+        {
+            return orders.OrderByDescending(order => order.Car.Price).ToList();
         }
     }
 }
