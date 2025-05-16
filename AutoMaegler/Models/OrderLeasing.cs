@@ -1,4 +1,5 @@
-﻿using System.Transactions;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Transactions;
 
 namespace AutoMaegler.Models
 {
@@ -7,8 +8,18 @@ namespace AutoMaegler.Models
         /// <summary>
         /// Properties of the OrderLeasing class.
         /// </summary>
-        public double Dipositum { get; set; }
+        [Display(Name = "Depositum")]
+        [Required(ErrorMessage = "Der skal være et depositum tilknyttet ordren")]
+        [Range(typeof(double), "0", "100000", ErrorMessage = "Depositum skal være mellem (1) og (2)")]
+        public double Depositum { get; set; }
+
+        [Display(Name = "Leasing dato")]
+        [Required(ErrorMessage = "Der skal være en leasing dato tilknyttet ordren")]
         public DateTime LeasingDate { get; set; }
+
+        [Display(Name = "Månedlig betaling")]
+        [Required(ErrorMessage = "Der skal være en månedlig betaling tilknyttet ordren")]
+        [Range(typeof(double), "0", "100000", ErrorMessage = "Månedlig betaling skal være mellem (1) og (2)")]
         public double MonthlyPayment { get; set; }
 
         /// <summary>
@@ -25,7 +36,7 @@ namespace AutoMaegler.Models
         public OrderLeasing(int id, Car car, Employee employee, Customer customer, OrderType type, double dipositum, DateTime leasingDate, double monthlyPayment)
             : base(id, car, employee, customer, type)
         {
-            Dipositum = dipositum;
+            Depositum = dipositum;
             LeasingDate = leasingDate;
             MonthlyPayment = monthlyPayment;
         }
@@ -36,7 +47,7 @@ namespace AutoMaegler.Models
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Dipositum: {Dipositum} LeasingDate: {LeasingDate} MonthlyPayment: {MonthlyPayment}";
+            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDate: {LeasingDate} MonthlyPayment: {MonthlyPayment}";
         }
     }
 }

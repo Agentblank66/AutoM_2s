@@ -1,3 +1,4 @@
+using AutoMaegler.EFDbContext;
 using AutoMaegler.Service;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -7,8 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<CarDBContext>();
+builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
+builder.Services.AddDbContext<UserDbContext>();
 builder.Services.Configure<CookiePolicyOptions>(options => {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
@@ -18,9 +22,11 @@ builder.Services.Configure<CookiePolicyOptions>(options => {
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(cookieOptions => {
     cookieOptions.LoginPath = "/Login/LogInPage";
 
+
 });
+
 builder.Services.AddMvc().AddRazorPagesOptions(options => {
-    options.Conventions.AuthorizeFolder("/Item");
+    options.Conventions.AuthorizeFolder("/Car");
 
 }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
@@ -38,10 +44,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.MapRazorPages();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapRazorPages();
 
 app.Run();

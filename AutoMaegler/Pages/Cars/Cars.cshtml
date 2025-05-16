@@ -35,7 +35,7 @@
         .overlay-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-Cars: center;
             border-bottom: 1px solid #ccc;
             padding-bottom: 10px;
             margin-bottom: 20px;
@@ -63,25 +63,26 @@
         <!-- Dropdowns -->
         <label for="valg1">Vælg mærke:</label>
         <select id="valg1" name="valg1">
-            <option value="option1">BMW</option>
-            <option value="option2">WOLWO</option>
-            <option value="option3">Tesla</option>
-        <option value="option3">Fort</option>
+            <option value="option1">Audi</option>
+            <option value="option2">BMW</option>
+            <option value="option3">Citroen</option>
+        <option value="option3">Ford</option>
+        <option value="option3">Ferrari</option>
+        <option value="option3">Fisker</option>
+        <option value="option3">Lamborghini</option>
+        <option value="option3">Mazda</option>
         <option value="option3">Opel</option>
-        <option value="option3">Fireje</option>
-        <option value="option3">Sitruen</option>
-        <option value="option3">Fisher</option>
-        <option value="option3">Labugini</option>
-        <option value="option3">Up</option>
-        <option value="option3">Citruen</option>
+        <option value="option3">Toyota</option>
         <option value="option3">Tesla</option>
         </select><br><br>
 
         <label for="valg2">Vælg drivmåde:</label>
         <select id="valg2" name="valg2">
-            <option value="optionA">Mulighed A</option>
-            <option value="optionB">Mulighed B</option>
-            <option value="optionC">Mulighed C</option>
+            <option value="optionA">Benzin</option>
+            <option value="optionB">Diesel</option>
+            <option value="optionC">Hybrid</option>
+            <option value="optionD">ElBil</option>
+
         </select><br><br>
 
         <label for="valg3">Vælg sorteringsmåder:</label>
@@ -92,7 +93,12 @@
         </select><br><br>
 
         <!-- Slider -->
-        <label for="justerbar">Juster værdi (0-100):</label>
+        <label for="justerbar">Juster Pris (0-100):</label>
+        <input type="range" id="justerbar" name="justerbar" min="0" max="100">
+        <span id="sliderValue">50</span><br><br>
+
+        <!-- Slider -->
+        <label for="justerbar">Juster KM (0-100):</label>
         <input type="range" id="justerbar" name="justerbar" min="0" max="100">
         <span id="sliderValue">50</span><br><br>
 
@@ -108,14 +114,44 @@
                 <h3>Flere valgmuligheder</h3>
                 <button type="button" class="close-btn" onclick="closeOverlay()">&times;</button>
             </div>
-            <label><input type="checkbox" name="ekstra[]" value="felt1"> Felt 1</label><br>
-            <label><input type="checkbox" name="ekstra[]" value="felt2"> Felt 2</label><br>
-            <label><input type="checkbox" name="ekstra[]" value="felt3"> Felt 3</label><br>
-            <label><input type="checkbox" name="ekstra[]" value="felt4"> Felt 4</label><br><br>
+            <label><input type="checkbox" name="ekstra[]" value="felt1"> Mikro</label><br>
+            <label><input type="checkbox" name="ekstra[]" value="felt2"> Stationcar</label><br>
+            <label><input type="checkbox" name="ekstra[]" value="felt3"> SUV</label><br>
+            <label><input type="checkbox" name="ekstra[]" value="felt4"> Sedan</label><br><br>
+            <label><input type="checkbox" name="ekstra[]" value="felt5"> Hatchback</label><br><br>
+            <label><input type="checkbox" name="ekstra[]" value="felt6"> Cabriolet</label><br><br>
+
+
             <button type="button" onclick="closeOverlay()">OK</button>
         </div>
 
     </form>
+@* 
+<table>
+    <tbody>
+        @if (Model.Car != null)
+        {
+            foreach (var Car in Model.Car)
+            {
+                <tr class="btn-secondary">
+                    <td>
+                        @Car.Id
+                    </td>
+                    <td>
+                        @Car.Name
+                    </td>
+                    <td>
+                        @Car.Price
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+ *@
+
+
+
 
     <script>
         const slider = document.getElementById("justerbar");

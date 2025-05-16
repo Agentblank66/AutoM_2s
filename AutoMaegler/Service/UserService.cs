@@ -3,7 +3,7 @@ using AutoMaegler.Models;
 
 namespace AutoMaegler.Service
 {
-    public class UserService
+    public class UserService : IUserService
     {
         /// <summary>
         /// A public list of customers and employees.
@@ -21,14 +21,165 @@ namespace AutoMaegler.Service
         }
 
         /// <summary>
-        /// A method which adds a customer to the list of customers.
+        /// A method which adds a user to the list of customers or employees.
         /// </summary>
         /// <param name="customer"></param>
-        public void AddCustomer(Customer customer)
+        public void AddUser<T>(T user) where T : User
         {
-            Customers.Add(customer);
-            //Skal være generisk når det skal laves
-            //JsonFileService.SaveJsonObjects(Users);
+
+            if (typeof(T) == typeof(Customer))
+            {
+                Customers.Add(user as Customer);
+                //database
+            }
+            else if (typeof(T) == typeof(Employee))
+            {
+                Employees.Add(user as Employee);
+                //database
+            }
+        }
+
+        /// <summary>
+        /// A method which deletes a user from the list of customers or employees.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="user"></param>
+        public void DeleteUser<T>(T user) where T : User
+        {
+            if (typeof(T) == typeof(Customer))
+            {
+                Customers.Remove(user as Customer);
+            }
+            else if (typeof(T) == typeof(Employee))
+            {
+                Employees.Remove(user as Employee);
+            }
+        }
+
+        /// <summary>
+        /// A method which gets a user from the list of customers or employees by id and type.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
+        public User GetUser(int id, User.UserType? user)
+        {
+            switch (user)
+            {
+                case User.UserType.Employee:
+                    foreach (Employee employee in Employees)
+                    {
+                        if (employee.Id == id)
+                        {
+                            return employee;
+                        }
+                    }
+                    break;
+                case User.UserType.Customer:
+                    foreach (Customer customer in Customers)
+                    {
+                        if (customer.Id == id)
+                        {
+                            return customer;
+                        }
+                    }
+                    break;
+                default:
+                    throw new ArgumentException("Invalid user type");
+            }
+            return null;
+
+        }
+
+        /// <summary>
+        /// A method which updates a user in the list of customers or employees.
+        /// </summary>
+        /// <param name="user"></param>
+        public void UpdateUser(User user)
+        {
+            User userToUpdate = GetUser(user.Id, user.UserTypes);
+            if (userToUpdate != null)
+            {
+                userToUpdate.FirstName = user.FirstName;
+                userToUpdate.LastName = user.LastName;
+                userToUpdate.Email = user.Email;
+                userToUpdate.Password = user.Password;
+                if (user is Employee)
+                {
+                    Employee employee = (Employee)user;
+                    ((Employee)userToUpdate).Type = employee.Type;
+                }
+                else if (user is Customer)
+                {
+                    Customer customer = (Customer)user;
+                    ((Customer)userToUpdate).WishToSell = customer.WishToSell;
+                    ((Customer)userToUpdate).PhoneNumber = customer.PhoneNumber;
+                }
+                // Save changes to the database
+            }
+        }
+
+        /// <summary>
+        /// A method which searches for a user in the list of customers or employees by id.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public List<T> SearchById<T>(int id) where T : User
+        {
+            if (typeof(T) == typeof(Customer))
+            {
+                foreach (Customer customer in Customers)
+                {
+                    if (customer.Id == id)
+                    {
+                        return new List<T> { customer as T };
+                    }
+                }
+            }
+            else if (typeof(T) == typeof(Employee))
+            {
+                foreach (Employee employee in Employees)
+                {
+                    if (employee.Id == id)
+                    {
+                        return new List<T> { employee as T };
+                    }
+                }
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// A method which searches for a user in the list of customers or employees by name.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public List<T> SearchbyName<T>(string name) where T : User
+        {
+            if (typeof(T) == typeof(Customer))
+            {
+                foreach (Customer customer in Customers)
+                {
+                    if (customer.FullName.Contains(name, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return new List<T> { customer as T };
+                    }
+                }
+            }
+            else if (typeof(T) == typeof(Employee))
+            {
+                foreach (Employee employee in Employees)
+                {
+                    if (employee.FullName.Contains(name, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return new List<T> { employee as T };
+                    }
+                }
+            }
+            return null;
         }
 
     }

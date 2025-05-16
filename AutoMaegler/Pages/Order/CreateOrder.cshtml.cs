@@ -1,13 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace AutoMaegler.Pages.Cars
+namespace AutoMaegler.Pages.Order
 {
-    public class CarModel : PageModel
+    public class OrderModel : PageModel
     {
         public void OnGet()
         {
-
         }
     }
 }

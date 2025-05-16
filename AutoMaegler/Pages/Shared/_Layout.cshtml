@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AutoMaegler.styles.css" asp-append-version="true" />
 </head>
-<body style="background-color: mediumblue;">
+<body class="d-flex flex-column min-vh-100" style="background-color: mediumblue;">
 
     <header style="background-color: darkblue">
         <nav style="background-color: midnightblue" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
@@ -22,14 +22,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Index">Køb Bil</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Index">KØB BIL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">Salg bil</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">SÆLG BIL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Cars/Cars">Biler</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Cars/Cars">BILER</a>
                         </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a class ="nav-link text-white" asp-area="" asp-page="/Admin/GetAllUsers">BRUGERE</a>
+                        <li class="navbar-nav">
+                            <a class="nav-link text-white" asp-area="" asp-page="/OmOs">OM OS</a>
                     </ul>
                 </div>
             </div>
@@ -60,6 +65,7 @@
                             <a class="nav-link text-white" asp-area="" asp-page="/LogIn/LogOutPage">Logout</a>
                         </li>
                     }
+                   
                 }
             </ul>
         </nav>

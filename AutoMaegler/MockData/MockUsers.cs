@@ -1,5 +1,4 @@
 ﻿using AutoMaegler.Models;
-using AutoMaegler.Pages.Cars;
 
 namespace AutoMaegler.MockData
 {
@@ -19,8 +18,8 @@ namespace AutoMaegler.MockData
         /// </summary>
         private static List<Employee> Employees = new List<Employee>
         {
-            new Employee(1, "Oliver Kronborg", "Salesman", 23098543, "Okronborg@gmail.com", "123")
-           
+            new Employee(1, "Oliver", "Kronborg", "Sælger", "Okronborg@gmail.com", passwordHasher.HashPassword(null, "123")),
+           new Employee(2, "Employee", "Employee", "Employee", "Employee", passwordHasher.HashPassword(null, "123")),
         };
 
         /// <summary>
@@ -28,7 +27,7 @@ namespace AutoMaegler.MockData
         /// </summary>
         private static List<Customer> Customers = new List<Customer>
         {
-            new Customer(101, "Lars Larsen", 12456790, "LLarsen@gmail.com", "123", "Bovej 9", true)
+            new Customer(101, "Lars", "Larsen", 12456790, "LLarsen@gmail.com", passwordHasher.HashPassword(null, "123"), true)
             
         };
 

@@ -1,33 +1,64 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Security.Cryptography.X509Certificates;
 
 namespace AutoMaegler.Models
 {
     public class Car
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         /// <summary>
         /// Properties of the Car class.
         /// </summary>
+        [Required]
         public int Id { get; set; }
+        [Required]
+        [StringLength(40)]
         public string Type { get; set; }
+        [Required]
+        [StringLength(40)]
+        public string Model { get; set; }
+        [Required]
+        [StringLength(40)]
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Color { get; set; }
+        [Required]
+        [StringLength(40)]
         public string Fuel { get; set; }
+        [Required]
         public int ModelYear { get; set; }
+        [Required]
         public int Price { get; set; }
+        [Required]
         public int Mileage { get; set; }
+        [Required]
         public double KmPrL { get; set; }
+        [Required]
         public int TopSpeed { get; set; }
+        [Required]
         public int Doors { get; set; }
+        [Required]
         public int HorsePower { get; set; }
+        [Required]
+        [StringLength(20)]
         public string Gear { get; set; }
+        [Required]
         public int Cylinders { get; set; }
+        [Required]
         public double MotorSize { get; set; }
+        [Required]
         public double ZeroToOneHundred { get; set; }
+        [Required]
         public int Length { get; set; }
+        [Required]
         public int NumOffWheels { get; set; }
+        [Required]
         public double MaxPull { get; set; }
+        [Required]
         public int Weight { get; set; }
+        [Required]
         public bool Status { get; set; }
 
         /// <summary>
