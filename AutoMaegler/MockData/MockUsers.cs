@@ -1,11 +1,10 @@
 ﻿using AutoMaegler.Models;
-using Microsoft.AspNetCore.Identity;
 
 namespace AutoMaegler.MockData
 {
     public class MockUsers
+
     {
-        private static PasswordHasher<string> passwordHasher = new PasswordHasher<string>();
 
         /// <summary>
         /// A privat static list of employees.
