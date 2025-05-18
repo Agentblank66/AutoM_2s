@@ -9,6 +9,9 @@ namespace AutoMaegler.Pages
 {
     public class EditUserModel : PageModel
     {
+        /// <summary>
+        /// Properties of the EditUserModel class.
+        /// </summary>
         private UserService _userService;
         [BindProperty]
         public int Id { get; set; }
@@ -21,21 +24,33 @@ namespace AutoMaegler.Pages
         [BindProperty]
         public string Password { get; set; }
         [BindProperty]
-        public string Type { get; set; } // kun for Employee
+        public string Type { get; set; }
         [BindProperty]
-        public int PhoneNumber { get; set; } // kun for Customer
+        public int PhoneNumber { get; set; }
         [BindProperty]
-        public bool WishToSell { get; set; } // kun for Customer
+        public bool WishToSell { get; set; }
         [BindProperty]
         public UserType? UserType { get; set; }
-        public string Role { get; set; } 
 
+        /// <summary>
+        /// Constructor of the EditUserModel class.
+        /// </summary>
+        /// <param name="userService"></param>
         public EditUserModel(UserService userService)
         {
             _userService = userService;
         }
 
 
+        /// <summary>
+        /// A method which is called when the page is loaded. If user is null, it redirects to the page with a message. 
+        /// If checks if the user is a Customer or an Employee.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="userType"></param>
+        /// <returns>
+        /// Returns a page with the user information if the user is found, or redirects if the user is not found.
+        /// </returns>
         public IActionResult OnGet(int id, UserType userType)
         {
             var user = _userService.GetUser(id, userType);
@@ -61,6 +76,13 @@ namespace AutoMaegler.Pages
             return Page();
         }
 
+        /// <summary>
+        /// A method which first, removes the validation for the Type property if the user is a customer. 
+        /// Then checks if the model state is valid. Then checks if it is a customer or an employee, and then updates that user.
+        /// </summary>
+        /// <returns>
+        /// Returns the same page with an error message if the model state is invalid, else returns to the GetAllUsers page.
+        /// </returns>
         public IActionResult OnPost()
         {
             if (UserType == Models.User.UserType.Customer)
