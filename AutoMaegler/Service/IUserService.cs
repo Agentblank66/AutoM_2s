@@ -15,8 +15,7 @@ namespace AutoMaegler.Service
 
         public User GetUser(int id, User.UserType? user);
 
-        public List<T> SearchById<T>(int id) where T : User;
-        public List<T> SearchbyName<T>(string name) where T : User;
+        public List<User> SearchbyName(string name);
 
     }
 }
