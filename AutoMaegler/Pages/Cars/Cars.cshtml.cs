@@ -9,7 +9,7 @@ namespace AutoMaegler.Pages.Cars
     {
         private ICarService _carService;
 
-        public void GetAllCarsModel(ICarService carService)
+        public CarsModel(ICarService carService)
         {
             _carService = carService;
         }
