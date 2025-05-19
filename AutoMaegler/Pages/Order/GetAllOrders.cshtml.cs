@@ -76,7 +76,67 @@ namespace AutoMaegler.Pages.Order
         }
 
         /// <summary>
-        /// 
+        /// Sorts the orders by ID
+        /// </summary>
+        /// <returns> Rerenders the page </returns>
+        public IActionResult OnGetSortById()
+        {
+            Orders = _orderService.SortById(Orders).ToList();
+            return Page();
+        }
+
+        /// <summary>
+        /// Sorts the orders by ID in descending order
+        /// </summary>
+        /// <returns> Rerenders the page </returns>
+        public IActionResult OnGetSortByIdDescending()
+        {
+            Orders = _orderService.SortByIdDecending(Orders).ToList();
+            return Page();
+        }
+
+        /// <summary>
+        /// Sorts the orders by name
+        /// </summary>
+        /// <returns> Rerenders the page </returns>
+        public IActionResult OnGetSortByName()
+        {
+            Orders = _orderService.SortByName(Orders).ToList();
+            return Page();
+        }
+
+        /// <summary>
+        /// Sorts the orders by name in descending order
+        /// </summary>
+        /// <returns> Rerenders the page </returns>
+        public IActionResult OnGetSortByNameDescending()
+        {
+            Orders = _orderService.SortByNameDecending(Orders).ToList();
+            return Page();
+        }
+
+        /// <summary>
+        /// Sorts the orders by price
+        /// </summary>
+        /// <returns> Rerenders the page </returns>
+        public IActionResult OnGetSortByPrice()
+        {
+            Orders = _orderService.SortByPrice(Orders).ToList();
+            return Page();
+        }
+
+        /// <summary>
+        /// Sorts the orders by price in descending order
+        /// </summary>
+        /// <returns> Rerenders the page </returns>
+        public IActionResult OnGetSortByPriceDescending()
+        {
+            Orders = _orderService.SortByPriceDescending(Orders).ToList();
+            return Page();
+        }
+
+        /// <summary>
+        /// Gets all the orders
         /// </summary>
         public void OnGet()
         {
