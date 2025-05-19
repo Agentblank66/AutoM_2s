@@ -1,4 +1,5 @@
 ﻿@page
+@using AutoMaegler.Models
 @model AutoMaegler.Pages.Admin.GetAllUsersModel
 @{
 } 
@@ -9,37 +10,83 @@
     </form>
 </div>
 
+<div class="nav-item mt-3">
+    <form method="post">
+        <div class="input-group mb-3">
+            <input asp-for="SearchString" class="form-control" placeholder="Søg efter navn" />
+            <button type="submit" class="btn btn-primary">Søg</button>
+        </div>
+    </form>
+</div>
 
+@if (Model.FilteredUsers != null && Model.FilteredUsers.Any())
+{
+    <h3 class="mt-4 text-white">Søgeresultater</h3>
+    <table class="table table-striped text-white">
+        <thead>
+            <tr>
+                <th>Fornavn</th>
+                <th>Efternavn</th>
+                <th>Email</th>
+                <th>Adgangskode</th>
+                <th>Telefonnummer</th>
+                <th>Type</th>
+                <th>Handlinger</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.FilteredUsers)
+            {
+                var isCustomer = user is Customer;
+                var isEmployee = user is Employee;
+
+                <tr class="text-white">
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Email</td>
+                    <td>@(user.Password)</td>
+                    <td>@(isCustomer ? ((Customer)user).PhoneNumber: "")</td>
+                    <td>@(isEmployee ? ((Employee)user).Type: "")</td>
+                   
+                    <td>
+                        <a class="btn btn-primary btn-sm" asp-page="/EditUser" asp-route-id="@user.Id" asp-route-userType="@user.GetType().Name">Edit</a>
+                        <a class="btn btn-danger btn-sm" asp-page="/DeleteUser" asp-route-id="@user.Id" asp-route-userType="@user.GetType().Name">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <!-- Vis kun hele listen hvis der ikke er søgt -->
     <div style="display: flex; gap: 50px; align-items: flex-start; color:white">
-
         <div>
             <h3 style="color: white">Kunder</h3>
             <table class="table table-striped text-white">
-                <thead>
-                    <tr>
+                <thead class="text-white">
+                    <tr class="text-white">
                         <th>Fornavn</th>
                         <th>Efternavn</th>
                         <th>Email</th>
                         <th>Adgangskode</th>
                         <th>Telefonnummer</th>
+                        <th>Handlinger</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-white">
                     @foreach (var customer in Model.UserService.Customers)
                     {
-                        <tr style="color:white">
+                        <tr class="text-white">
                             <td>@customer.FirstName</td>
                             <td>@customer.LastName</td>
                             <td>@customer.Email</td>
                             <td>@customer.Password</td>
                             <td>@customer.PhoneNumber</td>
-                        <td>
-                            <a class="btn btn-primary btn-sm" type="button" title="Edit" asp-page="/EditUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Edit</a>
-                            <a class="btn btn-danger btn-sm " type="button" title="Delete" asp-page="/DeleteUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Delete</a>
-
-                        </td>
-
-
+                            <td>
+                                <a class="btn btn-primary btn-sm" asp-page="/EditUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Edit</a>
+                                <a class="btn btn-danger btn-sm" asp-page="/DeleteUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Delete</a>
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -47,35 +94,34 @@
         </div>
 
         <div>
-            <h3 style="color:white">Medarbejder</h3>
+            <h3 style="color:white">Medarbejdere</h3>
             <table class="table table-striped text-white">
-                <thead>
+                <thead class="text-white">
                     <tr>
                         <th>Fornavn</th>
                         <th>Efternavn</th>
                         <th>Email</th>
                         <th>Type medarbejder</th>
+                        <th>Handlinger</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-white">
                     @foreach (var employee in Model.UserService.Employees)
                     {
-                        <tr style="color:white">
+                        <tr class="text-white">
                             <td>@employee.FirstName</td>
                             <td>@employee.LastName</td>
                             <td>@employee.Email</td>
                             <td>@employee.Type</td>
-                        <td>
-                            <a class="btn btn-primary btn-sm" type="button" title="Edit" asp-page="/EditUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Edit</a>
-                            <a class="btn btn-danger btn-sm " type="button" title="Delete" asp-page="/DeleteUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Delete</a>
-                        </td>
-
-
-
+                            <td>
+                                <a class="btn btn-primary btn-sm" asp-page="/EditUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Edit</a>
+                                <a class="btn btn-danger btn-sm" asp-page="/DeleteUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Delete</a>
+                            </td>
                         </tr>
                     }
                 </tbody>
             </table>
         </div>
-
     </div>
+}
+

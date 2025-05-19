@@ -9,13 +9,16 @@ namespace AutoMaegler.Pages.Admin
     /// <summary>
     /// This class is used to get all users from the database, where only Employees can go to the page.
     /// </summary>
-    [Authorize(Roles = "Employee")]
+    //[Authorize(Roles = "Employee")]
     public class GetAllUsersModel : PageModel
     {
         /// <summary>
         /// Property of the GetAllUsersModel class.
         /// </summary>
         public UserService UserService { get; set; }
+        [BindProperty]
+        public string SearchString { get; set; }
+        public List<User> FilteredUsers { get; set; } = new();
 
 
         /// <summary>
@@ -31,7 +34,24 @@ namespace AutoMaegler.Pages.Admin
         {
                
         }
-        
 
+        public IActionResult OnPost()
+        {
+
+            if (string.IsNullOrWhiteSpace(SearchString))
+            {
+                return RedirectToPage("/NotFound");
+            }
+
+            FilteredUsers = UserService.SearchbyName(SearchString);
+
+            if (FilteredUsers == null || !FilteredUsers.Any())
+            {
+                return RedirectToPage("/NotFound");
+            }
+
+            return Page();
+
+        }
     }
 }
