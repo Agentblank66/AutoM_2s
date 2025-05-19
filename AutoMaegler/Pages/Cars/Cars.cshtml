@@ -1,5 +1,5 @@
 ﻿@page
-@model AutoMaegler.Pages.Cars.CarModel
+@model AutoMaegler.Pages.Cars.CarsModel
 @{
 }
 
@@ -129,16 +129,16 @@
 
 <table>
     <tbody>
-        @if (Model.Car != null)
+        @if (Model.Cars != null)
         {
-            foreach (var Car in Model.Car)
+            foreach (var Car in Model.Cars)
             {
                 <tr class="btn-secondary">
                     <td>
                         @Car.Brand
                     </td>
                     <td>
-                        @Car.Model
+                        @Car.CarModel
                     </td>
                     <td>
                         @Car.Price

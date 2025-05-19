@@ -43,7 +43,7 @@ namespace AutoMaegler.Service
                         c.Id = car.Id;
                         c.Type = car.Type;
                         c.Brand = car.Brand;
-                        c.Model = car.Model;
+                        c.CarModel = car.CarModel;
                         c.Color = car.Color;
                         c.Fuel = car.Fuel;
                         c.ModelYear = car.ModelYear;
