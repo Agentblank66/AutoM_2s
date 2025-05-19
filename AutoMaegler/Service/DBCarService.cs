@@ -34,7 +34,7 @@ namespace AutoMaegler.Service
                 foreach (Car car in cars)
                 {
                     context.Cars.Add(car);
-                    context.SaveChanges();
+
                 }
                 context.SaveChanges();
             }

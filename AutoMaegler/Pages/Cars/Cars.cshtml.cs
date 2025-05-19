@@ -1,3 +1,4 @@
+using AutoMaegler.Models;
 using AutoMaegler.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -8,12 +9,12 @@ namespace AutoMaegler.Pages.Cars
     {
         private ICarService _carService;
 
-        public void GetAllCarsModel(ICarService carService)
+        public CarsModel(ICarService carService)
         {
             _carService = carService;
         }
 
-        public List<Models.Car>? Cars { get; private set; }
+        public List<Models.Car> Cars { get; private set; } = new List<Models.Car>() { };
 
         [BindProperty]
         public string SearchString { get; set; }
