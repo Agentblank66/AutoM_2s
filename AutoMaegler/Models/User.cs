@@ -16,14 +16,23 @@ namespace AutoMaegler.Models
         /// Properties of the User class.
         /// </summary>
         public UserType UserTypes { get; set; }
+        [Key]
+        [Display(Name = "Bruger ID")]
+        [Required(ErrorMessage = "Der skal angives et Bruger Id.")]
         public int Id { get; set; }
+        [Display(Name = "Bruger Fornavn")]
+        [Required(ErrorMessage = "Der skal angives et Fornavn."), MaxLength(100)]
         public string FirstName { get; set; }
+        [Display(Name = "Bruger Efternavn")]
+        [Required(ErrorMessage = "Der skal angives et Efternavn."), MaxLength(100)]
         public string LastName { get; set; }
         public string FullName => $"{FirstName} {LastName}";
-        [Key]
-        [StringLength(100, ErrorMessage = "Email length can't be more than 100 characters.")]
+        [Display(Name = "Bruger Email")]
+        [Required(ErrorMessage = "Der skal angives et Bruger Email.")]
+        [StringLength(100, ErrorMessage = "Email længden kan ikke være mere end 100 ord.")]
         public string Email { get; set; }
-        [Required]
+        [Display(Name = "Bruger Adgangskode")]
+        [Required(ErrorMessage = "Der skal angives et Bruger Adgangskode")]
         public string Password { get; set; }
 
         /// <summary>
