@@ -1,6 +1,7 @@
 using AutoMaegler.Models;
 using AutoMaegler.Service;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
@@ -25,7 +26,8 @@ namespace AutoMaegler.Pages.Admin
         public bool WishToSell { get; set; }
         public string Type { get; set; }
         public string UserType { get; set; }
-       
+        private PasswordHasher<string> passwordHasher;
+
 
         /// <summary>
         /// A constructor which initializes the user service.
@@ -34,6 +36,7 @@ namespace AutoMaegler.Pages.Admin
         public CreateUserModel(UserService userService)
         {
             _userService = userService;
+            passwordHasher = new PasswordHasher<string>();
         }
 
         public void OnGet()
@@ -57,11 +60,11 @@ namespace AutoMaegler.Pages.Admin
             }
             if (UserType == "Customer") 
             {
-                _userService.AddUser(new Customer(Id, FirstName, LastName, PhoneNumber, Email, Password, WishToSell));
+                _userService.AddUser(new Customer(Id, FirstName, LastName, PhoneNumber, Email, passwordHasher.HashPassword(null, Password), WishToSell));
             }
             else if (UserType == "Employee")
             {
-                _userService.AddUser(new Employee(Id, FirstName, LastName, Type, Email, Password));
+                _userService.AddUser(new Employee(Id, FirstName, LastName, Type, Email, passwordHasher.HashPassword(null, Password)));
             }
             return RedirectToPage("/Index");
         }

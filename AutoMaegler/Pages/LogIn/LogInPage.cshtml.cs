@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace AutoMaegler.Pages.LogIn
 {
@@ -22,6 +23,7 @@ namespace AutoMaegler.Pages.LogIn
         public static Customer LoggedInCustomer { get; set; } = null;
         public static Employee LoggedInEmployee { get; set; } = null;
         private UserService _userService;
+        public Models.User.UserType UserType { get; set; }
 
         /// <summary>
         /// A constructor which initializes the user service.
@@ -55,12 +57,19 @@ namespace AutoMaegler.Pages.LogIn
 
                     LoggedInCustomer = customer;
 
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Email, UserName) };
+                    var passwordHasher = new PasswordHasher<string>();
 
-                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-                    return RedirectToPage("/Index");
+                    if (passwordHasher.VerifyHashedPassword(null, customer.Password, Password) == PasswordVerificationResult.Success)
+                    {
+                        var claims = new List<Claim>
+                        {
+                        new Claim(ClaimTypes.Email, UserName),
+                        };
 
+                        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+                        return RedirectToPage("/Index");
+                    }
                 }
 
             }
@@ -68,17 +77,27 @@ namespace AutoMaegler.Pages.LogIn
             foreach (Employee employee in employees)
             {
 
-                if (UserName == employee.Email && Password == employee.Password)
+                if (UserName == employee.Email)
                 {
-
+                   
                     LoggedInEmployee = employee;
 
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Name, UserName) };
+                    var passwordHasher = new PasswordHasher<string>();
 
-                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-                    return RedirectToPage("/Index");
+                    if (passwordHasher.VerifyHashedPassword(null, employee.Password, Password) == PasswordVerificationResult.Success)
+                    {
+                        var claims = new List<Claim>
+                        {
+                        new Claim(ClaimTypes.Name, UserName),
+                        new Claim(ClaimTypes.Role, "Employee")
+                        };
 
+                        //if (UserName == "Employee") claims.Add(new Claim(ClaimTypes.Role, "Employee"));
+
+                        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+                        return RedirectToPage("/Index");
+                    }
                 }
 
             }

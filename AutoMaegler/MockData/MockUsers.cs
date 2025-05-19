@@ -3,14 +3,16 @@
 namespace AutoMaegler.MockData
 {
     public class MockUsers
+
     {
+
         /// <summary>
         /// A privat static list of employees.
         /// </summary>
         private static List<Employee> Employees = new List<Employee>
         {
-            new Employee(1, "Oliver", "Kronborg", "Sælger", "Okronborg@gmail.com", "123")
-           
+            new Employee(1, "Oliver", "Kronborg", "Sælger", "Okronborg@gmail.com", passwordHasher.HashPassword(null, "123")),
+           new Employee(2, "Employee", "Employee", "Employee", "Employee", passwordHasher.HashPassword(null, "123")),
         };
 
         /// <summary>
@@ -18,7 +20,7 @@ namespace AutoMaegler.MockData
         /// </summary>
         private static List<Customer> Customers = new List<Customer>
         {
-            new Customer(101, "Lars", "Larsen", 12456790, "LLarsen@gmail.com", "123", true)
+            new Customer(101, "Lars", "Larsen", 12456790, "LLarsen@gmail.com", passwordHasher.HashPassword(null, "123"), true)
             
         };
 

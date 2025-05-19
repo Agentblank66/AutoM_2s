@@ -63,7 +63,7 @@ namespace AutoMaegler.Service
         /// <param name="user"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        public User GetUser(int id, User.UserType user)
+        public User GetUser(int id, User.UserType? user)
         {
             switch (user)
             {

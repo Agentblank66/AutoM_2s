@@ -1,7 +1,7 @@
 ﻿@page
 @model AutoMaegler.Pages.Admin.GetAllUsersModel
 @{
-}
+} 
 
 <div class="nav-item mt-3">
     <form method="get" asp-area="" asp-page="/Admin/CreateUser">
@@ -33,6 +33,13 @@
                             <td>@customer.Email</td>
                             <td>@customer.Password</td>
                             <td>@customer.PhoneNumber</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" type="button" title="Edit" asp-page="/EditUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Edit</a>
+                            <a class="btn btn-danger btn-sm " type="button" title="Delete" asp-page="/DeleteUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Delete</a>
+
+                        </td>
+
+
                         </tr>
                     }
                 </tbody>
@@ -58,6 +65,13 @@
                             <td>@employee.LastName</td>
                             <td>@employee.Email</td>
                             <td>@employee.Type</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" type="button" title="Edit" asp-page="/EditUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Edit</a>
+                            <a class="btn btn-danger btn-sm " type="button" title="Delete" asp-page="/DeleteUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Delete</a>
+                        </td>
+
+
+
                         </tr>
                     }
                 </tbody>
