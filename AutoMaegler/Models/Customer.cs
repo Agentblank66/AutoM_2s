@@ -1,25 +1,33 @@
-﻿namespace AutoMaegler.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AutoMaegler.Models
 {
     public class Customer: User
     {
         /// <summary>
         /// Properties of the Customer class.
         /// </summary>
+        [Display(Name = "Bruger ønsker at sælge?")]
+        [Required(ErrorMessage = "Der skal angives om Brugeren ønsker at sælge.")]
         public bool WishToSell { get; set; }
+        [Display(Name = "Bruger Telefonnummer")]
+        [Required(ErrorMessage = "Der skal angives et Bruger Telefonnummer.")]
         public int PhoneNumber { get; set; }
 
         /// <summary>
         /// Constructor which initializes the customer with the given parameters, aswell as the users given parameters.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="name"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
         /// <param name="phonenumber"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
         /// <param name="wishtosell"></param>
         public Customer(int id, string firstName,string lastName, int phonenumber, string email, string password, bool wishtosell): base(id, firstName, lastName, email, password)
         {
- 
+            UserTypes = UserType.Customer;
+
             WishToSell = wishtosell;
             PhoneNumber = phonenumber;
         }

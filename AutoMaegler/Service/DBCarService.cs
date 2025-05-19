@@ -7,10 +7,6 @@ namespace AutoMaegler.Service
 {
     public class DBCarService
     {
-        public void SaveDBCars(List<Car> cars)
-        {
-
-        }
         ////public IEnumerable<Car> GetDBCars()
         //{
         //    //Skal returnere list fra DB
@@ -31,14 +27,14 @@ namespace AutoMaegler.Service
                 context.SaveChanges();
             }
         }
-        public async Task SaveItems(List<Car> cars)
+        public async Task SaveCars(List<Car> cars)
         {
             using (var context =new CarDBContext())
             {
                 foreach (Car car in cars)
                 {
                     context.Cars.Add(car);
-                    context.SaveChanges();
+
                 }
                 context.SaveChanges();
             }

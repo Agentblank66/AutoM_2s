@@ -18,12 +18,14 @@ namespace AutoMaegler.Models
         public string Type { get; set; }
         [Required]
         [StringLength(40)]
-        public string Model { get; set; }
-        [Required]
-        [StringLength(40)]
         public string Brand { get; set; }
         [Required]
         [StringLength(40)]
+        public string Model { get; set; }
+
+        [Required]
+        [StringLength(40)]
+
         public string Color { get; set; }
         [Required]
         [StringLength(40)]
@@ -91,11 +93,12 @@ namespace AutoMaegler.Models
         /// <param name="maxPull"></param>
         /// <param name="weight"></param>
         /// <param name="status"></param>
-        public Car(int id, string type, string brand, string color, string fuel, int modelYear, int price, int mileage, double kmPrL, int topSpeed, int doors, int horsePower, string gear, int cylinders, double motorSize, double zeroToOneHundred, int length, int numOffWheels, double maxPull, int weight, bool status)
+        public Car(int id, string type, string brand, string model, string color, string fuel, int modelYear, int price, int mileage, double kmPrL, int topSpeed, int doors, int horsePower, string gear, int cylinders, double motorSize, double zeroToOneHundred, int length, int numOffWheels, double maxPull, int weight, bool status)
         {
             Id = id;
             Type = type;
             Brand = brand;
+            Model = model;
             Color = color;
             Fuel = fuel;
             ModelYear = modelYear;

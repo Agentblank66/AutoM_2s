@@ -1,4 +1,5 @@
-﻿using AutoMaegler.Models;
+﻿using AutoMaegler.MockData;
+using AutoMaegler.Models;
 using System.Security.Cryptography.X509Certificates;
 
 namespace AutoMaegler.Service
@@ -9,6 +10,32 @@ namespace AutoMaegler.Service
         /// List of cars in the car service.
         /// </summary>
         private List<Car> _cars;
+
+
+
+    // ------------------------------------------------------ In test
+        private DBCarService _dBCarService;
+
+        public CarService(DBCarService dbCarService)
+        {
+            _dBCarService = dbCarService;
+            // _items = MockItems.GetMockItems();
+            //_items = _jsonFileItemService.GetJsonObjects().ToList();
+            //_dbService.SaveObjects(_items);
+            _cars = _dBCarService.GetCars().Result.ToList();
+        }
+
+        public CarService()
+        {
+            _cars = MockCars.GetMockCars();
+        }
+
+    // ------------------------------------------------------
+
+
+
+
+
 
         /// <summary>
         /// Methods to get all cars.
@@ -43,6 +70,7 @@ namespace AutoMaegler.Service
                         c.Id = car.Id;
                         c.Type = car.Type;
                         c.Brand = car.Brand;
+                        c.Model = car.Model;
                         c.Color = car.Color;
                         c.Fuel = car.Fuel;
                         c.ModelYear = car.ModelYear;

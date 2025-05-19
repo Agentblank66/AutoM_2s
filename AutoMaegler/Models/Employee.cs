@@ -1,24 +1,31 @@
-﻿namespace AutoMaegler.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AutoMaegler.Models
 {
     public class Employee: User
     {
         /// <summary>
         /// Properties of the Employee class.
         /// </summary>
+        [Display(Name = "Bruger Type")]
+        [Required(ErrorMessage = "Der skal angives en Bruger Type.")]
         public string Type { get; set; }
+       
 
         /// <summary>
         /// Constructor for the Employee class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="name"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
         /// <param name="type"></param>
-        /// <param name="phoneNumber"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
         public Employee(int id, string firstName, string lastName, string type, string email, string password): base(id, firstName, lastName, email, password)
         {
+            UserTypes = UserType.Employee;
             Type = type;
+           
         }
 
         /// <summary>

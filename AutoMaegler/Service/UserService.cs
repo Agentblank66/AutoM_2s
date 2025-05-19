@@ -63,7 +63,7 @@ namespace AutoMaegler.Service
         /// <param name="user"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        public User GetUser(int id, User.UserType user)
+        public User GetUser(int id, User.UserType? user)
         {
             switch (user)
             {
@@ -120,36 +120,6 @@ namespace AutoMaegler.Service
             }
         }
 
-        /// <summary>
-        /// A method which searches for a user in the list of customers or employees by id.
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        public List<T> SearchById<T>(int id) where T : User
-        {
-            if (typeof(T) == typeof(Customer))
-            {
-                foreach (Customer customer in Customers)
-                {
-                    if (customer.Id == id)
-                    {
-                        return new List<T> { customer as T };
-                    }
-                }
-            }
-            else if (typeof(T) == typeof(Employee))
-            {
-                foreach (Employee employee in Employees)
-                {
-                    if (employee.Id == id)
-                    {
-                        return new List<T> { employee as T };
-                    }
-                }
-            }
-            return null;
-        }
 
         /// <summary>
         /// A method which searches for a user in the list of customers or employees by name.
@@ -157,29 +127,18 @@ namespace AutoMaegler.Service
         /// <typeparam name="T"></typeparam>
         /// <param name="name"></param>
         /// <returns></returns>
-        public List<T> SearchbyName<T>(string name) where T : User
+        public List<User> SearchbyName(string name) 
         {
-            if (typeof(T) == typeof(Customer))
-            {
-                foreach (Customer customer in Customers)
-                {
-                    if (customer.FullName.Contains(name, StringComparison.OrdinalIgnoreCase))
-                    {
-                        return new List<T> { customer as T };
-                    }
-                }
-            }
-            else if (typeof(T) == typeof(Employee))
-            {
-                foreach (Employee employee in Employees)
-                {
-                    if (employee.FullName.Contains(name, StringComparison.OrdinalIgnoreCase))
-                    {
-                        return new List<T> { employee as T };
-                    }
-                }
-            }
-            return null;
+            
+            List<User> results = new();
+
+            results.AddRange(Customers.Where(c =>
+                c.FullName.Contains(name, StringComparison.OrdinalIgnoreCase)));
+
+            results.AddRange(Employees.Where(e =>
+                e.FullName.Contains(name, StringComparison.OrdinalIgnoreCase)));
+
+            return results;
         }
 
     }

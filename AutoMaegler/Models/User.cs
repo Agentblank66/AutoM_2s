@@ -4,30 +4,43 @@ namespace AutoMaegler.Models
 {
     public abstract class User
     {
+        /// <summary>
+        /// Enumeration for User types.
+        /// </summary>
         public enum UserType
         {
-            Employee,
-            Customer
+            Customer,
+            Employee
         }
         /// <summary>
         /// Properties of the User class.
         /// </summary>
         public UserType UserTypes { get; set; }
+        [Key]
+        [Display(Name = "Bruger ID")]
+        [Required(ErrorMessage = "Der skal angives et Bruger Id.")]
         public int Id { get; set; }
+        [Display(Name = "Bruger Fornavn")]
+        [Required(ErrorMessage = "Der skal angives et Fornavn."), MaxLength(100)]
         public string FirstName { get; set; }
+        [Display(Name = "Bruger Efternavn")]
+        [Required(ErrorMessage = "Der skal angives et Efternavn."), MaxLength(100)]
         public string LastName { get; set; }
         public string FullName => $"{FirstName} {LastName}";
-        [Key]
-        [StringLength(50, ErrorMessage = "Email length can't be more than 50 characters.")]
+        [Display(Name = "Bruger Email")]
+        [Required(ErrorMessage = "Der skal angives et Bruger Email.")]
+        [StringLength(100, ErrorMessage = "Email længden kan ikke være mere end 100 ord.")]
         public string Email { get; set; }
-        [Required]
+        [Display(Name = "Bruger Adgangskode")]
+        [Required(ErrorMessage = "Der skal angives et Bruger Adgangskode")]
         public string Password { get; set; }
 
         /// <summary>
         /// A constructor which initializes the user with the given parameters.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="name"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
         /// <param name="email"></param>
         /// <param name="password"></param>
         public User(int id, string firstName, string lastName, string email, string password)

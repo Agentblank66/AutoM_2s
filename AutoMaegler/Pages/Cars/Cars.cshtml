@@ -1,5 +1,5 @@
 ﻿@page
-@model AutoMaegler.Pages.Cars.CarModel
+@model AutoMaegler.Pages.Cars.CarsModel
 @{
 }
 
@@ -35,7 +35,7 @@
         .overlay-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-Cars: center;
             border-bottom: 1px solid #ccc;
             padding-bottom: 10px;
             margin-bottom: 20px;
@@ -126,19 +126,19 @@
         </div>
 
     </form>
-@* 
+
 <table>
     <tbody>
-        @if (Model.Car != null)
+        @if (Model.Cars != null)
         {
-            foreach (var Car in Model.Car)
+            foreach (var Car in Model.Cars)
             {
                 <tr class="btn-secondary">
                     <td>
-                        @Car.Id
+                        @Car.Brand
                     </td>
                     <td>
-                        @Car.Name
+                        @Car.Model
                     </td>
                     <td>
                         @Car.Price
@@ -148,7 +148,6 @@
         }
     </tbody>
 </table>
- *@
 
 
 
