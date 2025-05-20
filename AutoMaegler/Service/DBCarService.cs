@@ -7,11 +7,6 @@ namespace AutoMaegler.Service
 {
     public class DBCarService
     {
-        ////public IEnumerable<Car> GetDBCars()
-        //{
-        //    //Skal returnere list fra DB
-        //}
- 
         public async Task<List<Car>> GetCars()
         {
             using (var context = new CarDBContext())

@@ -14,6 +14,5 @@ namespace AutoMaegler.Service
         public Car DeleteCar(int id);
         public IEnumerable<Car> NameSearch(string str);
         public IEnumerable<Car> PriceFilter(int minPrice, int maxPrice);
-
     }
 }
