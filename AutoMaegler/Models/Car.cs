@@ -51,6 +51,7 @@ namespace AutoMaegler.Models
         [Required]
         public int Cylinders { get; set; }
 
+        public double MotorSize { get; set; }
         [Required]
         public double ZeroToOneHundred { get; set; }
         [Required]
