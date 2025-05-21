@@ -92,7 +92,7 @@ namespace AutoMaegler.Service
                     }
                 }
             }
-
+            _dBCarService.UpdateCar(car);
         }
 
         /// <summary>

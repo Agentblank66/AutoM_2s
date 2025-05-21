@@ -34,6 +34,15 @@ namespace AutoMaegler.Service
             }
         }
 
+        public async Task UpdateCar(Car car)
+        {
+            using (var context = new CarDBContext())
+            {
+                context.Cars.Update(car);
+                await context.SaveChangesAsync();
+            }
+        }
+
         public async Task SaveCars(List<Car> cars)
         {
             using (var context = new CarDBContext())
