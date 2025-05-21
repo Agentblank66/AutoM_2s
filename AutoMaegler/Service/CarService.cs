@@ -27,10 +27,10 @@ namespace AutoMaegler.Service
 
         public CarService()
         {
-            _cars = MockCars.GetMockCars();
+
         }
 
-    // ------------------------------------------------------
+        // ------------------------------------------------------
 
 
 
@@ -53,6 +53,7 @@ namespace AutoMaegler.Service
         public void AddCar(Car car)
         {
             _cars.Add(car);
+            _dBCarService.AddCar(car);
         }
 
         /// <summary>
@@ -81,8 +82,7 @@ namespace AutoMaegler.Service
                         c.Doors = car.Doors;
                         c.HorsePower = car.HorsePower;
                         c.Gear = car.Gear;
-                        c.Cylinders = car.Cylinders;
-                        c.MotorSize = car.MotorSize;
+                        c.Cylinders = car.Cylinders;                  
                         c.ZeroToOneHundred = car.ZeroToOneHundred;
                         c.Length = car.Length;
                         c.NumOffWheels = car.NumOffWheels;

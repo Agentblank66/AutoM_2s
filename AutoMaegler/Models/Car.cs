@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace AutoMaegler.Models
 {
+    [Table("Car")]
     public class Car
     {
         [Key]
@@ -49,8 +50,7 @@ namespace AutoMaegler.Models
         public string Gear { get; set; }
         [Required]
         public int Cylinders { get; set; }
-        [Required]
-        public double MotorSize { get; set; }
+
         [Required]
         public double ZeroToOneHundred { get; set; }
         [Required]
@@ -110,7 +110,6 @@ namespace AutoMaegler.Models
             HorsePower = horsePower;
             Gear = gear;
             Cylinders = cylinders;
-            MotorSize = motorSize;
             ZeroToOneHundred = zeroToOneHundred;
             Length = length;
             NumOffWheels = numOffWheels;
@@ -125,7 +124,7 @@ namespace AutoMaegler.Models
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Type: {Type} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} MotorSize: {MotorSize} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status}";
+            return $"Id: {Id} Type: {Type} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status}";
         }
     }
 }
