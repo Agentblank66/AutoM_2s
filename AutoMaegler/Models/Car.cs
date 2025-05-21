@@ -49,9 +49,9 @@ namespace AutoMaegler.Models
         [StringLength(20)]
         public string Gear { get; set; }
         [Required]
-        public int Cylinders { get; set; }
-
         public double MotorSize { get; set; }
+        [Required]
+        public int Cylinders { get; set; }
         [Required]
         public double ZeroToOneHundred { get; set; }
         [Required]
