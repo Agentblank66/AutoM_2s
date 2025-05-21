@@ -63,6 +63,10 @@ namespace AutoMaegler.Models
         public int Weight { get; set; }
         [Required]
         public bool Status { get; set; }
+        public int? PriceMonth { get; set; }
+        public int? LeasingPeriod { get; set; }
+        public int? KmIncluded { get; set; }
+
 
         /// <summary>
         /// Default constructor for the Car class.
@@ -93,6 +97,13 @@ namespace AutoMaegler.Models
         /// <param name="maxPull"></param>
         /// <param name="weight"></param>
         /// <param name="status"></param>
+        /// <param name="priceMonth"></param>
+        /// <param name="leasingPeriod"></param>
+        /// <param name="KmIncluded"></param>
+        /// 
+         
+
+        // Contructor til KØB BIL
         public Car(int id, string type, string brand, string model, string color, string fuel, int modelYear, int price, int mileage, double kmPrL, int topSpeed, int doors, int horsePower, string gear, int cylinders, double motorSize, double zeroToOneHundred, int length, int numOffWheels, double maxPull, int weight, bool status)
         {
             Id = id;
@@ -100,6 +111,7 @@ namespace AutoMaegler.Models
             Brand = brand;
             Model = model;
             Color = color;
+            Price = price;
             Fuel = fuel;
             ModelYear = modelYear;
             Price = price;
@@ -117,6 +129,35 @@ namespace AutoMaegler.Models
             MaxPull = maxPull;
             Weight = weight;
             Status = status;
+
+        }
+
+        //Contructor til LEASING
+        public Car(int id, string type, string brand, string model, string color, string fuel, int modelYear, int priceMonth, int mileage, double kmPrL, int topSpeed, int doors, int horsePower, string gear, int cylinders, double motorSize, double zeroToOneHundred, int length, int numOffWheels, double maxPull, int weight, int leasingPeriod, int kmIncluded)
+        {
+            Id = id;
+            Type = type;
+            Brand = brand;
+            Model = model;
+            Color = color;
+            PriceMonth = priceMonth;
+            Fuel = fuel;
+            ModelYear = modelYear;
+            Mileage = mileage;
+            KmPrL = kmPrL;
+            TopSpeed = topSpeed;
+            Doors = doors;
+            HorsePower = horsePower;
+            Gear = gear;
+            Cylinders = cylinders;
+            MotorSize = motorSize;
+            ZeroToOneHundred = zeroToOneHundred;
+            Length = length;
+            NumOffWheels = numOffWheels;
+            MaxPull = maxPull;
+            Weight = weight;
+            LeasingPeriod = leasingPeriod;
+            KmIncluded = kmIncluded;
         }
 
         /// <summary>
@@ -125,7 +166,7 @@ namespace AutoMaegler.Models
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Type: {Type} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} MotorSize: {MotorSize} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status}";
+            return $"Id: {Id} Type: {Type} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} MotorSize: {MotorSize} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status} PriceMonth: {PriceMonth} LeasingPeriod: {LeasingPeriod} KmIncluded: {KmIncluded}";
         }
     }
 }
