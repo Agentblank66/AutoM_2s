@@ -123,6 +123,7 @@ namespace AutoMaegler.Models
             HorsePower = horsePower;
             Gear = gear;
             Cylinders = cylinders;
+            MotorSize = motorSize;
             ZeroToOneHundred = zeroToOneHundred;
             Length = length;
             NumOffWheels = numOffWheels;
