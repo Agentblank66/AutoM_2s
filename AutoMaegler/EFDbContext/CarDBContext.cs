@@ -7,8 +7,10 @@ namespace AutoMaegler.EFDbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            string connStr = "Server=mysql62.unoeuro.com;Port=3306;Database=okronborg_dk_db;User ID=okronborg_dk;Password=gnb6xtyDdc3eafE9zkrh; Initial Catalog=OKronborg_dk_db; Integrated Security=True; Connect Timeout=30; Encrypt=False";
+            var connectionString = "Server=mysql62.unoeuro.com;Port=3306;Database=okronborg_dk_db;User=okronborg_dk;Password=gnb6xtyDdc3eafE9zkrh;";
+            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
+
         public DbSet<Car> Cars { get; set; }
     }
 }

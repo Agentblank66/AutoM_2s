@@ -3,13 +3,13 @@ using AutoMaegler.Service;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<CarDBContext>();
 builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
+builder.Services.AddSingleton<ICarService, CarService>();
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddDbContext<UserDbContext>();

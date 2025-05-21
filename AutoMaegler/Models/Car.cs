@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace AutoMaegler.Models
 {
+    [Table("Car")]
     public class Car
     {
         [Key]
@@ -49,8 +50,7 @@ namespace AutoMaegler.Models
         public string Gear { get; set; }
         [Required]
         public int Cylinders { get; set; }
-        [Required]
-        public double MotorSize { get; set; }
+
         [Required]
         public double ZeroToOneHundred { get; set; }
         [Required]
@@ -122,7 +122,6 @@ namespace AutoMaegler.Models
             HorsePower = horsePower;
             Gear = gear;
             Cylinders = cylinders;
-            MotorSize = motorSize;
             ZeroToOneHundred = zeroToOneHundred;
             Length = length;
             NumOffWheels = numOffWheels;
