@@ -32,7 +32,7 @@ namespace AutoMaegler.Pages.Cars
 			if (deletedCar == null)
 				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
-			return RedirectToPage("Cars");
+			return RedirectToPage("/Cars/Cars");
 		}
 	}
 }

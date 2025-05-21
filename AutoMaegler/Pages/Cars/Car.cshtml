@@ -92,34 +92,33 @@
 </section>
 
 <section class="details">
-    <h2>Kia Picanto 1.0 MPI Attraction Plus 66HK</h2>
-    <p class="price">Kr. 99.900</p>
-    <p>Årgang: 2021 | Kilometerstand: 25.000 km | Benzin | Manuel</p>
+    <h2>@Model.Car.Brand @Model.Car.Model @Model.Car.HorsePower HK</h2>
+    <p class="price">Kr. @Model.Car.Price.ToString("N0")</p>
+    <p>Årgang: @Model.Car.ModelYear | Kilometerstand: @Model.Car.Mileage.ToString("N0") km | @Model.Car.Fuel | @Model.Car.MotorSize</p>
 
     <table class="specs">
-        <tr><th>Id</th><td>123</td></tr>
-        <tr><th>Type af bil</th><td>Personbil</td></tr>
-        <tr><th>Mærke</th><td>Volkswagen</td></tr>
-        <tr><th>CarModel</th><td>Passat</td></tr>
-        <tr><th>Farve</th><td>Sort</td></tr>
-        <tr><th>Brændstof</th><td>Benzin</td></tr>
-        <tr><th>Årgang</th><td>2020</td></tr>
-        <tr><th>Pris</th><td>150.000 kr.</td></tr>
-        <tr><th>Kilometerstand</th><td>45.000 km</td></tr>
-        <tr><th>Km/l</th><td>18.2</td></tr>
-        <tr><th>Tophastighed</th><td>195 km/t</td></tr>
-        <tr><th>Døre</th><td>5</td></tr>
-        <tr><th>HK</th><td>115</td></tr>
-        <tr><th>Gear</th><td>Manuel</td></tr>
-        <tr><th>Cylindre</th><td>3</td></tr>
-        <tr><th>Motorstørrelse</th><td>1.0 L</td></tr>
-        <tr><th>0-100 km/t</th><td>9.9 sek.</td></tr>
-        <tr><th>Længde</th><td>4.050 mm</td></tr>
-        <tr><th>Hjul</th><td>4</td></tr>
-        <tr><th>Trækevne</th><td>1.000 kg</td></tr>
-        <tr><th>Vægt</th><td>1.200 kg</td></tr>
-        <tr><th>Lagerstatus</th><td>På lager</td></tr>
+        <tr><th>Type af bil</th><td>@Model.Car.Type</td></tr>
+        <tr><th>Mærke</th><td>@Model.Car.Brand</td></tr>
+        <tr><th>Model</th><td>@Model.Car.Model</td></tr>
+        <tr><th>Farve</th><td>@Model.Car.Color</td></tr>
+        <tr><th>Brændstof</th><td>@Model.Car.Fuel</td></tr>
+        <tr><th>Årgang</th><td>@Model.Car.ModelYear</td></tr>
+        <tr><th>Pris</th><td>@Model.Car.Price.ToString("N0") kr.</td></tr>
+        <tr><th>Kilometerstand</th><td>@Model.Car.Mileage.ToString("N0") km</td></tr>
+        <tr><th>Km/l</th><td>@Model.Car.KmPrL</td></tr>
+        <tr><th>Tophastighed</th><td>@Model.Car.TopSpeed km/t</td></tr>
+        <tr><th>Døre</th><td>@Model.Car.Doors</td></tr>
+        <tr><th>HK</th><td>@Model.Car.HorsePower</td></tr>
+        <tr><th>Gear</th><td>@Model.Car.Gear</td></tr>
+        <tr><th>Cylindre</th><td>@Model.Car.Cylinders</td></tr>
+        <tr><th>Motorstørrelse</th><td>@Model.Car.MotorSize L</td></tr>
+        <tr><th>0-100 km/t</th><td>@Model.Car.ZeroToOneHundred sek.</td></tr>
+        <tr><th>Længde</th><td>@Model.Car.Length mm</td></tr>
+        <tr><th>Hjul</th><td>@Model.Car.NumOffWheels</td></tr>
+        <tr><th>Trækevne</th><td>@Model.Car.MaxPull kg</td></tr>
+        <tr><th>Vægt</th><td>@Model.Car.Weight.ToString("N0") kg</td></tr>
+        <tr><th>Lagerstatus</th><td>@(Model.Car.Status ? "På lager" : "Ikke på lager")</td></tr>
     </table>
-</section>
+</section>  
 
 

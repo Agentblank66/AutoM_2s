@@ -7,9 +7,7 @@ namespace AutoMaegler.Service
 {
     public class DBCarService
     {
-        //    //Skal returnere list fra DB
-        //}
- 
+        
         public async Task<List<Car>> GetCars()
         {
             using (var context = new CarDBContext())
@@ -23,6 +21,15 @@ namespace AutoMaegler.Service
             using (var context = new CarDBContext())
             { 
                 context.Cars.Add(car);
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public async Task DeleteCar(Car car)
+        {
+            using (var context = new CarDBContext())
+            {
+                context.Cars.Remove(car);
                 await context.SaveChangesAsync();
             }
         }
