@@ -1,18 +1,29 @@
 using AutoMaegler.EFDbContext;
 using AutoMaegler.Service;
-using DotNetEnv;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
-Env.Load();
+
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables(); // stadig muligt hvis du vil bruge env vars senere
+
+// add DB service
+builder.Services.AddDbContext<CarDBContext>(options =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<CarDBContext>();
 builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
-builder.Services.AddSingleton<ICarService, CarService>();
+builder.Services.AddScoped<ICarService, CarService>(); 
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddDbContext<UserDbContext>();
