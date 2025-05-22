@@ -92,7 +92,7 @@ namespace AutoMaegler.Service
                     }
                 }
             }
-
+            _dBCarService.UpdateCar(car);
         }
 
         /// <summary>
@@ -118,6 +118,7 @@ namespace AutoMaegler.Service
         {
             Car car = GetCar(id);
             _cars.Remove(GetCar(id));
+            _dBCarService.DeleteCar(car);
             return car;
         }
 

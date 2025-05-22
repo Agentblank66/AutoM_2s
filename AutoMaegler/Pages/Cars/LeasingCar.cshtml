@@ -49,7 +49,7 @@
     <div class="leasing-container">
         @foreach (var car in Model.Cars)
         {
-            <div class="leasing-box">
+            <div class="leasing-box" style="cursor: pointer;" onclick="window.location='@Url.Page("/Cars/Car", new { id = car.Id })'">
                 <h2>@car.Brand @car.Model</h2>
                 <p><strong>Pris pr. måned:</strong></p>
                 <p><strong>Leasingperiode:</strong></p>
