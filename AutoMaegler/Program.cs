@@ -1,9 +1,12 @@
 using AutoMaegler.EFDbContext;
 using AutoMaegler.Service;
+using DotNetEnv;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 
+
 var builder = WebApplication.CreateBuilder(args);
+Env.Load();
 
 // Add services to the container.
 builder.Services.AddRazorPages();

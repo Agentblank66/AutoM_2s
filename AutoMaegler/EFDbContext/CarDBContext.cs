@@ -1,5 +1,6 @@
 ﻿using AutoMaegler.Models;
 using Microsoft.EntityFrameworkCore;
+using DotNetEnv;    
 
 namespace AutoMaegler.EFDbContext
 {
@@ -7,7 +8,7 @@ namespace AutoMaegler.EFDbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var connectionString = "Server=mysql62.unoeuro.com;Port=3306;Database=okronborg_dk_db;User=okronborg_dk;Password=gnb6xtyDdc3eafE9zkrh;";
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION");
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
 
