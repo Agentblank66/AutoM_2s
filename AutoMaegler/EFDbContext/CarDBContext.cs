@@ -1,13 +1,21 @@
 ﻿using AutoMaegler.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace AutoMaegler.EFDbContext
 {
     public class CarDBContext : DbContext
     {
+        private readonly IConfiguration _configuration;
+
+        public CarDBContext(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var connectionString = "Server=mysql62.unoeuro.com;Port=3306;Database=okronborg_dk_db;User=okronborg_dk;Password=gnb6xtyDdc3eafE9zkrh;";
+            var connectionString = _configuration.GetConnectionString("DefaultConnection");
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
 
