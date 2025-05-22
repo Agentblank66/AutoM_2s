@@ -11,7 +11,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100" style="background-color: mediumblue;">
 
-    <header style="background-color: darkblue">
+    <header class="custom-header">
         <nav style="background-color: midnightblue" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
                 <a asp-page="/Index"> <img style="height:80px; padding:10px;" src="https://www.autom.dk/img/logo.png" /> </a>
@@ -73,6 +73,7 @@
             </ul>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
