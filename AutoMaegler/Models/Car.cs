@@ -68,6 +68,9 @@ namespace AutoMaegler.Models
         public int? LeasingPeriod { get; set; }
         public int? KmIncluded { get; set; }
 
+        public List<String> ImageString { get; set; }
+
+
 
         /// <summary>
         /// Default constructor for the Car class.

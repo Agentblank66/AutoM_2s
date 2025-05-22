@@ -1,7 +1,7 @@
 ﻿@using AutoMaegler.Pages.LogIn
 <!DOCTYPE html>
 <html lang="en">
-<head style="background-color: darkblue">
+<head style="background-color: navy">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - AutoMaegler</title>
@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AutoMaegler.styles.css" asp-append-version="true" />
 </head>
-<body class="d-flex flex-column min-vh-100" style="background-color: mediumblue;">
-
-    <header class="custom-header">
-        <nav style="background-color: midnightblue" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+<body class="d-flex flex-column min-vh-100" style="background-color: ghostwhite;">
+        <nav style="background-color: #00002B;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
                 <a asp-page="/Index"> <img style="height:80px; padding:10px;" src="https://www.autom.dk/img/logo.png" /> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -72,8 +70,6 @@
                 }
             </ul>
         </nav>
-    </header>
-
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -86,7 +82,7 @@
         }
 
         .footer {
-            background-color: midnightblue;
+            background-color: #00002B;
             color: white;
             padding: 30px 0;
         }
