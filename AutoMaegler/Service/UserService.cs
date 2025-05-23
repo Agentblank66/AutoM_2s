@@ -8,8 +8,8 @@ namespace AutoMaegler.Service
         /// <summary>
         /// A public list of customers and employees.
         /// </summary>
-        public List<Customer> Customers { get; set; }
-        public List<Employee> Employees { get; set; }
+        public List<Customer> Customers { get; set; } 
+        public List<Employee> Employees { get; set; } 
 
         /// <summary>
         /// A constructor which initializes the list of customers and employees.
@@ -132,14 +132,37 @@ namespace AutoMaegler.Service
             
             List<User> results = new();
 
-            results.AddRange(Customers.Where(c =>
-                c.FullName.Contains(name, StringComparison.OrdinalIgnoreCase)));
+            results.AddRange(Customers.Where(customer =>
+                customer.FullName.Contains(name, StringComparison.OrdinalIgnoreCase)));
 
-            results.AddRange(Employees.Where(e =>
-                e.FullName.Contains(name, StringComparison.OrdinalIgnoreCase)));
+            results.AddRange(Employees.Where(employee =>
+                employee.FullName.Contains(name, StringComparison.OrdinalIgnoreCase)));
 
             return results;
         }
+
+
+        /// <summary>
+        /// A method which searches for a user in the list of customers or employees by name.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>
+        /// A list of users which contains the customers and employees which contain the name.
+        /// </returns>
+        //public List<User> SearchByName(string name)
+        //{
+        //    List<User> results = new();
+
+        //    var customerResult = from Customer in Customers 
+        //                         where Customer.FullName.Contains(name, StringComparison.OrdinalIgnoreCase) select Customer;
+        //    var employeeResult = from Employee in Employees 
+        //                         where Employee.FullName.Contains(name, StringComparison.OrdinalIgnoreCase) select Employee;
+
+        //    results.AddRange(customerResult);
+        //    results.AddRange(employeeResult);
+
+        //    return results;
+        //}
 
     }
 }

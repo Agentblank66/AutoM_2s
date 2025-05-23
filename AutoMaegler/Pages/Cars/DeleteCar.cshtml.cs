@@ -4,35 +4,35 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AutoMaegler.Pages.Cars
 {
-	public class DeleteCarModel : PageModel
-	{
-		private ICarService _CarService;
+    public class DeleteCarModel : PageModel
+    {
+        private ICarService _CarService;
 
-		public DeleteCarModel(ICarService carService)
-		{
-			_CarService = carService;
-		}
+        public DeleteCarModel(ICarService carService)
+        {
+            _CarService = carService;
+        }
 
-		[BindProperty]
-		public Models.Car Car { get; set; }
+        [BindProperty]
+        public Models.Car Car { get; set; }
 
 
-		public IActionResult OnGet(int id)
-		{
-			Car = _CarService.GetCar(id);
-			if (Car == null)
-				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+        public IActionResult OnGet(int id)
+        {
+            Car = _CarService.GetCar(id);
+            if (Car == null)
+                return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
-			return Page();
-		}
+            return Page();
+        }
 
-		public IActionResult OnPost()
-		{
-			Models.Car deletedCar = _CarService.DeleteCar(Car.Id);
-			if (deletedCar == null)
-				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+        public IActionResult OnPost()
+        {
+            Models.Car deletedCar = _CarService.DeleteCar(Car.Id);
+            if (deletedCar == null)
+                return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
-			return RedirectToPage("Cars");
+			return RedirectToPage("/Cars/Cars");
 		}
 	}
 }

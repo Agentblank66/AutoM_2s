@@ -15,11 +15,11 @@ namespace AutoMaegler.Pages.LogIn
         /// </returns>
         public async Task<IActionResult> OnGet()
         {
-            LogInPageModel.LoggedInCustomer = null;
-            LogInPageModel.LoggedInEmployee = null;
+            //LogInPageModel.LoggedInCustomer = null;
+            //LogInPageModel.LoggedInEmployee = null;
 
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToPage("/index");
+            return RedirectToPage("/Index");
         }
 
     }

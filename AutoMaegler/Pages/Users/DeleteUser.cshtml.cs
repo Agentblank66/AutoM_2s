@@ -1,10 +1,12 @@
 using AutoMaegler.Models;
 using AutoMaegler.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace AutoMaegler.Pages
+namespace AutoMaegler.Users
 {
+    [Authorize(Roles = "Employee")]
     public class DeleteUserModel : PageModel
     {
         /// <summary>
@@ -29,9 +31,9 @@ namespace AutoMaegler.Pages
         /// <returns>
         /// A page.
         /// </returns>
-        public IActionResult OnGet(int id, Models.User.UserType userType)
+        public IActionResult OnGet(int id, User.UserType userType)
         {
-           
+
             var user = _userService.GetUser(id, userType);
             if (user == null)
                 return RedirectToPage("/NotFound");
@@ -48,16 +50,21 @@ namespace AutoMaegler.Pages
         /// <returns>
         /// Returns to the page with a message if the model state is invalid, else it returns to the GetAllUsers page.
         /// </returns>
-        public IActionResult OnPost(int id, Models.User.UserType userType)
+        public IActionResult OnPost(int id, User.UserType userType)
         {
             var user = _userService.GetUser(id, userType);
             if (user == null)
+            {
                 return RedirectToPage("/NotFound");
-
-            if (user is Customer customer)
-                _userService.DeleteUser(customer);
-            else if (user is Employee employee)
-                _userService.DeleteUser(employee);
+            }
+            else
+            {
+                _userService.DeleteUser(user);
+            }
+            //if (user is Customer customer)
+            //    _userService.DeleteUser(customer);
+            //else if (user is Employee employee)
+            //    _userService.DeleteUser(employee);
 
 
             return RedirectToPage("/Admin/GetAllUsers");

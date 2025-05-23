@@ -20,8 +20,8 @@ namespace AutoMaegler.Pages.LogIn
         [BindProperty, DataType(DataType.Password)]
         public string Password { get; set; }
         public string Message { get; set; }
-        public static Customer LoggedInCustomer { get; set; } = null;
-        public static Employee LoggedInEmployee { get; set; } = null;
+        //public Customer LoggedInCustomer { get; set; } = null;
+        //public Employee LoggedInEmployee { get; set; } = null;
         private UserService _userService;
         public Models.User.UserType UserType { get; set; }
 
@@ -47,15 +47,17 @@ namespace AutoMaegler.Pages.LogIn
         /// </returns>
         public async Task<IActionResult> OnPost()
         {
+            
+
 
             List<Customer> customers = _userService.Customers;
             foreach (Customer customer in customers)
             {
 
-                if (UserName == customer.Email && Password == customer.Password)
+                if (UserName == customer.Email)
                 {
 
-                    LoggedInCustomer = customer;
+                    //LoggedInCustomer = customer;
 
                     var passwordHasher = new PasswordHasher<string>();
 
@@ -63,7 +65,9 @@ namespace AutoMaegler.Pages.LogIn
                     {
                         var claims = new List<Claim>
                         {
-                        new Claim(ClaimTypes.Email, UserName),
+                        new Claim(ClaimTypes.Email, customer.Email),
+                        new Claim(ClaimTypes.Name, customer.Email),
+                        new Claim(ClaimTypes.Role, "Customer")
                         };
 
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -80,7 +84,7 @@ namespace AutoMaegler.Pages.LogIn
                 if (UserName == employee.Email)
                 {
                    
-                    LoggedInEmployee = employee;
+                    //LoggedInEmployee = employee;
 
                     var passwordHasher = new PasswordHasher<string>();
 
@@ -88,11 +92,16 @@ namespace AutoMaegler.Pages.LogIn
                     {
                         var claims = new List<Claim>
                         {
-                        new Claim(ClaimTypes.Name, UserName),
-                        new Claim(ClaimTypes.Role, "Employee")
+                        new Claim(ClaimTypes.Name, employee.Email),
+                        new Claim(ClaimTypes.Email, employee.Email)
                         };
 
-                        //if (UserName == "Employee") claims.Add(new Claim(ClaimTypes.Role, "Employee"));
+                        if (employee is Employee)
+                        {
+                            claims.Add(new Claim(ClaimTypes.Role, "Employee"));
+                        }
+
+                       
 
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));

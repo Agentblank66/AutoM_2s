@@ -9,7 +9,7 @@ namespace AutoMaegler.Pages.Admin
     /// <summary>
     /// This class is used to get all users from the database, where only Employees can go to the page.
     /// </summary>
-    //[Authorize(Roles = "Employee")]
+    [Authorize(Roles = "Employee")]
     public class GetAllUsersModel : PageModel
     {
         /// <summary>
@@ -19,6 +19,7 @@ namespace AutoMaegler.Pages.Admin
         [BindProperty]
         public string SearchString { get; set; }
         public List<User> FilteredUsers { get; set; } = new();
+       
 
 
         /// <summary>

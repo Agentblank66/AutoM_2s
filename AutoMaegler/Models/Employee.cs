@@ -10,7 +10,14 @@ namespace AutoMaegler.Models
         [Display(Name = "Bruger Type")]
         [Required(ErrorMessage = "Der skal angives en Bruger Type.")]
         public string Type { get; set; }
-       
+
+        /// <summary>
+        /// Constructor for the Employee class with default values.
+        /// </summary>
+        public Employee(): base(0, "", "", "", "")
+        {
+
+        }
 
         /// <summary>
         /// Constructor for the Employee class.
@@ -27,6 +34,8 @@ namespace AutoMaegler.Models
             Type = type;
            
         }
+
+        
 
         /// <summary>
         /// Overrides the ToString method to return a string representation of the Employee object.

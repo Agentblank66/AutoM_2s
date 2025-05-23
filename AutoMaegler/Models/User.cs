@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoMaegler.Models
 {
@@ -9,14 +10,17 @@ namespace AutoMaegler.Models
         /// </summary>
         public enum UserType
         {
+            [Display(Name = "Kunde")]
             Customer,
-            Employee
+            [Display(Name = "Medarbejder")]
+            Employee,
         }
         /// <summary>
         /// Properties of the User class.
         /// </summary>
         public UserType UserTypes { get; set; }
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Display(Name = "Bruger ID")]
         [Required(ErrorMessage = "Der skal angives et Bruger Id.")]
         public int Id { get; set; }

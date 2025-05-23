@@ -13,6 +13,7 @@ namespace AutoMaegler.Service
 
 
 
+
     // ------------------------------------------------------ In test
         private DBCarService _dBCarService;
 
@@ -27,10 +28,10 @@ namespace AutoMaegler.Service
 
         public CarService()
         {
-            _cars = MockCars.GetMockCars();
+
         }
 
-    // ------------------------------------------------------
+        // ------------------------------------------------------
 
 
 
@@ -53,6 +54,7 @@ namespace AutoMaegler.Service
         public void AddCar(Car car)
         {
             _cars.Add(car);
+            _dBCarService.AddCar(car);
         }
 
         /// <summary>
@@ -81,8 +83,7 @@ namespace AutoMaegler.Service
                         c.Doors = car.Doors;
                         c.HorsePower = car.HorsePower;
                         c.Gear = car.Gear;
-                        c.Cylinders = car.Cylinders;
-                        c.MotorSize = car.MotorSize;
+                        c.Cylinders = car.Cylinders;                  
                         c.ZeroToOneHundred = car.ZeroToOneHundred;
                         c.Length = car.Length;
                         c.NumOffWheels = car.NumOffWheels;
@@ -92,7 +93,7 @@ namespace AutoMaegler.Service
                     }
                 }
             }
-
+            _dBCarService.UpdateCar(car);
         }
 
         /// <summary>
@@ -118,6 +119,7 @@ namespace AutoMaegler.Service
         {
             Car car = GetCar(id);
             _cars.Remove(GetCar(id));
+            _dBCarService.DeleteCar(car);
             return car;
         }
 
@@ -230,5 +232,6 @@ namespace AutoMaegler.Service
             }
             return KMResult;
         }
+
     }
 }

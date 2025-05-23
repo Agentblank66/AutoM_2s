@@ -2,26 +2,44 @@ using AutoMaegler.EFDbContext;
 using AutoMaegler.Service;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables(); // stadig muligt hvis du vil bruge env vars senere
+
+// add DB service
+builder.Services.AddDbContext<CarDBContext>(options =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<CarDBContext>();
 builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
 builder.Services.AddDbContext<OrderDbContext>();
+builder.Services.AddScoped<ICarService, CarService>(); 
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
+builder.Services.AddSingleton<IUserService, UserService>();
 builder.Services.AddDbContext<UserDbContext>();
+builder.Services.AddTransient<DbUserService>();
+
 builder.Services.Configure<CookiePolicyOptions>(options => {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
 
 });
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(cookieOptions => {
-    cookieOptions.LoginPath = "/Login/LogInPage";
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(Options => {
+    Options.LoginPath = "/Users/Login/LogInPage";
+    
 
 
 });
