@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<CarDBContext>();
 builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
+builder.Services.AddDbContext<OrderDbContext>();
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddDbContext<UserDbContext>();
