@@ -1,0 +1,35 @@
+using AutoMaegler.Models;
+using AutoMaegler.Service;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace AutoMaegler.Pages.Cars
+{
+    public class LeaseModel : PageModel
+    {
+
+        private ICarService _carService;
+
+        public LeaseModel(ICarService carService)
+        {
+            _carService = carService;
+        }
+
+
+        //public List<Models.Car> Cars { get; private set; } = new List<Models.Car>()
+        //{
+        //       new Cars { Brand = "BMW", Model = "320i", MonthlyPrice = 4500, Months = 36, Year = 2022, KmIncluded = 15000 },
+        //       new Cars { Brand = "Audi", Model = "A4", MonthlyPrice = 4200, Months = 24, Year = 2021, KmIncluded = 20000 },
+        //       new Cars { Brand = "Mercedes", Model = "C200", MonthlyPrice = 4800, Months = 36, Year = 2023, KmIncluded = 18000 }
+        //};
+
+        public List<Models.Car> Cars { get; private set; } = new List<Models.Car>() { };
+
+
+        public void OnGet()
+        {
+            Cars = _carService.GetCars();
+        }
+
+    }
+}

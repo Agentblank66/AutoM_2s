@@ -28,7 +28,7 @@ namespace AutoMaegler.Pages.Cars
                 return Page();
             }
             _CarService.AddCar(Car);
-            return RedirectToPage("GetAllCars");
+            return RedirectToPage("/Cars/Cars");
         }
     }
 }

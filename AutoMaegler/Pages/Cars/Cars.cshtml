@@ -133,7 +133,7 @@
         {
             foreach (var Car in Model.Cars)
             {
-                <tr class="btn-secondary">
+                <tr class="btn-secondary" style="cursor: pointer;" onclick="window.location='@Url.Page("/Cars/Car", new { id = Car.Id })'">
                     <td>
                         @Car.Brand
                     </td>
@@ -144,7 +144,7 @@
                         @Car.Price
                     </td>
                 </tr>
-            }
+            } 
         }
     </tbody>
 </table>
