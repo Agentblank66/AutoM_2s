@@ -13,9 +13,43 @@ namespace AutoMaegler.Models
         [Range(typeof(double), "0", "100000", ErrorMessage = "Depositum skal være mellem (1) og (2)")]
         public double Depositum { get; set; }
 
-        [Display(Name = "Leasing dato")]
-        [Required(ErrorMessage = "Der skal være en leasing dato tilknyttet ordren")]
-        public DateTime LeasingDate { get; set; }
+        [Display(Name = "Leasing dato start")]
+        [Required(ErrorMessage = "Der skal være en start leasing dato tilknyttet ordren")]
+        public DateTime LeasingDateStart { get; set; }
+
+        [Display(Name = "Leasing dato slut")]
+        [Required(ErrorMessage = "Der skal være en slut leasing dato tilknyttet ordren")]
+        public DateTime LeasingDateEnd { get; set; }
+
+        [Display(Name = "Start år")]
+        [Required(ErrorMessage = "Der skal være et år")]
+        [Range(typeof(int),"2025","9999", ErrorMessage = "År skal være mellem (1) og (2)")]
+        public int StartYear { get; set; }
+
+        [Display(Name = "Afleverings år")]
+        [Required(ErrorMessage = "Der skal være et år")]
+        [Range(typeof(int), "2025", "9999", ErrorMessage = "År skal være mellem (1) og (2)")]
+        public int EndYear { get; set; }
+
+        [Display(Name = "Start måned")]
+        [Required(ErrorMessage = "Der skal være et måned")]
+        [Range(typeof(int), "1", "12", ErrorMessage = "Måned skal være mellem (1) og (2)")]
+        public int StartMonth { get; set; }
+
+        [Display(Name = "Afleverings måned")]
+        [Required(ErrorMessage = "Der skal være et måned")]
+        [Range(typeof(int), "1", "12", ErrorMessage = "Måned skal være mellem (1) og (2)")]
+        public int EndMonth { get; set; }
+
+        [Display(Name = "Start dag")]
+        [Required(ErrorMessage = "Der skal være et dag")]
+        [Range(typeof(int), "1", "31", ErrorMessage = "Måned skal være mellem (1) og (2)")]
+        public int StartDay { get; set; }
+
+        [Display(Name = "Afleverings dag")]
+        [Required(ErrorMessage = "Der skal være et dag")]
+        [Range(typeof(int), "1", "31", ErrorMessage = "Måned skal være mellem (1) og (2)")]
+        public int Day { get; set; }
 
         [Display(Name = "Månedlig betaling")]
         [Required(ErrorMessage = "Der skal være en månedlig betaling tilknyttet ordren")]
@@ -31,14 +65,15 @@ namespace AutoMaegler.Models
         /// <param name="customer"></param>
         /// <param name="type"></param>
         /// <param name="dipositum"></param>
-        /// <param name="leasingDate"></param>
+        /// <param name="leasingDateStart"></param>
         /// <param name="monthlyPayment"></param>
-        public OrderLeasing(int id, Car car, Employee employee, Customer customer, OrderType type, double dipositum, DateTime leasingDate, double monthlyPayment)
+        public OrderLeasing(int id, Car car, Employee employee, Customer customer, OrderType type, double dipositum, int startYear, int endYear, int startMonth, int endMonth, int startDay, int endDay, double monthlyPayment)
             : base(id, car, employee, customer, type)
         {
             Depositum = dipositum;
-            LeasingDate = leasingDate;
+            LeasingDateStart = new DateTime(startYear, startMonth, startDay);
             MonthlyPayment = monthlyPayment;
+            LeasingDateEnd = new DateTime(endYear, endMonth, endDay);
         }
 
         /// <summary>
@@ -47,7 +82,7 @@ namespace AutoMaegler.Models
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDate: {LeasingDate} MonthlyPayment: {MonthlyPayment}";
+            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDateStart: {LeasingDateStart} LeasingDateEnd: {LeasingDateEnd} MonthlyPayment: {MonthlyPayment}";
         }
     }
 }
