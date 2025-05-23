@@ -1,14 +1,14 @@
 ﻿namespace AutoMaegler.Models
 {
-    public class Images
+    public class Image
     {
         public int Id { get; set; }
         public string ImageString { get; set; }
         public int CarId { get; set; }
 
-        public Images() { }
+        public Image() { }
 
-        public Images(int id, string imageString, int carId)
+        public Image(int id, string imageString, int carId)
         {
             Id = id;
             ImageString = imageString;

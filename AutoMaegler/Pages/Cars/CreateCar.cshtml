@@ -3,6 +3,32 @@
 @{
 }
 
+<section>
+	<h3>Upload billede til bilen</h3>
+
+	<!-- Upload Form -->
+	<form method="post" enctype="multipart/form-data" asp-page-handler="Upload" asp-route-id="@Model.Car.Id">
+		<input type="file" name="CarImage" accept="image/*" />
+		<button type="submit">Upload billede</button>
+	</form>
+
+	<!-- Save Form -->
+	<form method="post" asp-page-handler="Save" asp-route-id="@Model.Car.Id">
+		<input type="hidden" name="UploadedImagePath" value="@Model.UploadedImagePath" />
+		<button type="submit">Gem</button>
+	</form>
+
+	@if (!string.IsNullOrEmpty(Model.UploadMessage))
+	{
+		<p>@Model.UploadMessage</p>
+	}
+
+	@if (!string.IsNullOrEmpty(Model.UploadedImagePath))
+	{
+		<img src="@Model.UploadedImagePath" alt="Uploaded Car Image" style="max-width: 300px; margin-top: 10px;" />
+	}
+</section>
+
 <form method="post">
 	<div class="form-group">
 		<label asp-for="Car.Type" class="control-lable"></label>
