@@ -37,7 +37,7 @@ namespace AutoMaegler.Pages.Cars
             if (Car == null)
                 return RedirectToPage("/NotFound");
 
-            UploadedImagePath = Car.ImageString; // Load saved image path
+            //UploadedImagePath = Car.ImageString; // Load saved image path
             return Page();
         }
 
@@ -83,7 +83,7 @@ namespace AutoMaegler.Pages.Cars
 
             if (!string.IsNullOrEmpty(UploadedImagePath))
             {
-                Car.ImageString = UploadedImagePath;
+                //Car.ImageString = UploadedImagePath;
 
                 _carService.UpdateCar(Car); // Make sure this updates your database
 
