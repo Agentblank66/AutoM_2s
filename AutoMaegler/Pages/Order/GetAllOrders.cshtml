@@ -103,7 +103,7 @@
                 <tr>
                     <td>@order.Id</td>
                     <td>@order.Customer</td>
-                    <td>@order.Type</td>
+                    <td>@order.Car.Price</td>
                     <td>
                         <a asp-page-handler="Edit" asp-route-id="@order.Id" class="btn btn-primary">Rediger</a>
                         <a asp-page-handler="Delete" asp-route-id="@order.Id" class="btn btn-danger">Slet</a>
