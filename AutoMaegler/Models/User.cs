@@ -18,6 +18,7 @@ namespace AutoMaegler.Models
         /// <summary>
         /// Properties of the User class.
         /// </summary>
+        [NotMapped]
         public UserType UserTypes { get; set; }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
