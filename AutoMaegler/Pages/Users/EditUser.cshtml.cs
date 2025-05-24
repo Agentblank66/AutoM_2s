@@ -29,7 +29,7 @@ namespace AutoMaegler.Users
         public string? Type { get; set; }
         [BindProperty]
         public int PhoneNumber { get; set; }
-        [BindProperty]
+        
         public bool WishToSell { get; set; }
         [BindProperty]
         public UserType? UserType { get; set; }
@@ -68,7 +68,6 @@ namespace AutoMaegler.Users
             if (user is Customer customer)
             {
                 PhoneNumber = customer.PhoneNumber;
-                WishToSell = customer.WishToSell;
             }
             else if (user is Employee employee)
             {
@@ -85,19 +84,9 @@ namespace AutoMaegler.Users
         /// <returns>
         /// Returns the same page with an error message if the model state is invalid, else returns to the GetAllUsers page.
         /// </returns>
-        public IActionResult OnPost()
+        public IActionResult OnPost(User user)
         {
-            if (UserType == Models.User.UserType.Customer)
-            {
-                ModelState.Remove(nameof(Type));
-                ModelState.Remove(nameof(Password));
-            }
-            if (UserType == Models.User.UserType.Employee)
-            {
-                ModelState.Remove(nameof(PhoneNumber));
-                ModelState.Remove(nameof(WishToSell));
-                ModelState.Remove(nameof(Password));
-            }
+           
 
             if (!ModelState.IsValid)
             {
