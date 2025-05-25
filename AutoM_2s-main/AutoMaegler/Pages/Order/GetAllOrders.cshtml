@@ -15,7 +15,7 @@
     <div class="col-4">
         <form method="post" class="form-inline">
             <div class="input-group mb-3">
-                <input asp-formaction="Indtast Navn" class="form-control mr-1" placeholder="Skriv det navn du vil lede efter" />
+                <input asp-for="SearchString" name="SearchString" class="form-control mr-1" placeholder="Skriv det navn du vil lede efter" />
                 <input type="submit" asp-page-handler="NameSearch" value="Søg" class="btn btn-primary" />
             </div>
         </form>
@@ -54,12 +54,20 @@
     <div class="col-2"></div>
 </div>
 
-<table class="table table-bordered table-hover table-striped table-opacity" width="60%">
+<div class="col-auto">
+    <div class="col-auto">
+        <div class="d-flex flex-column align-items-start">
+            <a asp-page="/Order/CreateOrder" class="btn btn-success mb-2">Opret Ordre</a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-hover table-striped table-dark table-opacity" width="60%">
     <colgroup>
-        <col style="width : 5%" />
-        <col style="width : 77%" />
-        <col style="width : 9%" />
-        <col style="width : 9%" />
+        <col style="width : 7%" />
+        <col style="width : 69%" />
+        <col style="width : 12%" />
+        <col style="width : 12%" />
     </colgroup>
     <thead>
         <tr class="btn-secondary active">
@@ -67,8 +75,14 @@
                 <div class="d-flex justify-content-between p-0">
                     <div><h5> Id </h5></div>
                     <div>
-                        <a data-toggle="tooltip" title="Sorter Via Id" asp-asp-page-handler="SortById"><i class="fade fa-angle-up"></i></a>
-                        <a data-toogle="tooltip" title="Sorter Via Id Faldende" asp-asp-page-handler="SortByIdDecending"><i class="fa fa-angle-down"></i></a>
+                        <form method="post" class="d-inline">
+                            <button type="submit" asp-page-handler="SortById" class="btn btn-link p-0" title="Sorter Via Id">
+                                <i class="fa fa-angle-up"></i>
+                            </button>
+                            <button type="submit" asp-page-handler="SortByIdDescending" class="btn btn-link p-0" title="Sorter Via Id Faldende">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </th>
@@ -91,7 +105,7 @@
                 </div>
             </th>
             <th>
-                Soterings Metoder
+                Håndterings Metoder
             </th>
         </tr>
     </thead>
@@ -102,11 +116,11 @@
             {
                 <tr>
                     <td>@order.Id</td>
-                    <td>@order.Customer</td>
+                    <td>@order.Customer.FullName</td>
                     <td>@order.Car.Price</td>
                     <td>
-                        <a asp-page-handler="Edit" asp-route-id="@order.Id" class="btn btn-primary">Rediger</a>
-                        <a asp-page-handler="Delete" asp-route-id="@order.Id" class="btn btn-danger">Slet</a>
+                        <a class="btn btn-primary btn-sm" type="button" title="Rediger" asp-page="/Order/EditOrder" asp-route-id="@order.Id"><i class="fa fa-edit"></i></a>
+                        <a class="btn btn-danger btn-sm" type="button" title="Slet" asp-page="/Pages/Order/DeleteOrder" asp-route-id="@order.Id"><i class="fa fa-trash"></i></a>
                     </td>
                 </tr>
             }
@@ -116,6 +130,6 @@
             <tr>
                 <td colspan="4">Ingen ordrer fundet.</td>
             </tr>
-        })
+        }
     </tbody>
 </table>
