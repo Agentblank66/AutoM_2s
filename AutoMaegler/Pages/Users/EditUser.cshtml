@@ -1,5 +1,5 @@
 ﻿@page 
-@model AutoMaegler.Pages.EditUserModel
+@model AutoMaegler.Users.EditUserModel
 @{
 }
 
@@ -23,11 +23,6 @@
         <label asp-for="Email" class="control-label"></label>
         <input asp-for="Email" class="form-control" />
         <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-    <div class="form-group text-white">
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
     </div>
         @if (Model.UserType == Models.User.UserType.Customer)
         {

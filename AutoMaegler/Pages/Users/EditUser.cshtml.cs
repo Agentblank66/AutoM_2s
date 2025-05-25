@@ -1,12 +1,14 @@
 using AutoMaegler.Models;
 using AutoMaegler.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using static AutoMaegler.Models.User;
 
-namespace AutoMaegler.Pages
+namespace AutoMaegler.Users
 {
+    [Authorize(Roles = "Employee")]
     public class EditUserModel : PageModel
     {
         /// <summary>
@@ -24,7 +26,7 @@ namespace AutoMaegler.Pages
         [BindProperty]
         public string Password { get; set; }
         [BindProperty]
-        public string Type { get; set; }
+        public string? Type { get; set; }
         [BindProperty]
         public int PhoneNumber { get; set; }
         [BindProperty]
@@ -88,29 +90,36 @@ namespace AutoMaegler.Pages
             if (UserType == Models.User.UserType.Customer)
             {
                 ModelState.Remove(nameof(Type));
+                ModelState.Remove(nameof(Password));
+            }
+            if (UserType == Models.User.UserType.Employee)
+            {
+                ModelState.Remove(nameof(PhoneNumber));
+                ModelState.Remove(nameof(WishToSell));
+                ModelState.Remove(nameof(Password));
             }
 
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-           
+
             User updatedUser = null;
             if (UserType == Models.User.UserType.Customer)
             {
                 updatedUser = new Customer(Id, FirstName, LastName, PhoneNumber, Email, Password, WishToSell);
                 updatedUser.UserTypes = (UserType)UserType;
-                
+
             }
             else if (UserType == Models.User.UserType.Employee)
             {
                 updatedUser = new Employee(Id, FirstName, LastName, Type, Email, Password);
                 updatedUser.UserTypes = (UserType)UserType;
 
-                
+
             }
             _userService.UpdateUser(updatedUser);
-            return RedirectToPage("/Admin/GetAllUsers");
+            return RedirectToPage("/Users/Admin/GetAllUsers");
         }
     }
 }

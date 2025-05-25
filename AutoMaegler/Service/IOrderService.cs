@@ -8,10 +8,10 @@ namespace AutoMaegler.Service
         /// Methods that any class implementing this interface must implement.
         /// </summary>
         List<Order> GetOrders();
-        void AddOrder(Order order);
-        void UpdateOrder(Order order);
+        void AddOrder<T>(T order) where T : Order;
+        void UpdateOrder<T>(T order) where T : Order;
         Order GetOrder(int id, Order.OrderType type);
-        Order DeleteOrder(int id, Order.OrderType type);
+        T DeleteOrder<T>(int id, Order.OrderType type) where T : Order;
         IEnumerable<Order> NameSearch(string str);
         IEnumerable<Order> PriceFilter(double minPrice, double maxPrice, double minLeasing, double maxLeasing);
         IEnumerable<T> SortById<T>(IEnumerable<T> orders) where T : Order;

@@ -29,20 +29,24 @@ builder.Services.AddDbContext<ImageDBContext>(options =>
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
+builder.Services.AddDbContext<OrderDbContext>();
 builder.Services.AddScoped<ICarService, CarService>(); 
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<DBImageService>();
 builder.Services.AddDbContext<UserDbContext>();
+builder.Services.AddTransient<DbUserService>();
+
 builder.Services.Configure<CookiePolicyOptions>(options => {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
 
 });
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(cookieOptions => {
-    cookieOptions.LoginPath = "/Login/LogInPage";
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(Options => {
+    Options.LoginPath = "/Users/Login/LogInPage";
+    
 
 
 });

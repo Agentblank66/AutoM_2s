@@ -17,6 +17,18 @@ namespace AutoMaegler.Models
         [Required(ErrorMessage = "Der skal være en købs dato tilknyttet ordren")]
         public DateTime BuyDate { get; set; }
 
+        [Display(Name = "År")]
+        [Required(ErrorMessage = "Der skal være et år")]
+        public int Year { get; set; }
+
+        [Display(Name = "Måned")]
+        [Required(ErrorMessage = "Der skal være et måned")]
+        public int Month { get; set; }
+
+        [Display(Name = "Dag")]
+        [Required(ErrorMessage = "Der skal være et dag")]
+        public int Day { get; set; }
+
         /// <summary>
         /// Constructor for the OrderBuy class.
         /// </summary>
@@ -27,11 +39,11 @@ namespace AutoMaegler.Models
         /// <param name="type"></param>
         /// <param name="buyPrice"></param>
         /// <param name="buyDate"></param>
-        public OrderBuy(int id, Car car, Employee employee, Customer customer, OrderType type, double buyPrice, DateTime buyDate)
+        public OrderBuy(int id, Car car, Employee employee, Customer customer, OrderType type, double buyPrice, int year, int month, int day)
         : base(id, car, employee, customer, type)
         {
             BuyPrice = buyPrice;
-            BuyDate = buyDate;
+            BuyDate = new DateTime(year, month, day);
         }
 
         /// <summary>

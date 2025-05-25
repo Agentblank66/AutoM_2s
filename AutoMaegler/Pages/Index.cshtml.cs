@@ -17,14 +17,14 @@ namespace AutoMaegler.Pages
 
         public void OnGet()
         {
-            if (LogInPageModel.LoggedInCustomer == null)
-            {
-                HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            }
-            else if(LogInPageModel.LoggedInEmployee == null)
-            {
-                HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            }
+            //if (LogInPageModel.LoggedInCustomer == null)
+            //{
+            //    HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            //}
+            //else if(LogInPageModel.LoggedInEmployee == null)
+            //{
+            //    HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            //}
         }
     }
 }

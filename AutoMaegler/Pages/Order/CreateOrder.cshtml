@@ -3,14 +3,26 @@
 @{
 }
 
-<h1> Orders </h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Order.Id" class="control-label"></label>
+        <input asp-for="@Model.Order.Id" class="form-control" />
+        <span asp-validation-for="@Model.Order.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Order.Customer.FullName" class="control-label"></label>
+        <input asp-for="@Model.Order.Customer.FullName" class="form-control" />
+        <span asp-validation-for="@Model.Order.Customer.FullName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Order.Car.Price" class="control-label"></label>
+        <input asp-for="@Model.Order.Car.Price" class="form-control" />
+        <span asp-validation-for="@Model.Order.Car.Price" class="text-danger"></span>
+    </div>
 
-<div class="row">
-    <div class="col-4"><h5> Led Efter Navn </h5></div>
-    <div class="col-4"><h5> Filter Priser </h5></div>
-    <div class="col-4"></div>
-</div>
-
-<div class="row">
-
-</div>
+    <p>
+        <div class="form-group">
+            <input type="submit" value="Opret Ordre" class="btn btn-primary" />
+        </div>
+    </p>
+</form>

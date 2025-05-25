@@ -4,11 +4,13 @@
 @{
 } 
 
-<div class="nav-item mt-3">
-    <form method="get" asp-area="" asp-page="/Admin/CreateUser">
-        <button type="submit" class="btn btn-primary text-white">Create User</button>
-    </form>
-</div>
+<p>
+    <a class="btn btn-primary" asp-page="CreateEmployee"> Lav en ny Medarbejder </a>
+</p>
+<p>
+    <a class="btn btn-primary" asp-page="CreateCustomer"> Lav en ny Kunde </a>
+</p>
+
 
 <div class="nav-item mt-3">
     <form method="post">
@@ -28,7 +30,7 @@
                 <th>Fornavn</th>
                 <th>Efternavn</th>
                 <th>Email</th>
-                <th>Adgangskode</th>
+                
                 <th>Telefonnummer</th>
                 <th>Type</th>
                 <th>Handlinger</th>
@@ -44,13 +46,13 @@
                     <td>@user.FirstName</td>
                     <td>@user.LastName</td>
                     <td>@user.Email</td>
-                    <td>@(user.Password)</td>
+                    
                     <td>@(isCustomer ? ((Customer)user).PhoneNumber: "")</td>
                     <td>@(isEmployee ? ((Employee)user).Type: "")</td>
                    
                     <td>
-                        <a class="btn btn-primary btn-sm" asp-page="/EditUser" asp-route-id="@user.Id" asp-route-userType="@user.GetType().Name">Edit</a>
-                        <a class="btn btn-danger btn-sm" asp-page="/DeleteUser" asp-route-id="@user.Id" asp-route-userType="@user.GetType().Name">Delete</a>
+                        <a class="btn btn-primary btn-sm" asp-page="/Users/EditUser" asp-route-id="@user.Id" asp-route-userType="@user.GetType().Name">Edit</a>
+                        <a class="btn btn-danger btn-sm" asp-page="/Users/DeleteUser" asp-route-id="@user.Id" asp-route-userType="@user.GetType().Name">Delete</a>
                     </td>
                 </tr>
             }
@@ -59,7 +61,7 @@
 }
 else
 {
-    <!-- Vis kun hele listen hvis der ikke er søgt -->
+
     <div style="display: flex; gap: 50px; align-items: flex-start; color:white">
         <div>
             <h3 style="color: white">Kunder</h3>
@@ -69,7 +71,7 @@ else
                         <th>Fornavn</th>
                         <th>Efternavn</th>
                         <th>Email</th>
-                        <th>Adgangskode</th>
+                        
                         <th>Telefonnummer</th>
                         <th>Handlinger</th>
                     </tr>
@@ -81,11 +83,11 @@ else
                             <td>@customer.FirstName</td>
                             <td>@customer.LastName</td>
                             <td>@customer.Email</td>
-                            <td>@customer.Password</td>
+                           
                             <td>@customer.PhoneNumber</td>
                             <td>
-                                <a class="btn btn-primary btn-sm" asp-page="/EditUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Edit</a>
-                                <a class="btn btn-danger btn-sm" asp-page="/DeleteUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Delete</a>
+                                <a class="btn btn-primary btn-sm" asp-page="/Users/EditUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Edit</a>
+                                <a class="btn btn-danger btn-sm" asp-page="/Users/DeleteUser" asp-route-id="@customer.Id" asp-route-userType="Customer">Delete</a>
                             </td>
                         </tr>
                     }
@@ -114,8 +116,8 @@ else
                             <td>@employee.Email</td>
                             <td>@employee.Type</td>
                             <td>
-                                <a class="btn btn-primary btn-sm" asp-page="/EditUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Edit</a>
-                                <a class="btn btn-danger btn-sm" asp-page="/DeleteUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Delete</a>
+                                <a class="btn btn-primary btn-sm" asp-page="/Users/EditUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Edit</a>
+                                <a class="btn btn-danger btn-sm" asp-page="/Users/DeleteUser" asp-route-id="@employee.Id" asp-route-userType="Employee">Delete</a>
                             </td>
                         </tr>
                     }

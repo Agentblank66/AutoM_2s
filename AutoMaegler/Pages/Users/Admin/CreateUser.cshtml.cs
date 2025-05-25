@@ -5,28 +5,38 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
+using static AutoMaegler.Models.User;
+
 
 namespace AutoMaegler.Pages.Admin
 {
-    
+    [Authorize(Roles = "Employee")]
     public class CreateUserModel : PageModel
     {
         /// <summary>
         ///  Properties of the CreateUserModel class.
         /// </summary>
         private UserService _userService;
+        private PasswordHasher<string> passwordHasher;
+
         [BindProperty]
         public string Email { get; set; }
         [BindProperty, DataType(DataType.Password)]
         public string Password { get; set; }
+        [BindProperty]
         public int Id { get; set; }
+        [BindProperty]
         public string FirstName { get; set; }
+        [BindProperty]
         public string LastName { get; set; }
+        [BindProperty]
         public int PhoneNumber { get; set; }
+        [BindProperty]
         public bool WishToSell { get; set; }
+        [BindProperty]
         public string Type { get; set; }
-        public string UserType { get; set; }
-        private PasswordHasher<string> passwordHasher;
+        [BindProperty]
+        public UserType UserType { get; set; }
 
 
         /// <summary>
@@ -39,8 +49,9 @@ namespace AutoMaegler.Pages.Admin
             passwordHasher = new PasswordHasher<string>();
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            return Page();
         }
 
         /// <summary>
@@ -54,19 +65,35 @@ namespace AutoMaegler.Pages.Admin
         /// </returns>
         public IActionResult OnPost()
         {
+
+
+            if (UserType == Models.User.UserType.Customer)
+            {
+                ModelState.Remove(nameof(Type));
+            }
+            else if (UserType == Models.User.UserType.Employee)
+            {
+                ModelState.Remove(nameof(PhoneNumber));
+                ModelState.Remove(nameof(WishToSell));
+            }
+
+
+
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-            if (UserType == "Customer") 
+
+            if (UserType == Models.User.UserType.Customer) 
             {
                 _userService.AddUser(new Customer(Id, FirstName, LastName, PhoneNumber, Email, passwordHasher.HashPassword(null, Password), WishToSell));
             }
-            else if (UserType == "Employee")
+            else if (UserType == Models.User.UserType.Employee)
             {
                 _userService.AddUser(new Employee(Id, FirstName, LastName, Type, Email, passwordHasher.HashPassword(null, Password)));
             }
-            return RedirectToPage("/Index");
+
+            return RedirectToPage("/Users/Admin/GetAllUsers");
         }
     }
 }

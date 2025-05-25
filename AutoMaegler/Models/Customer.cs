@@ -15,6 +15,14 @@ namespace AutoMaegler.Models
         public int PhoneNumber { get; set; }
 
         /// <summary>
+        /// Constructor which initializes the customer with default values.
+        /// </summary>
+        public Customer() : base(0, "", "", "", "")
+        {
+           
+        }
+
+        /// <summary>
         /// Constructor which initializes the customer with the given parameters, aswell as the users given parameters.
         /// </summary>
         /// <param name="id"></param>
