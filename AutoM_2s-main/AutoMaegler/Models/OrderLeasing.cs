@@ -49,7 +49,7 @@ namespace AutoMaegler.Models
         [Display(Name = "Afleverings dag")]
         [Required(ErrorMessage = "Der skal være et dag")]
         [Range(typeof(int), "1", "31", ErrorMessage = "Måned skal være mellem (1) og (2)")]
-        public int Day { get; set; }
+        public int EndDay { get; set; }
 
         [Display(Name = "Månedlig betaling")]
         [Required(ErrorMessage = "Der skal være en månedlig betaling tilknyttet ordren")]
@@ -82,7 +82,7 @@ namespace AutoMaegler.Models
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDateStart: {LeasingDateStart} LeasingDateEnd: {LeasingDateEnd} MonthlyPayment: {MonthlyPayment}";
+            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDateStart: {LeasingDateStart} LeasingDateEnd: {LeasingDateEnd} monthlyPayment: {MonthlyPayment}";
         }
     }
 }
