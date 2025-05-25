@@ -12,9 +12,9 @@ namespace AutoMaegler.Service
         void UpdateOrder<T>(T order) where T : Order;
         Order GetOrder(int id, Order.OrderType type);
         T DeleteOrder<T>(int id, Order.OrderType type) where T : Order;
-        IEnumerable<Order> NameSearch(string str);
+        IEnumerable<T> NameSearch<T>(string str) where T : Order;
         IEnumerable<Order> PriceFilter(double minPrice, double maxPrice, double minLeasing, double maxLeasing);
-        IEnumerable<T> SortById<T>(IEnumerable<T> orders) where T : Order;
+        IEnumerable<T> SortById<T>() where T : Order;
         IEnumerable<T> SortByIdDecending<T>(IEnumerable<T> orders) where T : Order;
         IEnumerable<T> SortByName<T>(IEnumerable<T> orders) where T : Order;
         IEnumerable<T> SortByNameDecending<T>(IEnumerable<T> orders) where T : Order;
