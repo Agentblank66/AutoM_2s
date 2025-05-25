@@ -251,6 +251,30 @@ namespace AutoMaegler.Service
             return (T)orderToDeleted;
         }
 
+        //public Order DeleteOrder(int id, Order.OrderType type) 
+        //{
+        //    Order tempOrderToBeDeleted = GetOrder(id, type);
+        //    if (tempOrderToBeDeleted != null) 
+        //    {
+        //        switch (tempOrderToBeDeleted.Type)
+        //        {
+        //            case Order.OrderType.Leasing:
+        //                _orderLeasings.Remove((OrderLeasing)tempOrderToBeDeleted);
+        //                break;
+        //            case Order.OrderType.Buy:
+        //                _orderBuys.Remove((OrderBuy)tempOrderToBeDeleted);
+        //                break;
+        //            case Order.OrderType.Sale:
+        //                _orderSales.Remove((OrderSale)tempOrderToBeDeleted);
+        //                break;
+        //            default:
+        //                throw new ArgumentException("Invalid order type");
+        //        }
+        //        return tempOrderToBeDeleted;
+        //    }
+        //    return null;
+        //}
+
         /// <summary>
         /// A method that searches for orders by customer name.
         /// </summary>
