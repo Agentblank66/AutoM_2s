@@ -76,6 +76,20 @@ namespace AutoMaegler.Models
             LeasingDateEnd = new DateTime(endYear, endMonth, endDay);
         }
 
+        public OrderLeasing() : base(0,new Car(), new Employee(), new Customer(), OrderType.Leasing) 
+        {
+            Depositum = 0.0;
+            LeasingDateStart = DateTime.Now;
+            LeasingDateEnd = DateTime.Now.AddYears(1);
+            MonthlyPayment = 0.0;
+            StartYear = DateTime.Now.Year;
+            EndYear = DateTime.Now.Year + 1;
+            StartMonth = DateTime.Now.Month;
+            EndMonth = DateTime.Now.Month + 1;
+            StartDay = DateTime.Now.Day;
+            EndDay = DateTime.Now.Day;
+        }
+
         /// <summary>
         /// Overrides the ToString method to provide a string representation of the OrderLeasing object.
         /// </summary>
