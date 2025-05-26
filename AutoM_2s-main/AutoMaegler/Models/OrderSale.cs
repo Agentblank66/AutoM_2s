@@ -46,6 +46,8 @@ namespace AutoMaegler.Models
             SaleDate = new DateTime(year, month, day);
         }
 
+        public OrderSale() : base() {}
+
         /// <summary>
         /// Overrides the ToString method to provide a string representation of the OrderSale object.
         /// </summary>
