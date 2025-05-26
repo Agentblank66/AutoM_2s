@@ -1,0 +1,317 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\editorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\editorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\editorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\editorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\deleteorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\deleteorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\deleteorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\deleteorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\mockdata\\mockorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:mockdata\\mockorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\service\\dborderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\dborderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\efdbcontext\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:efdbcontext\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\models\\orderleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\orderleasing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\createorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\createorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\getallorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\getallorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\getallorders.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\getallorders.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\models\\ordersale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\ordersale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\models\\orderbuy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\orderbuy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MockOrders.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\MockData\\MockOrders.cs",
+              "RelativeDocumentMoniker": "MockData\\MockOrders.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\MockData\\MockOrders.cs",
+              "RelativeToolTip": "MockData\\MockOrders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:04:18.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DBOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Service\\DBOrderService.cs",
+              "RelativeDocumentMoniker": "Service\\DBOrderService.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Service\\DBOrderService.cs",
+              "RelativeToolTip": "Service\\DBOrderService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T15:57:04.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\EFDbContext\\OrderDbContext.cs",
+              "RelativeDocumentMoniker": "EFDbContext\\OrderDbContext.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\EFDbContext\\OrderDbContext.cs",
+              "RelativeToolTip": "EFDbContext\\OrderDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T10:27:35.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditOrder.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\EditOrder.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\EditOrder.cshtml.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\EditOrder.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\EditOrder.cshtml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T09:16:27.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditOrder.cshtml",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\EditOrder.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\EditOrder.cshtml",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\EditOrder.cshtml",
+              "RelativeToolTip": "Pages\\Order\\EditOrder.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T09:15:55.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeleteOrder.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\DeleteOrder.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\DeleteOrder.cshtml.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\DeleteOrder.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\DeleteOrder.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T08:25:59.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteOrder.cshtml",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\DeleteOrder.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\DeleteOrder.cshtml",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\DeleteOrder.cshtml",
+              "RelativeToolTip": "Pages\\Order\\DeleteOrder.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T08:25:42.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:24:39.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetAllOrders.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\GetAllOrders.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\GetAllOrders.cshtml.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\GetAllOrders.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\GetAllOrders.cshtml.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwIEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T10:27:28.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetAllOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\GetAllOrders.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\GetAllOrders.cshtml",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\GetAllOrders.cshtml",
+              "RelativeToolTip": "Pages\\Order\\GetAllOrders.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwGkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T10:09:03.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateOrder.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\CreateOrder.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\CreateOrder.cshtml.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\CreateOrder.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\CreateOrder.cshtml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwCwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T10:07:49.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateOrder.cshtml",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\CreateOrder.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\CreateOrder.cshtml",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\CreateOrder.cshtml",
+              "RelativeToolTip": "Pages\\Order\\CreateOrder.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T09:19:33.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:20:31.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Service\\OrderService.cs",
+              "RelativeDocumentMoniker": "Service\\OrderService.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Service\\OrderService.cs",
+              "RelativeToolTip": "Service\\OrderService.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAcwBoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T07:49:04.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Service\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Service\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Service\\IOrderService.cs",
+              "RelativeToolTip": "Service\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T07:48:46.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderLeasing.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\OrderLeasing.cs",
+              "RelativeDocumentMoniker": "Models\\OrderLeasing.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\OrderLeasing.cs",
+              "RelativeToolTip": "Models\\OrderLeasing.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAIwFQAAAC7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:35:14.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderBuy.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\OrderBuy.cs",
+              "RelativeDocumentMoniker": "Models\\OrderBuy.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\OrderBuy.cs",
+              "RelativeToolTip": "Models\\OrderBuy.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:35:28.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderSale.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\OrderSale.cs",
+              "RelativeDocumentMoniker": "Models\\OrderSale.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Models\\OrderSale.cs",
+              "RelativeToolTip": "Models\\OrderSale.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:02:36.223Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
