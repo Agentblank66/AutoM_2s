@@ -50,8 +50,6 @@ namespace AutoMaegler.Pages.Cars
 
         public string UploadMessage { get; set; }
 
-<<<<<<<< HEAD:AutoM_2s-main/AutoMaegler/Pages/Cars/CreateCar.cshtml.cs
-========
         public CarModel(ICarService carService, IWebHostEnvironment environment)
         {
             _carService = carService;
@@ -68,7 +66,7 @@ namespace AutoMaegler.Pages.Cars
             return Page();
         }
 
->>>>>>>> d3d7dcd6eddd5dd988704b9398bcb88a6f93d04d:AutoM_2s-main/AutoMaegler/Pages/Cars/Car.cshtml.cs
+
         // Upload the image and keep it ready, but don't save it to the car yet
         public async Task<IActionResult> OnPostUploadAsync(int id)
         {
@@ -111,11 +109,9 @@ namespace AutoMaegler.Pages.Cars
 
             if (!string.IsNullOrEmpty(UploadedImagePath))
             {
-<<<<<<<< HEAD:AutoM_2s-main/AutoMaegler/Pages/Cars/CreateCar.cshtml.cs
                 image.ImageString = UploadedImagePath;
-========
+
                 //Car.ImageString = UploadedImagePath;
->>>>>>>> d3d7dcd6eddd5dd988704b9398bcb88a6f93d04d:AutoM_2s-main/AutoMaegler/Pages/Cars/Car.cshtml.cs
 
                 _imageService.AddImage(image); // Make sure this updates your database
 

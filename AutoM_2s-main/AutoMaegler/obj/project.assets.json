@@ -2158,11 +2158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoMaegler\\AutoMaegler.csproj",
+      "projectUniqueName": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj",
       "projectName": "AutoMaegler",
-      "projectPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoMaegler\\AutoMaegler.csproj",
+      "projectPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj",
       "packagesPath": "C:\\Users\\Kaspe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoMaegler\\obj\\",
+      "outputPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
