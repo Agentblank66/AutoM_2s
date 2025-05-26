@@ -10,7 +10,7 @@ namespace AutoMaegler.Models
         [Display(Name = "Bruger ønsker at sælge?")]
         [Required(ErrorMessage = "Der skal angives om Brugeren ønsker at sælge.")]
         public bool WishToSell { get; set; }
-        [Display(Name = "Bruger Telefonnummer")]
+        [Display(Name = "Telefonnummer")]
         [Required(ErrorMessage = "Der skal angives et Bruger Telefonnummer.")]
         public int PhoneNumber { get; set; }
 
