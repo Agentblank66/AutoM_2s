@@ -20,16 +20,24 @@ builder.Services.AddDbContext<CarDBContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
+builder.Services.AddDbContext<ImageDBContext>(options =>
+{
+	var connectionString = builder.Configuration.GetConnectionString("ImageDb");
+	options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddTransient<DBCarService>(); // brugte AddTransient
 builder.Services.AddDbContext<OrderDbContext>();
 builder.Services.AddScoped<ICarService, CarService>(); 
-builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
-builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<IImageService, ImageService>();
+builder.Services.AddScoped<DBImageService>();
 builder.Services.AddDbContext<UserDbContext>();
-builder.Services.AddTransient<DbUserService>();
+builder.Services.AddScoped<DbUserService>();
 
 builder.Services.Configure<CookiePolicyOptions>(options => {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;
