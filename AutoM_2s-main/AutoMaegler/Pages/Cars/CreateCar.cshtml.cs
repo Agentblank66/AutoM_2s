@@ -1,3 +1,4 @@
+using AutoMaegler.Models;
 using AutoMaegler.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -6,15 +7,20 @@ namespace AutoMaegler.Pages.Cars
 {
     public class CreateCarModel : PageModel
     {
-        private ICarService _CarService;
+		private readonly ICarService _carService;
+		private readonly IWebHostEnvironment _environment;
+		private readonly IImageService _imageService;
 
-        public CreateCarModel(ICarService carService)
+		public CreateCarModel(ICarService carService, IWebHostEnvironment environment, IImageService imageService)
         {
-            _CarService = carService;
+			_carService = carService;
+			_environment = environment;
+			_imageService = imageService;
         }
 
         [BindProperty]
         public AutoMaegler.Models.Car Car { get; set; }
+        public List<String> ImageString { get; set; }
 
         public IActionResult OnGet()
         {
@@ -27,8 +33,101 @@ namespace AutoMaegler.Pages.Cars
             {
                 return Page();
             }
-            _CarService.AddCar(Car);
+            _carService.AddCar(Car);
             return RedirectToPage("/Cars/Cars");
         }
+
+
+        public string ImagePath { get; set; }
+
+
+        [BindProperty]
+        public IFormFile CarImage { get; set; }
+
+        // This will be bound to a hidden field or stored in Car.ImagePath for the saved image
+        [BindProperty]
+        public string UploadedImagePath { get; set; }
+
+        public string UploadMessage { get; set; }
+
+<<<<<<<< HEAD:AutoM_2s-main/AutoMaegler/Pages/Cars/CreateCar.cshtml.cs
+========
+        public CarModel(ICarService carService, IWebHostEnvironment environment)
+        {
+            _carService = carService;
+            _environment = environment;
+        }
+
+        public IActionResult OnGet(int id)
+        {
+            Car = _carService.GetCar(id);
+            if (Car == null)
+                return RedirectToPage("/NotFound");
+
+            //UploadedImagePath = Car.ImageString; // Load saved image path
+            return Page();
+        }
+
+>>>>>>>> d3d7dcd6eddd5dd988704b9398bcb88a6f93d04d:AutoM_2s-main/AutoMaegler/Pages/Cars/Car.cshtml.cs
+        // Upload the image and keep it ready, but don't save it to the car yet
+        public async Task<IActionResult> OnPostUploadAsync(int id)
+        {
+            Car = _carService.GetCar(id);
+            if (Car == null)
+                return RedirectToPage("/NotFound");
+
+            if (CarImage != null && CarImage.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_environment.WebRootPath, "car-images");
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var fileName = Path.GetFileName(CarImage.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await CarImage.CopyToAsync(stream);
+                }
+
+                UploadedImagePath = "/car-images/" + fileName;
+                UploadMessage = "Billede uploadet! Husk at gemme for at bevare billedet.";
+
+            }
+            else
+            {
+                UploadMessage = "Vælg et gyldigt billede.";
+            }
+
+            return Page();
+        }
+
+        // Save the uploaded image path to the car permanently
+        public IActionResult OnPostSaveAsync(int id, Image image)
+        {
+            Car = _carService.GetCar(id);
+            if (Car == null)
+                return RedirectToPage("/NotFound");
+
+            if (!string.IsNullOrEmpty(UploadedImagePath))
+            {
+<<<<<<<< HEAD:AutoM_2s-main/AutoMaegler/Pages/Cars/CreateCar.cshtml.cs
+                image.ImageString = UploadedImagePath;
+========
+                //Car.ImageString = UploadedImagePath;
+>>>>>>>> d3d7dcd6eddd5dd988704b9398bcb88a6f93d04d:AutoM_2s-main/AutoMaegler/Pages/Cars/Car.cshtml.cs
+
+                _imageService.AddImage(image); // Make sure this updates your database
+
+                UploadMessage = "Billedet er gemt!";
+            }
+            else
+            {
+                UploadMessage = "Ingen billede at gemme.";
+            }
+
+            return Page();
+        }
+
     }
 }
