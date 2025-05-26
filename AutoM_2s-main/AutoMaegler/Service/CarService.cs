@@ -1,5 +1,6 @@
 ﻿using AutoMaegler.MockData;
 using AutoMaegler.Models;
+using System.ComponentModel.Design;
 using System.Security.Cryptography.X509Certificates;
 
 namespace AutoMaegler.Service
@@ -47,6 +48,16 @@ namespace AutoMaegler.Service
             return _cars;
         }
 
+        public List<Car> GetbuyCars() 
+        { 
+            return _dBCarService.GetBuyCars().Result.ToList();
+        }
+
+        public List<Car> GetLeasingCars()
+        {
+            return _dBCarService.GetLeasingCars().Result.ToList();
+        }
+
         /// <summary>
         /// Adds a car to the list of cars.
         /// </summary>
@@ -70,8 +81,8 @@ namespace AutoMaegler.Service
                     if (c.Id == car.Id)
                     {
                         c.Id = car.Id;
-                        c.Type = car.Type;
-                        c.Brand = car.Brand;
+                        c.TypeOfCar = car.TypeOfCar;
+						c.Brand = car.Brand;
                         c.Model = car.Model;
                         c.Color = car.Color;
                         c.Fuel = car.Fuel;
@@ -90,6 +101,7 @@ namespace AutoMaegler.Service
                         c.MaxPull = car.MaxPull;
                         c.Weight = car.Weight;
                         c.Status = car.Status;
+                        car = c;
                     }
                 }
             }
@@ -124,113 +136,16 @@ namespace AutoMaegler.Service
         }
 
 
-        // søge på navn af bil
-        public IEnumerable<Car> NameSearch(string str)
+        public async Task<List<Car>> SearchCarsAsync(string? searchName, string? brand, string? fuel, int? maxPrice, int? maxKm, List<string>? selectedTypes, bool? forSaleOnly)
         {
-            List<Car> allCars = GetCars();
-            List<Car> brandMatch = new List<Car>();
+            var cars = await _dBCarService.SearchCarsAsync(searchName, brand, fuel, maxPrice, maxKm, selectedTypes);
 
-            // foreach allcars
-            // if match add to list
-            // if match remove from list
-            foreach (Car car in allCars)
+            if (forSaleOnly.HasValue)
             {
-                if (car.Brand == str)
-                {
-                    brandMatch.Add(car);
-                    allCars.Remove(car);
-                }
+                cars = cars.Where(c => c.ForSale == forSaleOnly.Value).ToList();
             }
 
-            return brandMatch;
-        }
-
-        // søge på type af biler
-        public IEnumerable<Car> TypeSearch(string str)
-        {
-            List<Car> allCars = GetCars();
-            List<Car> typeOfMatch = new List<Car>();
-
-        
-
-            // foreach allcars
-            // if match add to list
-            // if match remove from list
-            foreach (Car car in allCars)
-            {
-                if (car.Type == str)
-                {
-                    typeOfMatch.Add(car);
-                    allCars.Remove(car);
-                }
-            }
-
-            return typeOfMatch;
-        }
-
-        // søge på fuel af biler
-        public IEnumerable<Car> FuelSearch(string str)
-        {
-            List<Car> allCars = GetCars();
-            List<Car> FuelOfMatch = new List<Car>();
-
-
-
-            // foreach allcars
-            // if match add to list
-            // if match remove from list
-            foreach (Car car in allCars)
-            {
-                if (car.Type == str)
-                {
-                    FuelOfMatch.Add(car);
-                    allCars.Remove(car);
-                }
-            }
-
-            return FuelOfMatch;
-        }
-
-        /// <summary>
-        /// Filters cars by price range.
-        /// </summary>
-        /// <param name="minPrice"></param>
-        /// <param name="maxPrice"></param>
-        /// <returns> A list of cars </returns>
-        public IEnumerable<Car> PriceFilter(int minPrice, int maxPrice)
-        {
-            List<Car> SortedByPriceCars = GetCars();
-            List<Car> PriceResult = new List<Car>();
-            
-            foreach (Car car in SortedByPriceCars)
-            {
-                if (car.Price >= minPrice && car.Price <= maxPrice)
-                {
-                    PriceResult.Add(car);
-                }
-            }
-            return PriceResult;
-        }
-
-        /// <summary>
-        /// Filters cars by price range.
-        /// </summary>
-        /// <param name="minKM"></param>
-        /// <param name="maxPrice"></param>
-        /// <returns> A list of cars </returns>
-        public IEnumerable<Car> KMFilter(int minKM, int maxKM)
-        {
-            List<Car> SortedByKMCars = GetCars();
-            List<Car> KMResult = new List<Car>();
-
-            foreach (Car car in SortedByKMCars)
-            {
-                if (car.Price >= minKM && car.Price <= maxKM)
-                {
-                    KMResult.Add(car);
-                }
-            }
-            return KMResult;
+            return cars;
         }
 
     }
