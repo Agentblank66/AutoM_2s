@@ -1,5 +1,6 @@
 ﻿using AutoMaegler.MockData;
 using AutoMaegler.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace AutoMaegler.Service
 {
@@ -9,15 +10,24 @@ namespace AutoMaegler.Service
         /// A public list of customers and employees.
         /// </summary>
         public List<Customer> Customers { get; set; } 
-        public List<Employee> Employees { get; set; } 
+        public List<Employee> Employees { get; set; }
+        public User.UserType UserType { get; set; }
+        private DbUserService _dbUserService;
 
         /// <summary>
         /// A constructor which initializes the list of customers and employees.
         /// </summary>
-        public UserService()
+
+
+        public UserService(DbUserService dbUserService)
         {
-            Customers = MockUsers.GetMockCustomers();
-            Employees = MockUsers.GetMockEmployees();
+            _dbUserService = dbUserService;
+
+            Customers = _dbUserService.GetCustomers().Result.ToList();
+            Employees = _dbUserService.GetEmployees().Result.ToList();
+            
+            //_dbUserService.SaveUsers(Employees.Cast<User>().ToList()).Wait();
+            
         }
 
         /// <summary>
@@ -26,17 +36,21 @@ namespace AutoMaegler.Service
         /// <param name="customer"></param>
         public void AddUser<T>(T user) where T : User
         {
-
             if (typeof(T) == typeof(Customer))
             {
-                Customers.Add(user as Customer);
-                //database
+                if (user is Customer customer)
+                {
+                    Customers.Add(customer);
+                }
             }
             else if (typeof(T) == typeof(Employee))
             {
-                Employees.Add(user as Employee);
-                //database
+                if (user is Employee employee)
+                {
+                    Employees.Add(employee);
+                }
             }
+            _dbUserService.AddUser(user);
         }
 
         /// <summary>
@@ -54,6 +68,7 @@ namespace AutoMaegler.Service
             {
                 Employees.Remove(user as Employee);
             }
+            _dbUserService.DeleteUser(user);
         }
 
         /// <summary>
@@ -98,26 +113,26 @@ namespace AutoMaegler.Service
         /// <param name="user"></param>
         public void UpdateUser(User user)
         {
-            User userToUpdate = GetUser(user.Id, user.UserTypes);
-            if (userToUpdate != null)
-            {
-                userToUpdate.FirstName = user.FirstName;
-                userToUpdate.LastName = user.LastName;
-                userToUpdate.Email = user.Email;
-                userToUpdate.Password = user.Password;
-                if (user is Employee)
-                {
-                    Employee employee = (Employee)user;
-                    ((Employee)userToUpdate).Type = employee.Type;
-                }
-                else if (user is Customer)
-                {
-                    Customer customer = (Customer)user;
-                    ((Customer)userToUpdate).WishToSell = customer.WishToSell;
-                    ((Customer)userToUpdate).PhoneNumber = customer.PhoneNumber;
-                }
-                // Save changes to the database
-            }
+            //User userToUpdate = GetUser(user.Id, user.UserTypes);
+            //if (userToUpdate != null)
+            //{
+            //    userToUpdate.FirstName = user.FirstName;
+            //    userToUpdate.LastName = user.LastName;
+            //    userToUpdate.Email = user.Email;
+            //    userToUpdate.Password = user.Password;
+            //    if (user is Employee)
+            //    {
+            //        Employee employee = (Employee)user;
+            //        ((Employee)userToUpdate).Type = employee.Type;
+            //    }
+            //    else if (user is Customer)
+            //    {
+            //        Customer customer = (Customer)user;
+            //        ((Customer)userToUpdate).WishToSell = customer.WishToSell;
+            //        ((Customer)userToUpdate).PhoneNumber = customer.PhoneNumber;
+            //    }
+            //}
+            _dbUserService.UpdateUser(user);
         }
 
 
@@ -140,6 +155,7 @@ namespace AutoMaegler.Service
 
             return results;
         }
+       
 
 
         /// <summary>

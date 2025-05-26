@@ -7,7 +7,7 @@ namespace AutoMaegler.Models
         /// <summary>
         /// Properties of the Employee class.
         /// </summary>
-        [Display(Name = "Bruger Type")]
+        [Display(Name = "Type")]
         [Required(ErrorMessage = "Der skal angives en Bruger Type.")]
         public string Type { get; set; }
 

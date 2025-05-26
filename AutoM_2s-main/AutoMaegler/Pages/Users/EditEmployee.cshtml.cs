@@ -1,39 +1,46 @@
 using AutoMaegler.Models;
 using AutoMaegler.Service;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace AutoMaegler.Pages.Users.Admin
+namespace AutoMaegler.Pages.Users
 {
     [Authorize(Roles = "Employee")]
-    public class CreateEmployeeModel : PageModel
+    public class EditEmployeeModel : PageModel
     {
         private UserService _userService;
-        private readonly PasswordHasher<string> _hasher;
+
+        public EditEmployeeModel(UserService userService)
+        {
+            _userService = userService;
+        }
 
         [BindProperty]
         public Models.Employee Employee { get; set; }
 
-        public CreateEmployeeModel(UserService userService)
+        public IActionResult OnGet(int id, User.UserType userType)
         {
-            _userService = userService;
-            _hasher = new PasswordHasher<string>();
-        }
+            var user = _userService.GetUser(id, userType);
+            if (user is Employee employee)
+            {
+                Employee = employee;
+            }
 
-        public IActionResult OnGet()
-        {
+            if (Employee == null)
+                return RedirectToPage("/NotFound");
+
             return Page();
         }
+
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-            Employee.Password = _hasher.HashPassword(Employee.Email, Employee.Password);
-            _userService.AddUser(Employee);
+
+            _userService.UpdateUser(Employee);
             return RedirectToPage("/Users/Admin/GetAllUsers");
         }
     }
