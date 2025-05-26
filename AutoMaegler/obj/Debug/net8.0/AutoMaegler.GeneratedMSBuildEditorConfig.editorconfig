@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AutoMaegler
+build_property.RootNamespace = AutoMaegler
+build_property.ProjectDir = C:\Users\Kaspe\OneDrive\Skrivebord\2. semester eksmaen\AutoMaegler\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Kaspe\OneDrive\Skrivebord\2. semester eksmaen\AutoMaegler
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Admin/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3JlYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Admin/GetAllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cR2V0QWxsVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Cars/BuyCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xCdXlDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Cars/Car.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Cars/Cars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Cars/CreateCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDcmVhdGVDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Cars/DeleteCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xEZWxldGVDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Cars/EditCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xFZGl0Q2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Cars/LeasingCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xMZWFzaW5nQ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/DeleteUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/LogIn/LogInPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nSW5cTG9nSW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/LogIn/LogOutPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nSW5cTG9nT3V0UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/OmOs/OmOs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT21Pc1xPbU9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Order/CreateOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcQ3JlYXRlT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Order/GetAllOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcR2V0QWxsT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/SellCars/SellCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbENhcnNcU2VsbENhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaspe/OneDrive/Skrivebord/2. semester eksmaen/AutoMaegler/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1y2tgoif8b
