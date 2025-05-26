@@ -46,6 +46,15 @@ namespace AutoMaegler.Models
             BuyDate = new DateTime(year, month, day);
         }
 
+        public OrderBuy() : base(0, new Car(), new Employee(), new Customer(), OrderType.Buy)
+        {
+            BuyPrice = 0.0;
+            BuyDate = DateTime.Now;
+            Year = DateTime.Now.Year;
+            Month = DateTime.Now.Month;
+            Day = DateTime.Now.Day;
+        }
+
         /// <summary>
         /// Overrides the ToString method to provide a string representation of the OrderBuy object.
         /// </summary>
