@@ -16,7 +16,7 @@ namespace AutoMaegler.Models
         public int Id { get; set; }
         [Required]
         [StringLength(40)]
-        public string Type { get; set; }
+        public string TypeOfCar { get; set; }
         [Required]
         [StringLength(40)]
         public string Brand { get; set; }
@@ -67,7 +67,7 @@ namespace AutoMaegler.Models
         public int? PriceMonth { get; set; }
         public int? LeasingPeriod { get; set; }
         public int? KmIncluded { get; set; }
-
+        public bool ForSale { get; set; }
 
 
 
@@ -111,7 +111,7 @@ namespace AutoMaegler.Models
         public Car(int id, string type, string brand, string model, string color, string fuel, int modelYear, int price, int mileage, double kmPrL, int topSpeed, int doors, int horsePower, string gear, int cylinders, double motorSize, double zeroToOneHundred, int length, int numOffWheels, double maxPull, int weight, bool status)
         {
             Id = id;
-            Type = type;
+            TypeOfCar = type;
             Brand = brand;
             Model = model;
             Color = color;
@@ -140,7 +140,7 @@ namespace AutoMaegler.Models
         public Car(int id, string type, string brand, string model, string color, string fuel, int modelYear, int priceMonth, int mileage, double kmPrL, int topSpeed, int doors, int horsePower, string gear, int cylinders, double motorSize, double zeroToOneHundred, int length, int numOffWheels, double maxPull, int weight, int leasingPeriod, int kmIncluded)
         {
             Id = id;
-            Type = type;
+            TypeOfCar = type;
             Brand = brand;
             Model = model;
             Color = color;
@@ -170,7 +170,7 @@ namespace AutoMaegler.Models
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Type: {Type} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} MotorSize: {MotorSize} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status} PriceMonth: {PriceMonth} LeasingPeriod: {LeasingPeriod} KmIncluded: {KmIncluded}";
+            return $"Id: {Id} Type: {TypeOfCar} Brand: {Brand} Color: {Color} Fuel: {Fuel} ModelYear: {ModelYear} Price: {Price} Mileage: {Mileage} KmPrL: {KmPrL} TopSpeed: {TopSpeed} Doors: {Doors} HorsePower: {HorsePower} Gear: {Gear} Cylinders: {Cylinders} MotorSize: {MotorSize} ZeroToOnehundred: {ZeroToOneHundred} Length: {Length} NumOffWheels: {NumOffWheels} MaxPull: {MaxPull} Weight: {Weight} Status: {Status} PriceMonth: {PriceMonth} LeasingPeriod: {LeasingPeriod} KmIncluded: {KmIncluded}";
         }
     }
 }
