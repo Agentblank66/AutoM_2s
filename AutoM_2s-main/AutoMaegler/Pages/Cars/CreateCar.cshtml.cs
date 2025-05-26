@@ -50,11 +50,6 @@ namespace AutoMaegler.Pages.Cars
 
         public string UploadMessage { get; set; }
 
-        public CarModel(ICarService carService, IWebHostEnvironment environment)
-        {
-            _carService = carService;
-            _environment = environment;
-        }
 
         public IActionResult OnGet(int id)
         {
