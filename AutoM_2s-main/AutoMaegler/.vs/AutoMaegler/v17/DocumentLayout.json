@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\",
+  "WorkspaceRootPath": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\dbimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\dbimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\service\\dbuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\dbuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\pages\\users\\admin\\createcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\users\\admin\\createcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\efdbcontext\\imagedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:efdbcontext\\imagedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\pages\\users\\admin\\createemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\users\\admin\\createemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +22,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 76,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -45,72 +53,42 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbUserService.cs",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Service\\DbUserService.cs",
+              "RelativeDocumentMoniker": "Service\\DbUserService.cs",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Service\\DbUserService.cs*",
+              "RelativeToolTip": "Service\\DbUserService.cs*",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAgwI4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T08:29:51.289Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ImageService.cs",
-              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\ImageService.cs",
-              "RelativeDocumentMoniker": "Service\\ImageService.cs",
-              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\ImageService.cs",
-              "RelativeToolTip": "Service\\ImageService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA1wCwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T09:42:53.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ImageDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\EFDbContext\\ImageDBContext.cs",
-              "RelativeDocumentMoniker": "EFDbContext\\ImageDBContext.cs",
-              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\EFDbContext\\ImageDBContext.cs",
-              "RelativeToolTip": "EFDbContext\\ImageDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T09:34:55.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DBImageService.cs",
-              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBImageService.cs",
-              "RelativeDocumentMoniker": "Service\\DBImageService.cs",
-              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBImageService.cs",
-              "RelativeToolTip": "Service\\DBImageService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T09:27:20.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Image.cs",
-              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Image.cs",
-              "RelativeDocumentMoniker": "Models\\Image.cs",
-              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Image.cs",
-              "RelativeToolTip": "Models\\Image.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T09:26:15.08Z",
+              "Title": "CreateCustomer.cshtml",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateCustomer.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Users\\Admin\\CreateCustomer.cshtml",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateCustomer.cshtml",
+              "RelativeToolTip": "Pages\\Users\\Admin\\CreateCustomer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T07:25:36.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IImageService.cs",
-              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\IImageService.cs",
-              "RelativeDocumentMoniker": "Service\\IImageService.cs",
-              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\IImageService.cs",
-              "RelativeToolTip": "Service\\IImageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T09:07:09.928Z",
+              "Title": "CreateEmployee.cshtml",
+              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateEmployee.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Users\\Admin\\CreateEmployee.cshtml",
+              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateEmployee.cshtml",
+              "RelativeToolTip": "Pages\\Users\\Admin\\CreateEmployee.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T07:25:11.433Z",
               "EditorCaption": ""
             }
           ]

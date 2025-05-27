@@ -36,7 +36,7 @@ builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<IImageService, ImageService>();
-builder.Services.AddScoped<DbImageService>();
+builder.Services.AddScoped<DBImageService>();
 builder.Services.AddDbContext<UserDbContext>();
 builder.Services.AddScoped<DbUserService>();
 
