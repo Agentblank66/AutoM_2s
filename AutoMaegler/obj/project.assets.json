@@ -2153,23 +2153,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kaspe\\.nuget\\packages\\": {},
+    "C:\\Users\\marti\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\AutoMaegler.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\AutoMaegler.csproj",
       "projectName": "AutoMaegler",
-      "projectPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\AutoMaegler.csproj",
-      "packagesPath": "C:\\Users\\Kaspe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\obj\\",
+      "projectPath": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\AutoMaegler.csproj",
+      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2242,7 +2242,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

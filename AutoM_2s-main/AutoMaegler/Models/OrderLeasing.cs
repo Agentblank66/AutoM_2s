@@ -49,7 +49,7 @@ namespace AutoMaegler.Models
         [Display(Name = "Afleverings dag")]
         [Required(ErrorMessage = "Der skal være et dag")]
         [Range(typeof(int), "1", "31", ErrorMessage = "Måned skal være mellem (1) og (2)")]
-        public int Day { get; set; }
+        public int EndDay { get; set; }
 
         [Display(Name = "Månedlig betaling")]
         [Required(ErrorMessage = "Der skal være en månedlig betaling tilknyttet ordren")]
@@ -76,13 +76,27 @@ namespace AutoMaegler.Models
             LeasingDateEnd = new DateTime(endYear, endMonth, endDay);
         }
 
+        public OrderLeasing() : base(0,new Car(), new Employee(), new Customer(), OrderType.Leasing) 
+        {
+            Depositum = 0.0;
+            LeasingDateStart = DateTime.Now;
+            LeasingDateEnd = DateTime.Now.AddYears(1);
+            MonthlyPayment = 0.0;
+            StartYear = DateTime.Now.Year;
+            EndYear = DateTime.Now.Year + 1;
+            StartMonth = DateTime.Now.Month;
+            EndMonth = DateTime.Now.Month + 1;
+            StartDay = DateTime.Now.Day;
+            EndDay = DateTime.Now.Day;
+        }
+
         /// <summary>
         /// Overrides the ToString method to provide a string representation of the OrderLeasing object.
         /// </summary>
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDateStart: {LeasingDateStart} LeasingDateEnd: {LeasingDateEnd} MonthlyPayment: {MonthlyPayment}";
+            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDateStart: {LeasingDateStart} LeasingDateEnd: {LeasingDateEnd} monthlyPayment: {MonthlyPayment}";
         }
     }
 }

@@ -280,16 +280,13 @@ namespace AutoMaegler.Service
         /// </summary>
         /// <param name="str"></param>
         /// <returns> A list of orders </returns>
-        public IEnumerable<Order> NameSearch(string str)
+        public IEnumerable<T> NameSearch<T>(string str) where T : Order
         {
-            List<Order> result = new List<Order>();
-            foreach (Order order in _orders)
-            {
-                if (order.Customer.FullName.Contains(str, StringComparison.OrdinalIgnoreCase))
-                {
-                    result.Add(order);
-                }
-            }
+            if (string.IsNullOrEmpty(str))
+                return Enumerable.Empty<T>();
+
+            var result = _orders.OfType<T>().Where(order => order.Customer.FullName.Contains(str, StringComparison.OrdinalIgnoreCase));
+
             return result;
         }
 
@@ -332,9 +329,9 @@ namespace AutoMaegler.Service
         /// A methods that sorts orders by id by using generics to do so.
         /// </summary>
         /// <returns> A list where all the orders are sorted </returns>
-        public IEnumerable<T> SortById<T>(IEnumerable<T> orders) where T : Order
+        public IEnumerable<T> SortById<T>() where T : Order
         {
-            return orders.OrderBy(order => order.Id).ToList();
+            return _orders.OfType<T>().OrderBy(order => order.Id).ToList();
         }
 
         /// <summary>
@@ -426,6 +423,7 @@ namespace AutoMaegler.Service
         /// <returns> The first order that has a matching Id. </returns>
         private T GetOrderById<T>(List<T> orders, int id) where T : Order
         {
+            if (orders == null) return null;
             return orders.FirstOrDefault(order => order.Id == id);
         }
     }

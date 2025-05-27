@@ -47,6 +47,18 @@ namespace AutoMaegler.Models
         }
 
         /// <summary>
+        /// Default constructor for the OrderSale class, initializing with default values.
+        /// </summary>
+        public OrderSale() : base(0,new Car(), new Employee() , new Customer() ,OrderType.Sale ) 
+        {
+            SalePrice = 0.0;
+            SaleDate = DateTime.Now;
+            Year = DateTime.Now.Year;
+            Month = DateTime.Now.Month;
+            Day = DateTime.Now.Day;
+        }
+
+        /// <summary>
         /// Overrides the ToString method to provide a string representation of the OrderSale object.
         /// </summary>
         /// <returns> A string with the properties </returns>

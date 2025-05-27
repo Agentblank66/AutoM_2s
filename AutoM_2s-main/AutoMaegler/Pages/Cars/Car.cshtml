@@ -88,31 +88,7 @@
 
 
 
-<section>
-    <h3>Upload billede til bilen</h3>
 
-    <!-- Upload Form -->
-    <form method="post" enctype="multipart/form-data" asp-page-handler="Upload" asp-route-id="@Model.Car.Id">
-        <input type="file" name="CarImage" accept="image/*" />
-        <button type="submit">Upload billede</button>
-    </form>
-
-    <!-- Save Form -->
-    <form method="post" asp-page-handler="Save" asp-route-id="@Model.Car.Id">
-        <input type="hidden" name="UploadedImagePath" value="@Model.UploadedImagePath" />
-        <button type="submit">Gem</button>
-    </form>
-
-    @if (!string.IsNullOrEmpty(Model.UploadMessage))
-    {
-        <p>@Model.UploadMessage</p>
-    }
-
-    @if (!string.IsNullOrEmpty(Model.UploadedImagePath))
-    {
-        <img src="@Model.UploadedImagePath" alt="Uploaded Car Image" style="max-width: 300px; margin-top: 10px;" />
-    }
-</section>
 
 <section class="details">
     <h2>@Model.Car.Brand @Model.Car.Model @Model.Car.HorsePower HK</h2>
@@ -120,7 +96,7 @@
     <p>Årgang: @Model.Car.ModelYear | Kilometerstand: @Model.Car.Mileage.ToString("N0") km | @Model.Car.Fuel | @Model.Car.MotorSize</p>
 
     <table class="specs">
-        <tr><th>Type af bil</th><td>@Model.Car.Type</td></tr>
+        <tr><th>Type af bil</th><td>@Model.Car.TypeOfCar</td></tr>
         <tr><th>Mærke</th><td>@Model.Car.Brand</td></tr>
         <tr><th>Model</th><td>@Model.Car.Model</td></tr>
         <tr><th>Farve</th><td>@Model.Car.Color</td></tr>

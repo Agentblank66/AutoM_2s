@@ -67,7 +67,7 @@ namespace AutoMaegler.Users
             //    _userService.DeleteUser(employee);
 
 
-            return RedirectToPage("/Admin/GetAllUsers");
+            return RedirectToPage("/Users/Admin/GetAllUsers");
         }
     }
 }

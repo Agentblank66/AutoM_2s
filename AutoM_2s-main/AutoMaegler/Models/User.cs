@@ -18,24 +18,25 @@ namespace AutoMaegler.Models
         /// <summary>
         /// Properties of the User class.
         /// </summary>
+        [NotMapped]
         public UserType UserTypes { get; set; }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Display(Name = "Bruger ID")]
+        [Display(Name = "ID")]
         [Required(ErrorMessage = "Der skal angives et Bruger Id.")]
         public int Id { get; set; }
-        [Display(Name = "Bruger Fornavn")]
+        [Display(Name = "Fornavn")]
         [Required(ErrorMessage = "Der skal angives et Fornavn."), MaxLength(100)]
         public string FirstName { get; set; }
-        [Display(Name = "Bruger Efternavn")]
+        [Display(Name = "Efternavn")]
         [Required(ErrorMessage = "Der skal angives et Efternavn."), MaxLength(100)]
         public string LastName { get; set; }
         public string FullName => $"{FirstName} {LastName}";
-        [Display(Name = "Bruger Email")]
+        [Display(Name = "Email")]
         [Required(ErrorMessage = "Der skal angives et Bruger Email.")]
         [StringLength(100, ErrorMessage = "Email længden kan ikke være mere end 100 ord.")]
         public string Email { get; set; }
-        [Display(Name = "Bruger Adgangskode")]
+        [Display(Name = "Adgangskode")]
         [Required(ErrorMessage = "Der skal angives et Bruger Adgangskode")]
         public string Password { get; set; }
 

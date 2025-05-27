@@ -3,11 +3,37 @@
 @{
 }
 
+<section>
+	<h3>Upload billede til bilen</h3>
+
+	<!-- Upload Form -->
+	<form method="post" enctype="multipart/form-data" asp-page-handler="Upload" asp-route-id="@Model.Car.Id">
+		<input type="file" name="CarImage" accept="image/*" />
+		<button type="submit">Upload billede</button>
+	</form>
+
+	<!-- Save Form -->
+	<form method="post" asp-page-handler="Save" asp-route-id="@Model.Car.Id">
+		<input type="hidden" name="UploadedImagePath" value="@Model.UploadedImagePath" />
+		<button type="submit">Gem</button>
+	</form>
+
+	@if (!string.IsNullOrEmpty(Model.UploadMessage))
+	{
+		<p>@Model.UploadMessage</p>
+	}
+
+	@if (!string.IsNullOrEmpty(Model.UploadedImagePath))
+	{
+		<img src="@Model.UploadedImagePath" alt="Uploaded Car Image" style="max-width: 300px; margin-top: 10px;" />
+	}
+</section>
+
 <form method="post">
 	<div class="form-group">
-		<label asp-for="Car.Type" class="control-lable"></label>
-		<input asp-for="Car.Type" class="form-control" />
-		<span asp-validation-for="Car.Type" class="text-danger"></span>
+		<label asp-for="Car.TypeOfCar" class="control-lable"></label>
+		<input asp-for="Car.TypeOfCar" class="form-control" />
+		<span asp-validation-for="Car.TypeOfCar" class="text-danger"></span>
 	</div>
 	<div class="form-group">
 		<label asp-for="Car.Model" class="control-lable"></label>
@@ -107,6 +133,11 @@
 		<label asp-for="Car.Status" class="control-label"></label>
 		<input asp-for="Car.Status" class="form-control" />
 		<span asp-validation-for="Car.Status" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Car.ForSale" class="control-label"></label>
+		<input asp-for="Car.ForSale" class="form-check-input" type="checkbox" />
+		<span asp-validation-for="Car.ForSale" class="text-danger"></span>
 	</div>
 
 	<p>

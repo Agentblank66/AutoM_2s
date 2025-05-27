@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using AutoMaegler.Service;
+using AutoMaegler.Models;
 
 namespace AutoMaegler.Pages.Order
 {

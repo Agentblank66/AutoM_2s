@@ -33,7 +33,7 @@ namespace AutoMaegler.Pages.Cars
 			}
 
 			_CarService.UpdateCar(Car);
-			return RedirectToPage("Cars");
+			return RedirectToPage("/Cars/Cars");
 		}
 	}
 }

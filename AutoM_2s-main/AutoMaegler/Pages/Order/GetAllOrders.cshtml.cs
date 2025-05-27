@@ -23,7 +23,7 @@ namespace AutoMaegler.Pages.Order
         /// <summary>
         /// The orders to be shown
         /// </summary>
-        public List<Models.Order>? Orders { get; private set; }
+        public List<Models.Order>? Orders { get; set; }
 
         /// <summary>
         /// The search string for the orders
@@ -61,7 +61,7 @@ namespace AutoMaegler.Pages.Order
         /// <returns> To the same newly updated page </returns>
         public IActionResult OnPostNameSearch()
         {
-            Orders = _orderService.NameSearch(SearchString).ToList();
+            Orders = _orderService.NameSearch<Models.Order>(SearchString).ToList();
             return Page();
         }
 
@@ -81,7 +81,7 @@ namespace AutoMaegler.Pages.Order
         /// <returns> Rerenders the page </returns>
         public IActionResult OnGetSortById()
         {
-            Orders = _orderService.SortById(Orders).ToList();
+            Orders = _orderService.SortById<Models.Order>().ToList();
             return Page();
         }
 
