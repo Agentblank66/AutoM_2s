@@ -1,34 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\",
+  "WorkspaceRootPath": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\createcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\createcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\createcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\createcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\dbimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\dbimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\service\\dbuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\dbuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\car.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\car.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\pages\\users\\admin\\createcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\users\\admin\\createcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\car.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\car.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\rasmu\\onedrive\\dokumenter\\eksamener\\2. semester eksamen\\autom_2s-main\\automaegler\\pages\\users\\admin\\createemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\users\\admin\\createemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\cars.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\cars.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\cars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\cars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 76,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,142 +54,127 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "Models\\Car.cs",
-              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
-              "RelativeToolTip": "Models\\Car.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAwEYAAABLAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CreateCar.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Cars\\CreateCar.cshtml.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml.cs",
+              "RelativeToolTip": "Pages\\Cars\\CreateCar.cshtml.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T07:35:01.974Z",
+              "WhenOpened": "2025-05-27T21:56:23.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCar.cshtml",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Cars\\CreateCar.cshtml",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml",
+              "RelativeToolTip": "Pages\\Cars\\CreateCar.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T21:56:22.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\Models\\Employee.cs",
-              "RelativeToolTip": "Models\\Employee.cs",
+              "Title": "DBImageService.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBImageService.cs",
+              "RelativeDocumentMoniker": "Service\\DBImageService.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBImageService.cs",
+              "RelativeToolTip": "Service\\DBImageService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T07:36:01.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T12:03:23.646Z",
+              "WhenOpened": "2025-05-27T21:54:07.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAjAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAlwCcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:12:29.729Z",
-              "EditorCaption": ""
-              "WhenOpened": "2025-05-26T07:37:39.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\Employee.cs",
-              "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:12:31.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Models\\Customer.cs",
-              "RelativeToolTip": "Models\\Customer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:12:30.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DbUserService.cs",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Service\\DbUserService.cs",
-              "RelativeDocumentMoniker": "Service\\DbUserService.cs",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Service\\DbUserService.cs",
-              "RelativeToolTip": "Service\\DbUserService.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAgwE4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T08:29:51.289Z",
+              "WhenOpened": "2025-05-27T21:53:55.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CreateCustomer.cshtml",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateCustomer.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Users\\Admin\\CreateCustomer.cshtml",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateCustomer.cshtml",
-              "RelativeToolTip": "Pages\\Users\\Admin\\CreateCustomer.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABMAAAAAAAAAA==",
+              "Title": "Car.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Car.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Cars\\Car.cshtml.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Car.cshtml.cs",
+              "RelativeToolTip": "Pages\\Cars\\Car.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T21:53:21.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Car.cshtml",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Car.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Cars\\Car.cshtml",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Car.cshtml",
+              "RelativeToolTip": "Pages\\Cars\\Car.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T07:25:36.924Z",
+              "WhenOpened": "2025-05-27T21:51:02.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CreateEmployee.cshtml",
-              "DocumentMoniker": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateEmployee.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Users\\Admin\\CreateEmployee.cshtml",
-              "ToolTip": "C:\\Users\\rasmu\\OneDrive\\Dokumenter\\Eksamener\\2. semester eksamen\\AutoM_2s-main\\AutoMaegler\\Pages\\Users\\Admin\\CreateEmployee.cshtml",
-              "RelativeToolTip": "Pages\\Users\\Admin\\CreateEmployee.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Cars.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Cars.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Cars\\Cars.cshtml.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Cars.cshtml.cs",
+              "RelativeToolTip": "Pages\\Cars\\Cars.cshtml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAQwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T21:50:11.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cars.cshtml",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Cars.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Cars\\Cars.cshtml",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Cars.cshtml",
+              "RelativeToolTip": "Pages\\Cars\\Cars.cshtml",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAQwJsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T07:25:11.433Z",
+              "WhenOpened": "2025-05-27T21:49:59.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Models\\Car.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
+              "RelativeToolTip": "Models\\Car.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAwKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T21:49:29.369Z",
               "EditorCaption": ""
             }
           ]
