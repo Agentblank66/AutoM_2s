@@ -7,90 +7,82 @@ namespace AutoMaegler.Service
 {
     public class DbUserService
     {
-        private readonly UserDbContext _context;
+        private readonly UserDbContext _userDbContext;
 
         public DbUserService(UserDbContext context)
         {
-            _context = context;
+            _userDbContext = context;
         }
         public async Task<List<Customer>> GetCustomers()
         {
                 
-              return await _context.Customers.ToListAsync();
+              return await _userDbContext.Customers.ToListAsync();
         }
 
         public async Task<List<Employee>> GetEmployees()
         {
 
-            return await _context.Employees.ToListAsync();
+            return await _userDbContext.Employees.ToListAsync();
         }
 
         public async Task AddUser(User user)
         {
-           
                 if(user is Customer customer)
                 {
-                    _context.Customers.Add(customer);
+                    _userDbContext.Customers.Add(customer);
                 }
                 else if (user is Employee employee)
                 {
-                    _context.Employees.Add(employee);
+                    _userDbContext.Employees.Add(employee);
                 }
                 else
                 {
                     throw new ArgumentException("Invalid user type");
                 }
-                _context.SaveChanges();
-            
+                _userDbContext.SaveChanges();
         }
 
         public async Task SaveUsers(List<User> users)
         {
-            
-            
                 foreach (var user in users)
                 {
                     if (user is Customer customer)
                     {
-                        _context.Customers.Add(customer);
+                        _userDbContext.Customers.Add(customer);
                     }
                     else if (user is Employee employee)
                     {
-                        _context.Employees.Add(employee);
+                        _userDbContext.Employees.Add(employee);
                     }
                     else
                     {
                         throw new ArgumentException("Invalid user type");
                     }
                 }
-                await _context.SaveChangesAsync();
-            
+                await _userDbContext.SaveChangesAsync(); 
         }
 
         public async Task DeleteUser(User user)
         {
-           
-            
                 if(user is Customer customer)
                 {
-                    _context.Customers.Remove(customer);
+                    _userDbContext.Customers.Remove(customer);
                 }
                 else if (user is Employee employee)
                 {
-                    _context.Employees.Remove(employee);
+                    _userDbContext.Employees.Remove(employee);
                 }
                 else
                 {
                     throw new ArgumentException("No users found");
                 }
-                _context.SaveChanges();
-            
+                _userDbContext.SaveChanges();
         }
 
         //public async Task UpdateUser(User user)
         //{
-           
-            
+
+
         //        if (user is Customer customer)
         //        {
         //            _context.Customers.Update(customer);
@@ -104,27 +96,33 @@ namespace AutoMaegler.Service
         //            throw new ArgumentException("No users found");
         //        }
         //        _context.SaveChanges();
-            
+
         //}
 
+        /// <summary>
+        /// Updates an existing user in the database.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
         public async Task UpdateUser(User user)
         {
             if (user is Customer customer)
             {
-                var existing = await _context.Customers.FindAsync(customer.Id);
+                var existing = await _userDbContext.Customers.FindAsync(customer.Id);
                 if (existing != null)
                 {
-                    _context.Entry(existing).CurrentValues.SetValues(customer);
-                    await _context.SaveChangesAsync();
+                    _userDbContext.Entry(existing).CurrentValues.SetValues(customer);
+                    await _userDbContext.SaveChangesAsync();
                 }
             }
             else if (user is Employee employee)
             {
-                var existing = await _context.Employees.FindAsync(employee.Id);
+                var existing = await _userDbContext.Employees.FindAsync(employee.Id);
                 if (existing != null)
                 {
-                    _context.Entry(existing).CurrentValues.SetValues(employee);
-                    await _context.SaveChangesAsync();
+                    _userDbContext.Entry(existing).CurrentValues.SetValues(employee);
+                    await _userDbContext.SaveChangesAsync();
                 }
             }
             else
