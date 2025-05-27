@@ -31,7 +31,7 @@ namespace AutoMaegler.Pages.Cars
 
         public void OnGet()
         {
-            Cars = _carService.GetCars();
+            Cars = _carService.GetLeasingCars();
             Images = _imageService.GetImages();
         }
 

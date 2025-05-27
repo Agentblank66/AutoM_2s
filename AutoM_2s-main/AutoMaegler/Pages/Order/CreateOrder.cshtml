@@ -6,12 +6,13 @@
 
 <h1> Opret Ordre </h1>
 
+<div class="form-group">
+    <label asp-for="SelectedOrderType" class="control-label"></label>
+    <select asp-for="SelectedOrderType" class="form-control" asp-items="Model.OrderTypes"></select>
+    <span asp-validation-for="SelectedOrderType" class="text-danger"></span>
+</div>
+
 <form method="post">
-    <div class="form-group">
-        <label asp-for="SelectedOrderType" class="control-label"></label>
-        <select asp-for="SelectedOrderType" class="form-control" asp-items="Model.OrderTypes"></select>
-        <span asp-validation-for="SelectedOrderType" class="text-danger"></span>
-    </div>
     @if (Model.SelectedOrderType == Models.Order.OrderType.Leasing)
     {
         <div class="form-group">
@@ -91,48 +92,26 @@
             <span asp-validation-for="Order.Type" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="OrderSale.SalePrice" class="control-label"></label>
-            <input asp-for="OrderSale.SalePrice" class="form-control" />
-            <span asp-validation-for="OrderSale.SalePrice" class="text-danger"></span>
+            <label asp-for="SalePrice" class="control-label"></label>
+            <input asp-for="SalePrice" class="form-control" />
+            <span asp-validation-for="SalePrice" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="OrderSale.SaleDate" class="control-label"></label>
-            <input asp-for="OrderSale.SaleDate" class="form-control" type="date" />
-            <span asp-validation-for="OrderSale.SaleDate" class="text-danger"></span>
+            <label asp-for="SaleYear" class="control-label"></label>
+            <input asp-for="SaleYear" class="form-control" type="date" />
+            <span asp-validation-for="SaleYear" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="OrderSale.Year" class="control-label"></label>
-            <input asp-for="OrderSale.Year" class="form-control" />
-            <span asp-validation-for="OrderSale.Year" class="text-danger"></span>
+            <label asp-for="SaleMonth" class="control-label"></label>
+            <input asp-for="SaleMonth" class="form-control" />
+            <span asp-validation-for="SaleMonth" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="OrderSale.Month" class="control-label"></label>
-            <input asp-for="OrderSale.Month" class="form-control" />
-            <span asp-validation-for="OrderSale.Month" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="OrderSale.Day" class="control-label"></label>
-            <input asp-for="OrderSale.Day" class="form-control" />
-            <span asp-validation-for="OrderSale.Day" class="text-danger"></span>
+            <label asp-for="SaleDay" class="control-label"></label>
+            <input asp-for="SaleDay" class="form-control" />
+            <span asp-validation-for="SaleDay" class="text-danger"></span>
         </div>
     }
-
-   
-    <div class="form-group">
-        <label asp-for="@Model.Order.Id" class="control-label"></label>
-        <input asp-for="@Model.Order.Id" class="form-control" />
-        <span asp-validation-for="@Model.Order.Id" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="@Model.Order.Customer.FullName" class="control-label"></label>
-        <input asp-for="@Model.Order.Customer.FullName" class="form-control" />
-        <span asp-validation-for="@Model.Order.Customer.FullName" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="@Model.Order.Car.Price" class="control-label"></label>
-        <input asp-for="@Model.Order.Car.Price" class="form-control" />
-        <span asp-validation-for="@Model.Order.Car.Price" class="text-danger"></span>
-    </div>
 
     <p>
         <div class="form-group">
