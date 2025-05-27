@@ -3,6 +3,7 @@ using AutoMaegler.Service;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,7 +36,7 @@ builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<IImageService, ImageService>();
-builder.Services.AddScoped<DBImageService>();
+builder.Services.AddScoped<DbImageService>();
 builder.Services.AddDbContext<UserDbContext>();
 builder.Services.AddScoped<DbUserService>();
 
@@ -47,7 +48,8 @@ builder.Services.Configure<CookiePolicyOptions>(options => {
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(Options => {
     Options.LoginPath = "/Users/Login/LogInPage";
-    
+    Options.AccessDeniedPath = "/Users/Account/AccessDenied";
+
 
 
 });
