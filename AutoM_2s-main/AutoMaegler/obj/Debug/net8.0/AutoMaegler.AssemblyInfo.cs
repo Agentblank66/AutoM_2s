@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoMaegler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c277b87b9ba154546e42e091b0535b3da93c67ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce5dc0acf3cb1dd3a5b8f905d454cedce7ef986f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoMaegler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoMaegler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
