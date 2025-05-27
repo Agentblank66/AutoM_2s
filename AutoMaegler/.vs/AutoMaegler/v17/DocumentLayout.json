@@ -1,28 +1,41 @@
 {
   "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\",
   "WorkspaceRootPath": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\automaegler\\pages\\cars\\createcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\createcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
       "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\automaegler\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
       "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\editorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\editorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\automaegler\\mockdata\\mockcars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:mockdata\\mockcars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
       "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\editorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\editorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\automaegler\\mockdata\\mockusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:mockdata\\mockusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
       "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\deleteorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\deleteorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\automaegler\\service\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
       "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\pages\\order\\deleteorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\order\\deleteorder.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\automaegler\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
       "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\marti\\desktop\\datamatiker\\2.semester\\automaegler\\automaegler\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -82,10 +95,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
@@ -94,6 +109,16 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateCar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Cars\\CreateCar.cshtml",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml",
+              "RelativeToolTip": "Pages\\Cars\\CreateCar.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T23:16:45.805Z",
+              "EditorCaption": ""
               "DocumentIndex": 7,
               "Title": "MockOrders.cs",
               "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\MockData\\MockOrders.cs",
@@ -131,6 +156,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MockCars.cs",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\MockData\\MockCars.cs",
+              "RelativeDocumentMoniker": "MockData\\MockCars.cs",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\MockData\\MockCars.cs",
+              "RelativeToolTip": "MockData\\MockCars.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
               "Title": "EditOrder.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\EditOrder.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Order\\EditOrder.cshtml.cs",
@@ -138,11 +169,20 @@
               "RelativeToolTip": "Pages\\Order\\EditOrder.cshtml.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwDQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:51:42.844Z"
               "WhenOpened": "2025-05-20T09:16:27.526Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Models\\Car.cs",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Models\\Car.cs",
+              "RelativeToolTip": "Models\\Car.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwBYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:27:58.789Z"
               "Title": "EditOrder.cshtml",
               "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\EditOrder.cshtml",
               "RelativeDocumentMoniker": "Pages\\Order\\EditOrder.cshtml",
@@ -155,6 +195,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Service\\CarService.cs",
+              "RelativeDocumentMoniker": "Service\\CarService.cs",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Service\\CarService.cs",
+              "RelativeToolTip": "Service\\CarService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
               "Title": "DeleteOrder.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\DeleteOrder.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Order\\DeleteOrder.cshtml.cs",
@@ -162,11 +208,18 @@
               "RelativeToolTip": "Pages\\Order\\DeleteOrder.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:27:04.966Z"
               "WhenOpened": "2025-05-20T08:25:59.483Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MockUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\MockData\\MockUsers.cs",
+              "RelativeDocumentMoniker": "MockData\\MockUsers.cs",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\MockData\\MockUsers.cs",
+              "RelativeToolTip": "MockData\\MockUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABEAAAAAAAAAA==",
               "Title": "DeleteOrder.cshtml",
               "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Pages\\Order\\DeleteOrder.cshtml",
               "RelativeDocumentMoniker": "Pages\\Order\\DeleteOrder.cshtml",
@@ -247,11 +300,20 @@
               "RelativeToolTip": "Models\\Order.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwCoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:13:26.793Z"
               "WhenOpened": "2025-04-30T08:20:31.484Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoMaegler\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T07:46:08.897Z"
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoMaegler\\Service\\OrderService.cs",
               "RelativeDocumentMoniker": "Service\\OrderService.cs",

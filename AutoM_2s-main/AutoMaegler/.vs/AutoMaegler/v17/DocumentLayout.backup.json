@@ -1,31 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoM_2s-main\\AutoMaegler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\autom_2s-main\\automaegler\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\kaspe\\onedrive\\skrivebord\\2. semester eksmaen\\autom_2s-main\\automaegler\\mockdata\\mockcars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:mockdata\\mockcars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 76,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Models\\Car.cs",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
+              "RelativeToolTip": "Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:19:58.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MockCars.cs",
+              "DocumentMoniker": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoM_2s-main\\AutoMaegler\\MockData\\MockCars.cs",
+              "RelativeDocumentMoniker": "MockData\\MockCars.cs",
+              "ToolTip": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\2. semester eksmaen\\AutoM_2s-main\\AutoMaegler\\MockData\\MockCars.cs",
+              "RelativeToolTip": "MockData\\MockCars.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:17:41.102Z"
             }
           ]
         }
