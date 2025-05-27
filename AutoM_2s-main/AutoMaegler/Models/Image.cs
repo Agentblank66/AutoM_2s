@@ -5,6 +5,7 @@
         public int Id { get; set; }
         public string ImageString { get; set; }
         public int CarId { get; set; }
+        public Car Car { get; set; }
 
         public Image() { }
 

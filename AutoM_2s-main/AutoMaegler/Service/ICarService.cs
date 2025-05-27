@@ -10,7 +10,7 @@ namespace AutoMaegler.Service
         public List<Car> GetCars();
         public List<Car> GetbuyCars();
         public List<Car> GetLeasingCars();
-        public void AddCar(Car car);
+        Task<Car> AddCarAsync(Car car);
         public void UpdateCar(Car car);
         public Car GetCar(int id);
         public Car DeleteCar(int id);

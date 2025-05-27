@@ -13,12 +13,13 @@ namespace AutoMaegler.EFDbContext
             _configuration = configuration;
         }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var connectionString = _configuration.GetConnectionString("ImageConnection");
+            var connectionString = _configuration.GetConnectionString("DefaultConnection");
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
 
-        public DbSet<Image> Images { get; set; }
+        public DbSet<Image> Image { get; set; }
     }
 }

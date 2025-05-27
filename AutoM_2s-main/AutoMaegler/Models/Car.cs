@@ -8,7 +8,7 @@ namespace AutoMaegler.Models
     public class Car
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         /// <summary>
         /// Properties of the Car class.
         /// </summary>
@@ -69,13 +69,13 @@ namespace AutoMaegler.Models
         public int? KmIncluded { get; set; }
         public bool ForSale { get; set; }
 
+        public List<Image> Images { get; set; }
 
 
-
-		/// <summary>
-		/// Default constructor for the Car class.
-		/// </summary>
-		public Car(){ }
+        /// <summary>
+        /// Default constructor for the Car class.
+        /// </summary>
+        public Car(){ }
 
         /// <summary>
         /// Constructor for the Car class with parameters.
@@ -162,7 +162,7 @@ namespace AutoMaegler.Models
             Weight = weight;
             LeasingPeriod = leasingPeriod;
             KmIncluded = kmIncluded;
-        }
+        }   
 
         /// <summary>
         /// Overrides the ToString method to provide a string representation of the Car object.

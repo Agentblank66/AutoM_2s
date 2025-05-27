@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace AutoMaegler.Service
 {
-    public class CarService: ICarService
+    public class CarService : ICarService
     {
         /// <summary>
         /// List of cars in the car service.
@@ -58,14 +58,11 @@ namespace AutoMaegler.Service
             return _dBCarService.GetLeasingCars().Result.ToList();
         }
 
-        /// <summary>
-        /// Adds a car to the list of cars.
-        /// </summary>
-        /// <param name="car"></param>
-        public void AddCar(Car car)
+        public async Task<Car> AddCarAsync(Car car)
         {
-            _cars.Add(car);
-            _dBCarService.AddCar(car);
+            var createdCar = await _dBCarService.AddCar(car);
+            _cars.Add(createdCar);
+            return createdCar;
         }
 
         /// <summary>

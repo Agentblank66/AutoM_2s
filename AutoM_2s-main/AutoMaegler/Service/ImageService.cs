@@ -11,14 +11,14 @@ namespace AutoMaegler.Service
             _dbImageService = dbImageService;
         }
 
-        public void AddImage(Image image)
+        public async Task AddImageAsync(Image image)
         {
-            // Her kan du validere billedet fx:
             if (string.IsNullOrEmpty(image.ImageString))
                 throw new ArgumentException("Image string cannot be empty");
 
-            _dbImageService.AddImage(image);
+            await _dbImageService.AddImageAsync(image); // skal også være async
         }
+
 
         public void DeleteImage(int id)
         {

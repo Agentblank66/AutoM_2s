@@ -16,139 +16,143 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.EnforceExtendedAnalyzerRules = 
 build_property.RootNamespace = AutoMaegler
 build_property.RootNamespace = AutoMaegler
-build_property.ProjectDir = C:\Users\rasmu\OneDrive\Dokumenter\Eksamener\2. semester eksamen\AutoM_2s-main\AutoMaegler\
+build_property.ProjectDir = C:\Users\olive\Source\Repos\AutoM_2s\AutoM_2s-main\AutoMaegler\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\rasmu\OneDrive\Dokumenter\Eksamener\2. semester eksamen\AutoM_2s-main\AutoMaegler
+build_property.MSBuildProjectDirectory = C:\Users\olive\Source\Repos\AutoM_2s\AutoM_2s-main\AutoMaegler
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Cars/BuyCar.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/AdminCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xBZG1pbkNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/BuyCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xCdXlDYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Cars/Car.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/Car.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Cars/Cars.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/Cars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Cars/CreateCar.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/CreateCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDcmVhdGVDYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Cars/DeleteCar.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/DeleteCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xEZWxldGVDYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Cars/EditCar.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/EditCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xFZGl0Q2FyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Cars/LeasingCar.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/LeasingCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xMZWFzaW5nQ2FyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Error.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Index.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/NotFound.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/OmOs/OmOs.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/OmOs/OmOs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT21Pc1xPbU9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Order/CreateOrder.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Order/CreateOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcQ3JlYXRlT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Order/DeleteOrder.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Order/DeleteOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcRGVsZXRlT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Order/EditOrder.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Order/EditOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcRWRpdE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Order/GetAllOrders.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Order/GetAllOrders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcR2V0QWxsT3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Privacy.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/SellCars/SellCar.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/SellCars/SellCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbENhcnNcU2VsbENhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/Account/AccessDenied.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/CreateCustomer.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/CreateCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRtaW5cQ3JlYXRlQ3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/CreateEmployee.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/CreateEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRtaW5cQ3JlYXRlRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/CreateUser.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRtaW5cQ3JlYXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/GetAllUsers.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/Admin/GetAllUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRtaW5cR2V0QWxsVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/DeleteUser.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/DeleteUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGVsZXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/EditCustomer.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/EditCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdEN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/EditEmployee.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/EditEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdEVtcGxveWVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/EditUser.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/LogIn/LogInPage.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/LogIn/LogInPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9nSW5cTG9nSW5QYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Users/LogIn/LogOutPage.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Users/LogIn/LogOutPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9nSW5cTG9nT3V0UGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/_ViewImports.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/_ViewStart.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rasmu/OneDrive/Dokumenter/Eksamener/2. semester eksamen/AutoM_2s-main/AutoMaegler/Pages/Shared/_Layout.cshtml]
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1y2tgoif8b

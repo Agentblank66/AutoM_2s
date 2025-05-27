@@ -14,25 +14,25 @@ namespace AutoMaegler.Service
             _context = context;
         }
 
-        public void AddImage(Image image)
+        public async Task AddImageAsync(Image image)
         {
-            _context.Images.Add(image);
-            _context.SaveChanges();
+            _context.Image.Add(image);
+            await _context.SaveChangesAsync(); // Husk: denne kræver at din kontekst er async-kompatibel
         }
 
         public void DeleteImage(int id)
         {
-            var image = _context.Images.Find(id);
+            var image = _context.Image.Find(id);
             if (image != null)
             {
-                _context.Images.Remove(image);
+                _context.Image.Remove(image);
                 _context.SaveChanges();
             }
         }
 
         public Image EditImage(Image image)
         {
-            var existing = _context.Images.Find(image.Id);
+            var existing = _context.Image.Find(image.Id);
             if (existing != null)
             {
                 existing.ImageString = image.ImageString;
@@ -44,18 +44,18 @@ namespace AutoMaegler.Service
 
         public Image GetImageById(int id)
         {
-            return _context.Images.Find(id);
+            return _context.Image.Find(id);
         }
 
         public List<Image> GetImages()
         {
-            return _context.Images.ToList();
+            return _context.Image.ToList();
         }
 
         // 🔥 Tilføj denne metode – det er her fejlen opstår hvis den mangler
         public List<Image> GetImagesByCarId(int carId)
         {
-            return _context.Images.Where(i => i.CarId == carId).ToList();
+            return _context.Image.Where(i => i.CarId == carId).ToList();
         }
     }
 }

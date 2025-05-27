@@ -32,10 +32,11 @@ namespace AutoMaegler.Service
                                 .ToListAsync();
         }
 
-        public async Task AddCar(Car car)
+        public async Task<Car> AddCar(Car car)
         {
             _context.Cars.Add(car);
             await _context.SaveChangesAsync();
+            return car; // EF har nu sat car.Id automatisk
         }
 
         public async Task DeleteCar(Car car)

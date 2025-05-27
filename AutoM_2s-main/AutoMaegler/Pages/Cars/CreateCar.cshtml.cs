@@ -2,122 +2,80 @@ using AutoMaegler.Models;
 using AutoMaegler.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace AutoMaegler.Pages.Cars
 {
     public class CreateCarModel : PageModel
     {
-		private readonly ICarService _carService;
-		private readonly IWebHostEnvironment _environment;
-		private readonly IImageService _imageService;
-
-		public CreateCarModel(ICarService carService, IWebHostEnvironment environment, IImageService imageService)
-        {
-			_carService = carService;
-			_environment = environment;
-			_imageService = imageService;
-        }
+        private readonly ICarService _carService;
+        private readonly IWebHostEnvironment _environment;
+        private readonly IImageService _imageService;
 
         [BindProperty]
-        public AutoMaegler.Models.Car Car { get; set; }
-        public List<String> ImageString { get; set; }
-
-        public IActionResult OnGet()
-        {
-            return Page();
-        }
-
-        public IActionResult OnPost()
-        {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-            _carService.AddCar(Car);
-            return RedirectToPage("/Cars/Cars");
-        }
-
-
-        public string ImagePath { get; set; }
-
+        public Car Car { get; set; }
 
         [BindProperty]
         public IFormFile CarImage { get; set; }
 
-        // This will be bound to a hidden field or stored in Car.ImagePath for the saved image
-        [BindProperty]
-        public string UploadedImagePath { get; set; }
-
-        public string UploadMessage { get; set; }
-
-
-        public IActionResult OnGet(int id)
+        public CreateCarModel(ICarService carService, IWebHostEnvironment environment, IImageService imageService)
         {
-            Car = _carService.GetCar(id);
-            if (Car == null)
-                return RedirectToPage("/NotFound");
-
-            //UploadedImagePath = Car.ImageString; // Load saved image path
-            return Page();
+            _carService = carService;
+            _environment = environment;
+            _imageService = imageService;
         }
 
-
-        // Upload the image and keep it ready, but don't save it to the car yet
-        public async Task<IActionResult> OnPostUploadAsync(int id)
+        public void OnGet()
         {
-            Car = _carService.GetCar(id);
-            if (Car == null)
-                return RedirectToPage("/NotFound");
+            // Intet specielt på GET
+        }
 
+        public async Task<IActionResult> OnPostAsync()
+        {
+            Console.WriteLine("OnPostAsync() kaldt");
+
+            if (!ModelState.IsValid)
+            {
+                return Page(); // Håndter valideringsfejl korrekt
+            }
+
+            // Gem bilen og få det genererede Id
+            var createdCar = await _carService.AddCarAsync(Car);
+
+            // Hvis billede blev uploadet
             if (CarImage != null && CarImage.Length > 0)
             {
                 var uploadsFolder = Path.Combine(_environment.WebRootPath, "car-images");
+
+                // Opret mappen hvis den ikke findes
                 if (!Directory.Exists(uploadsFolder))
+                {
                     Directory.CreateDirectory(uploadsFolder);
+                }
 
-                var fileName = Path.GetFileName(CarImage.FileName);
-                var filePath = Path.Combine(uploadsFolder, fileName);
+                // Unik filnavn baseret på bil-id
+                var uniqueFileName = $"{Path.GetFileNameWithoutExtension(CarImage.FileName)}_{createdCar.Id}{Path.GetExtension(CarImage.FileName)}";
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
+                // Gem billede til filesystem
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await CarImage.CopyToAsync(stream);
                 }
 
-                UploadedImagePath = "/car-images/" + fileName;
-                UploadMessage = "Billede uploadet! Husk at gemme for at bevare billedet.";
+                // Opret Image-objekt og gem i DB
+                var image = new Image
+                {
+                    CarId = createdCar.Id,
+                    ImageString = $"/car-images/{uniqueFileName}"
+                };
 
-            }
-            else
-            {
-                UploadMessage = "Vælg et gyldigt billede.";
-            }
-
-            return Page();
-        }
-
-        // Save the uploaded image path to the car permanently
-        public IActionResult OnPostSaveAsync(int id, Image image)
-        {
-            Car = _carService.GetCar(id);
-            if (Car == null)
-                return RedirectToPage("/NotFound");
-
-            if (!string.IsNullOrEmpty(UploadedImagePath))
-            {
-                image.ImageString = UploadedImagePath;
-
-                //Car.ImageString = UploadedImagePath;
-
-                _imageService.AddImage(image); // Make sure this updates your database
-
-                UploadMessage = "Billedet er gemt!";
-            }
-            else
-            {
-                UploadMessage = "Ingen billede at gemme.";
+                await _imageService.AddImageAsync(image);
             }
 
-            return Page();
+            // Redirect til biloversigt
+            return RedirectToPage("/Cars/Cars");
         }
 
     }

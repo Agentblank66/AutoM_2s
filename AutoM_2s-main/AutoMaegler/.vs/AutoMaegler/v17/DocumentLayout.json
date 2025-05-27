@@ -1,7 +1,64 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\createcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\createcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\createcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\createcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\dbcarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\dbcarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\dbimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\dbimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\service\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:service\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\efdbcontext\\cardbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:efdbcontext\\cardbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 76,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,11 +78,182 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-27T09:42:13.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-27T09:34:23.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CarDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\EFDbContext\\CarDBContext.cs",
+              "RelativeDocumentMoniker": "EFDbContext\\CarDBContext.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\EFDbContext\\CarDBContext.cs",
+              "RelativeToolTip": "EFDbContext\\CarDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:36:14.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwGkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:15:22.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Image.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Image.cs",
+              "RelativeDocumentMoniker": "Models\\Image.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Image.cs",
+              "RelativeToolTip": "Models\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:13:58.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Models\\Car.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
+              "RelativeToolTip": "Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:13:52.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DBImageService.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBImageService.cs",
+              "RelativeDocumentMoniker": "Service\\DBImageService.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBImageService.cs",
+              "RelativeToolTip": "Service\\DBImageService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAuwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:46:25.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\IImageService.cs",
+              "RelativeDocumentMoniker": "Service\\IImageService.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\IImageService.cs",
+              "RelativeToolTip": "Service\\IImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:35:55.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\ImageService.cs",
+              "RelativeDocumentMoniker": "Service\\ImageService.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\ImageService.cs",
+              "RelativeToolTip": "Service\\ImageService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:05:00.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DBCarService.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBCarService.cs",
+              "RelativeDocumentMoniker": "Service\\DBCarService.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBCarService.cs",
+              "RelativeToolTip": "Service\\DBCarService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwG8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:19:45.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\CarService.cs",
+              "RelativeDocumentMoniker": "Service\\CarService.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\CarService.cs",
+              "RelativeToolTip": "Service\\CarService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAvwBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:10:22.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCar.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Cars\\CreateCar.cshtml.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml.cs",
+              "RelativeToolTip": "Pages\\Cars\\CreateCar.cshtml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAYwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:08:26.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateCar.cshtml",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Cars\\CreateCar.cshtml",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml",
+              "RelativeToolTip": "Pages\\Cars\\CreateCar.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAiwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T18:08:20.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICarService.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\ICarService.cs",
+              "RelativeDocumentMoniker": "Service\\ICarService.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\ICarService.cs",
+              "RelativeToolTip": "Service\\ICarService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:11:04.348Z"
             }
           ]
         }

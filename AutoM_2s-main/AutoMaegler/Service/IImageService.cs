@@ -8,7 +8,7 @@ namespace AutoMaegler.Service
         public List<Image> GetImages();
         public void DeleteImage(int id);
         public Image EditImage (Image image);
-        public void AddImage(Image image);
+        Task AddImageAsync(Image image);
         public Image GetImageById(int Id);
     }
 }
