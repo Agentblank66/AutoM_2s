@@ -2,27 +2,19 @@
   "format": 1,
   "restore": {
     "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj": {}
-    "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj": {}
   },
   "projects": {
     "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj": {
-    "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj": {
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj",
-        "projectUniqueName": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj",
         "projectName": "AutoMaegler",
         "projectPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj",
         "packagesPath": "C:\\Users\\Kaspe\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Kaspe\\OneDrive\\Skrivebord\\Eksamen2sem\\AutoM_2s-main\\AutoMaegler\\obj\\",
-        "projectPath": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoM_2s-main\\AutoMaegler\\AutoMaegler.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\Desktop\\Datamatiker\\2.Semester\\AutoMaegler\\AutoM_2s-main\\AutoMaegler\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,8 +41,6 @@
           "auditLevel": "low",
           "auditMode": "direct"
         }
-        },
-        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -103,7 +93,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
