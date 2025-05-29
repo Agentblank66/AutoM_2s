@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\leasingcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\leasingcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\leasingcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\leasingcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|c:\\users\\olive\\source\\repos\\autom_2s\\autom_2s-main\\automaegler\\pages\\cars\\createcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E0D7471-A315-4CED-9636-EB04C26CC09A}|AutoMaegler.csproj|solutionrelative:pages\\cars\\createcar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 76,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +70,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LeasingCar.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\LeasingCar.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Cars\\LeasingCar.cshtml.cs",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\LeasingCar.cshtml.cs",
+              "RelativeToolTip": "Pages\\Cars\\LeasingCar.cshtml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T22:02:31.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LeasingCar.cshtml",
+              "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\LeasingCar.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Cars\\LeasingCar.cshtml",
+              "ToolTip": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\LeasingCar.cshtml",
+              "RelativeToolTip": "Pages\\Cars\\LeasingCar.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T22:02:28.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CreateCar.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Cars\\CreateCar.cshtml.cs",
@@ -75,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CreateCar.cshtml",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\CreateCar.cshtml",
               "RelativeDocumentMoniker": "Pages\\Cars\\CreateCar.cshtml",
@@ -88,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DBImageService.cs",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Service\\DBImageService.cs",
               "RelativeDocumentMoniker": "Service\\DBImageService.cs",
@@ -101,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -114,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Car.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Car.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Cars\\Car.cshtml.cs",
@@ -127,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Car.cshtml",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Car.cshtml",
               "RelativeDocumentMoniker": "Pages\\Cars\\Car.cshtml",
@@ -140,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Cars.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Cars.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Cars\\Cars.cshtml.cs",
@@ -153,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Cars.cshtml",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Pages\\Cars\\Cars.cshtml",
               "RelativeDocumentMoniker": "Pages\\Cars\\Cars.cshtml",
@@ -166,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Users\\olive\\source\\repos\\AutoM_2s\\AutoM_2s-main\\AutoMaegler\\Models\\Car.cs",
               "RelativeDocumentMoniker": "Models\\Car.cs",

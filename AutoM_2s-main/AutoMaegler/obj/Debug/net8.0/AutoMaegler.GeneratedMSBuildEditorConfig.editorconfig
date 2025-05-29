@@ -25,6 +25,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\olive\Source\Repos\AutoM_2s\AutoM_2s-main\AutoMaegler
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/AdminCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xBZG1pbkNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/olive/Source/Repos/AutoM_2s/AutoM_2s-main/AutoMaegler/Pages/Cars/BuyCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xCdXlDYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
