@@ -69,7 +69,7 @@ namespace AutoMaegler.Models
         public int? KmIncluded { get; set; }
         public bool ForSale { get; set; }
 
-
+        public ICollection<Image> Images { get; set; } = new List<Image>();
 
 
 		/// <summary>

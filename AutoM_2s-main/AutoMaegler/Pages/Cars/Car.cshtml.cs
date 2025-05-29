@@ -1,45 +1,24 @@
-using AutoMaegler.Models;
 using AutoMaegler.Service;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc;
+
+using AutoMaegler.Service;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace AutoMaegler.Pages.Cars
 {
-    public class CreateCarModel : PageModel
+    public class CarModel : PageModel
     {
-		private readonly ICarService _carService;
-		//private readonly IWebHostEnvironment _environment;
-		//private readonly IImageService _imageService;
+        private readonly ICarService _carService;
+        //private readonly IWebHostEnvironment _environment;
 
-		public CreateCarModel(ICarService carService)
-        {
-			_carService = carService;
-			//_environment = environment;
-			//_imageService = imageService;
-        }
-
-        [BindProperty]
-        public AutoMaegler.Models.Car Car { get; set; }
-        //public List<String> ImageString { get; set; }
-
-        public IActionResult OnGet()
-        {
-            return Page();
-        }
-
-        public IActionResult OnPost()
-        {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-            _carService.AddCar(Car);
-            return RedirectToPage("/Cars/Cars");
-        }
-
-
+        public Models.Car Car { get; set; }
         //public string ImagePath { get; set; }
-
 
         //[BindProperty]
         //public IFormFile CarImage { get; set; }
@@ -50,6 +29,11 @@ namespace AutoMaegler.Pages.Cars
 
         //public string UploadMessage { get; set; }
 
+        public CarModel(ICarService carService)
+        {
+            _carService = carService;
+            //_environment = environment;
+        }
 
         public IActionResult OnGet(int id)
         {
@@ -60,7 +44,6 @@ namespace AutoMaegler.Pages.Cars
             //UploadedImagePath = Car.ImageString; // Load saved image path
             return Page();
         }
-
 
         // Upload the image and keep it ready, but don't save it to the car yet
         public async Task<IActionResult> OnPostUploadAsync(int id)
@@ -89,36 +72,32 @@ namespace AutoMaegler.Pages.Cars
             //}
             //else
             //{
-            //    UploadMessage = "Vælg et gyldigt billede.";
             //}
 
             return Page();
         }
 
         // Save the uploaded image path to the car permanently
-        public IActionResult OnPostSaveAsync(int id, Image image)
+        public IActionResult OnPostSaveAsync(int id)
         {
             Car = _carService.GetCar(id);
             if (Car == null)
                 return RedirectToPage("/NotFound");
 
-            ////if (!string.IsNullOrEmpty(UploadedImagePath))
-            ////{
-            ////    image.ImageString = UploadedImagePath;
+            //if (!string.IsNullOrEmpty(UploadedImagePath))
+            //{
+            //    //Car.ImageString = UploadedImagePath;
 
-            ////    //Car.ImageString = UploadedImagePath;
+            //    _carService.UpdateCar(Car); // Make sure this updates your database
 
-            ////    _imageService.AddImage(image); // Make sure this updates your database
-
-            ////    UploadMessage = "Billedet er gemt!";
-            ////}
-            ////else
-            ////{
-            ////    UploadMessage = "Ingen billede at gemme.";
-            ////}
+            //    UploadMessage = "Billedet er gemt!";
+            //}
+            //else
+            //{
+            //    UploadMessage = "Ingen billede at gemme.";
+            //}
 
             return Page();
         }
-
     }
 }
