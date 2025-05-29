@@ -91,7 +91,7 @@ namespace AutoMaegler.Pages.Order
         /// <returns> Rerenders the page </returns>
         public IActionResult OnGetSortByIdDescending()
         {
-            Orders = _orderService.SortByIdDecending(Orders).ToList();
+            Orders = _orderService.SortByIdDecending<Models.Order>().ToList();
             return Page();
         }
 
