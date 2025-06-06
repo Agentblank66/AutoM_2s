@@ -9,12 +9,12 @@ namespace AutoMaegler.Pages.Cars
     {
 
         private ICarService _carService;
-        private IImageService _imageService;
+        //private IImageService _imageService;
 
-        public LeaseModel(ICarService carService, IImageService imageService)
+        public LeaseModel(ICarService carService)
         {
             _carService = carService;
-            _imageService = imageService;
+            //_imageService = imageService;
         }
 
 
@@ -26,13 +26,13 @@ namespace AutoMaegler.Pages.Cars
         //};
 
         public List<Models.Car> Cars { get; private set; } = new List<Models.Car>() { };
-        public List<Image> Images { get; private set; }
+        //public List<Image> Images { get; private set; }
 
 
         public void OnGet()
         {
             Cars = _carService.GetLeasingCars();
-            Images = _imageService.GetImages();
+            //Images = _imageService.GetImages();
         }
 
     }

@@ -15,7 +15,7 @@ namespace AutoMaegler.Service
         IEnumerable<T> NameSearch<T>(string str) where T : Order;
         IEnumerable<Order> PriceFilter(double minPrice, double maxPrice, double minLeasing, double maxLeasing);
         IEnumerable<T> SortById<T>() where T : Order;
-        IEnumerable<T> SortByIdDecending<T>(IEnumerable<T> orders) where T : Order;
+        IEnumerable<T> SortByIdDecending<T>() where T : Order;
         IEnumerable<T> SortByName<T>(IEnumerable<T> orders) where T : Order;
         IEnumerable<T> SortByNameDecending<T>(IEnumerable<T> orders) where T : Order;
         IEnumerable<T> SortByPrice<T>(IEnumerable<T> orders) where T : Order;

@@ -351,9 +351,9 @@ namespace AutoMaegler.Service
         /// A method that sorts orders by id in descending order by using generics to do so.
         /// </summary>
         /// <returns> A list with the newly sorted orders </returns>
-        public IEnumerable<T> SortByIdDecending<T>(IEnumerable<T> orders) where T : Order
+        public IEnumerable<T> SortByIdDecending<T>() where T : Order
         {
-            return orders.OrderByDescending(order => order.Id).ToList();
+            return _orders.OfType<T>().OrderByDescending(order => order.Id).ToList();
         }
 
         /// <summary>

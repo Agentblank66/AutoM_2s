@@ -30,9 +30,15 @@ namespace AutoMaegler.Pages.Order
         [BindProperty]
         public Models.Order Order { get; set; }
 
+        /// <summary>
+        /// The type of order that is to be created
+        /// </summary>
         [BindProperty]
         public Models.Order.OrderType SelectedOrderType { get; set; }
 
+        /// <summary>
+        /// List of order types for selection in the view
+        /// </summary>
         public IEnumerable<SelectListItem> OrderTypes { get; set; }
 
         /// <summary>
@@ -42,25 +48,25 @@ namespace AutoMaegler.Pages.Order
         public double? Depositum { get; set; }
 
         [BindProperty]
-        public int startYear { get; set; }
+        public int StartYear { get; set; }
 
         [BindProperty]
-        public int endYear { get; set; }
+        public int EndYear { get; set; }
 
         [BindProperty]
-        public int startMonth { get; set; }
+        public int StartMonth { get; set; }
 
         [BindProperty]
-        public int endMonth { get; set; }
+        public int EndMonth { get; set; }
 
         [BindProperty]
-        public int startDay { get; set; }
+        public int StartDay { get; set; }
 
         [BindProperty]
-        public int endDay { get; set; }
+        public int EndDay { get; set; }
 
         [BindProperty]
-        public double monthlyPayment { get; set; }
+        public double MonthlyPayment { get; set; }
 
         /// <summary>
         /// Buy order Properties
@@ -93,9 +99,9 @@ namespace AutoMaegler.Pages.Order
         public int SaleDay { get; set; }
 
         /// <summary>
-        /// The type of order
+        /// Initializes the page with the available order types for selection.
         /// </summary>
-        /// <returns> To current page </returns>
+        /// <returns> The currect page </returns>
         public IActionResult OnGet()
         {
             OrderTypes = Enum.GetValues(typeof(Models.Order.OrderType))
@@ -129,13 +135,13 @@ namespace AutoMaegler.Pages.Order
                             Customer = Order.Customer,
                             Type = SelectedOrderType,
                             Depositum = Depositum ?? 0,
-                            StartYear = startYear,
-                            EndYear = endYear,
-                            StartMonth = startMonth,
-                            EndMonth = endMonth,
-                            StartDay = startDay,
-                            EndDay = endDay,
-                            MonthlyPayment = monthlyPayment
+                            StartYear = StartYear,
+                            EndYear = EndYear,
+                            StartMonth = StartMonth,
+                            EndMonth = EndMonth,
+                            StartDay = StartDay,
+                            EndDay = EndDay,
+                            MonthlyPayment = MonthlyPayment
                         };
                         break;
                     case Models.Order.OrderType.Buy:

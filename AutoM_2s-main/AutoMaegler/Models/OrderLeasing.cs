@@ -76,6 +76,9 @@ namespace AutoMaegler.Models
             LeasingDateEnd = new DateTime(endYear, endMonth, endDay);
         }
 
+        /// <summary>
+        /// Default constructor for the OrderLeasing class, initializing with default values.
+        /// </summary>
         public OrderLeasing() : base(0,new Car(), new Employee(), new Customer(), OrderType.Leasing) 
         {
             Depositum = 0.0;
@@ -96,7 +99,7 @@ namespace AutoMaegler.Models
         /// <returns> A string with properties </returns>
         public override string ToString()
         {
-            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDateStart: {LeasingDateStart} LeasingDateEnd: {LeasingDateEnd} monthlyPayment: {MonthlyPayment}";
+            return $"Id: {Id} Car: {Car} Employee: {Employee} Customer: {Customer} Type: {Type} Depositum: {Depositum} LeasingDateStart: {LeasingDateStart} LeasingDateEnd: {LeasingDateEnd} MonthlyPayment: {MonthlyPayment}";
         }
     }
 }

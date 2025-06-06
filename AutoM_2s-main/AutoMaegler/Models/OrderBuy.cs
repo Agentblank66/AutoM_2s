@@ -46,6 +46,9 @@ namespace AutoMaegler.Models
             BuyDate = new DateTime(year, month, day);
         }
 
+        /// <summary>
+        /// Default constructor for the OrderBuy class, initializing with default values.
+        /// </summary>
         public OrderBuy() : base(0, new Car(), new Employee(), new Customer(), OrderType.Buy)
         {
             BuyPrice = 0.0;
